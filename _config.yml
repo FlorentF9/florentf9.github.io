@@ -9,14 +9,14 @@ description: "Personal site" # used by search engines
 theme_settings:
   # Meta
   title: Florent Forest # blog's title
-  avatar: assets/img/triangle.svg
-  favicon: assets/favicon.ico
+  avatar: assets/img/profil.png
+  favicon: assets/favicon.png
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <p>Personal site and blog.</p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  #header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
@@ -29,7 +29,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "florentf9"
+  github: "FlorentF9"
   google_plus:
   instagram:
   keybase:
@@ -59,14 +59,14 @@ theme_settings:
     email: true
 
   # Scripts / Features 
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  google_analytics: "UA-132667122-1" # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: "florentforest"
   katex: true # Enable if using math markup
   
   special_page:
     search: 
       icon: "search" # Assuming page link and icon are the same
-      enabled: true
+      enabled: false
     tags:
       icon: "tags"
       enabled: true
