@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://florentforest.xyz"
+url: "http://florentforest.xyz"
 title: Florent Forest # site's title
 description: "Personal site" # used by search engines
 
