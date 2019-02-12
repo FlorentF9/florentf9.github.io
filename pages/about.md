@@ -12,7 +12,7 @@ I am a second-year PhD student in Computer Science at [LIPN](http://lipn.univ-pa
 In 2017, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse, one of the top French "grande école", with a specialization in data and decision sciences and aerospace engineering.
 Apart from data science, AI and technology in general, I love music (especially classical, playing the piano) and tennis (mostly on TV but sometimes on the court).
 
-My full CV is available on [LinkedIn](https://www.linkedin.com/in/florent-forest).
+You can find my publications [here](publications), and my full CV is available on [LinkedIn](https://www.linkedin.com/in/florent-forest).
 
 **Disclaimer**: This website is a purely personal project and none of its content is endorsed by my company or university.
 
