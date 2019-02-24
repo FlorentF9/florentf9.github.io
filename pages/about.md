@@ -19,6 +19,7 @@ You can find my publications [here](publications), and my full CV is available o
 ## Upcoming events
 
 * [TS days (Journées sur les données temporelles)](https://project.inria.fr/tsdays/), March 25-26, Rennes, France
+* [LDRC (Learning Data Representation for Clustering) Workshop @ PAKDD](https://sites.google.com/view/pakdd-workshop-ldrc2019/), April 14-17, Macau, China *[presenting a paper]*
 * [ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)](https://www.elen.ucl.ac.be/esann/), April 24-26, Bruges, Belgium *[presenting a paper]*
 
 ## Past events
