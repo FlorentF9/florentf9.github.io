@@ -18,7 +18,6 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
-* [TS days (Journées sur les données temporelles)](https://project.inria.fr/tsdays/), March 25-26, Rennes, France
 * [LDRC (Learning Data Representation for Clustering) Workshop @ PAKDD](https://sites.google.com/view/pakdd-workshop-ldrc2019/), April 14-17, Macau, China *[presenting a paper]*
 * [ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)](https://www.elen.ucl.ac.be/esann/), April 24-26, Bruges, Belgium *[presenting a paper]*
 
@@ -26,12 +25,13 @@ You can find my publications [here](publications), and my full CV is available o
 
 2019
 
+* [TS days (Journées sur les données temporelles)](https://project.inria.fr/tsdays/), March 25-26, Rennes, France
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-29, Lausanne, Switzerland
 
 2018
 
-* [IEEE International Conference on Big Data](https://cci.drexel.edu/bigdata/bigdata2018/index.html), December 10-13, Seattle, USA *[presented a paper]*
+* [IEEE International Conference on Big Data](https://cci.drexel.edu/bigdata/bigdata2018/index.html), December 10-13, Seattle, USA *[presented a [paper](/publications)]*
 * [IEEE SC2-IoV-SOCA tutorials day](https://lipn.univ-paris13.fr/~cerin/sc2iovsoca2018.html), November 19, Paris, France
 * [Deep Learning Day](https://tensorchiefs.github.io/dlday2018/), September 14, Winterthur, Switzerland
-* [DS3 (Data Science Summer School)](http://www.ds3-datascience-polytechnique.fr/), June, Palaiseau, France
-* [S4D (Research Summer School on Statistics for Data Science)](https://s4d.sciencesconf.org/), June, Caen, France
+* [DS3 (Data Science Summer School)](http://www.ds3-datascience-polytechnique.fr/), June 25-27, Palaiseau, France
+* [S4D (Research Summer School on Statistics for Data Science)](https://s4d.sciencesconf.org/), June 18-22, Caen, France
