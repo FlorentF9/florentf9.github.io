@@ -5,13 +5,25 @@ permalink: /publications
 hide: false
 ---
 
+<!-- top right bottom left-->
+
+### 2019
+
+▶ _[Additional material on the DESOM model](files/DESOM-additional-material.pdf)_
+
+<a href="files/LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**Deep Architectures for Joint Clustering and Visualization**<br/>
+_**Florent Forest**, Mustapha Lebbah, Hanene Azzag, Jérôme Lacaille_<br/>
+Workshop on Learning Representations for Data Clustering (LDRC), Pacific-Asia conference on Knowledge Discovery and Data mining (PAKDD), 2019
+
+<a href="files/ESANN-2019-DeepEmbeddedSOM-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**Deep Embedded SOM: Joint Representation Learning and Self-Organization**<br/>
+_**Florent Forest**, Mustapha Lebbah, Hanene Azzag, Jérôme Lacaille_<br/>
+European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN), 2019
 
 ### 2018
 
-<!-- top right bottom left-->
 <a href="files/IEEEBigData-2018-ForestLacailleLebbahAzzag-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**[A Generic and Scalable Pipeline for Large-Scale Analytics of Continuous Aircraft Engine Data](https://ieeexplore.ieee.org/document/8622297)**<br/>
 _**Florent Forest**, Jérôme Lacaille, Mustapha Lebbah, Hanene Azzag_<br/>
-2018 IEEE International Conference on Big Data, pp. 1918-1924<br/>
+IEEE International Conference on Big Data, 2018, pp. 1918-1924<br/>
 _[10.1109/BigData.2018.8622297](https://doi.org/10.1109/BigData.2018.8622297)_
 
 ### Other
