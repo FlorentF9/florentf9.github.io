@@ -18,7 +18,7 @@ Workshop on Learning Representations for Data Clustering (LDRC), Pacific-Asia co
 <a href="files/ESANN-2019-DeepEmbeddedSOM-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**Deep Embedded SOM: Joint Representation Learning and Self-Organization**<br/>
 _**Florent Forest**, Mustapha Lebbah, Hanene Azzag, Jérôme Lacaille_<br/>
 European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN), 2019<br/>
-[[presentation]](files/ESANN-2019-DeepEmbeddedSOM-pres.pdf)
+[[presentation]](files/ESANN-2019-DeepEmbeddedSOM-pres.pdf) [[code]](https://github.com/FlorentF9/DESOM)
 
 ### 2018
 
