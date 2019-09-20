@@ -18,7 +18,8 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
-
+* [Climate Informatics](https://sites.google.com/view/climateinformatics2019/), October 3-4, Paris, France
+* [International Workshop on Machine Learning & Artificial Intelligence](https://workshopmlai.wp.imt.fr/), October 7-8, Paris, France
 
 ## Past events
 
