@@ -13,12 +13,13 @@ hide: false
 
 ▶ _[Additional material on the DESOM model](files/DESOM-additional-material.pdf)_
 
-<a href="files/LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**Deep Architectures for Joint Clustering and Visualization**<br/>
+<a href="files/LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**[Deep Architectures for Joint Clustering and Visualization](https://link.springer.com/chapter/10.1007/978-3-030-26142-9_10)**<br/>
 _**Florent Forest**, Mustapha Lebbah, Hanene Azzag, Jérôme Lacaille_<br/>
 Workshop on Learning Representations for Data Clustering (LDRC), Pacific-Asia conference on Knowledge Discovery and Data mining (PAKDD), 2019<br/>
+_[10.1007/978-3-030-26142-9_10](https://doi.org/10.1007/978-3-030-26142-9_10)_<br/>
 [[pdf]](files/LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf)
 
-<a href="files/ESANN-2019-DeepEmbeddedSOM-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**Deep Embedded SOM: Joint Representation Learning and Self-Organization**<br/>
+<a href="files/ESANN-2019-DeepEmbeddedSOM-full-paper.pdf"><img src="assets/img/icons/pdf.png" height="42px" style="float: left; padding: 0; margin: 8px 0 0 -52px"/></a>**[Deep Embedded SOM: Joint Representation Learning and Self-Organization](https://www.i6doc.com/en/book/?gcoi=28001100931280)**<br/>
 _**Florent Forest**, Mustapha Lebbah, Hanene Azzag, Jérôme Lacaille_<br/>
 European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN), 2019<br/>
 [[pdf]](files/ESANN-2019-DeepEmbeddedSOM-full-paper.pdf) [[presentation]](files/ESANN-2019-DeepEmbeddedSOM-pres.pdf) [[code]](https://github.com/FlorentF9/DESOM)
