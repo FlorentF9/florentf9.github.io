@@ -18,13 +18,13 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
-* [Climate Informatics](https://sites.google.com/view/climateinformatics2019/), October 3-4, Paris, France
-* [International Workshop on Machine Learning & Artificial Intelligence](https://workshopmlai.wp.imt.fr/), October 7-8, Paris, France
-
 ## Past events
 
 2019
 
+* [France is AI](https://franceisai.com/), October 23, Paris, France
+* [International Workshop on Machine Learning & Artificial Intelligence](https://workshopmlai.wp.imt.fr/), October 7-8, Paris, France
+* [Climate Informatics](https://sites.google.com/view/climateinformatics2019/), October 3-4, Paris, France
 * [LDRC (Learning Data Representation for Clustering) Workshop @ PAKDD](https://sites.google.com/view/pakdd-workshop-ldrc2019/), April 14-17, Macau, China *[presented a [paper](/publications)]*
 * [ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)](https://www.elen.ucl.ac.be/esann/), April 24-26, Bruges, Belgium *[presented a [paper](/publications)]*
 * [TS days (Journées sur les données temporelles)](https://project.inria.fr/tsdays/), March 25-26, Rennes, France
