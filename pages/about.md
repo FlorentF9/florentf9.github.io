@@ -18,10 +18,13 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
+* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
+
 ## Past events
 
 2019
 
+* [EGG Paris dataiku](https://paris.egg.dataiku.com/home), November 7, Paris, France
 * [France is AI](https://franceisai.com/), October 23, Paris, France
 * [International Workshop on Machine Learning & Artificial Intelligence](https://workshopmlai.wp.imt.fr/), October 7-8, Paris, France
 * [Climate Informatics](https://sites.google.com/view/climateinformatics2019/), October 3-4, Paris, France
