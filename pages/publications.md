@@ -5,7 +5,7 @@ permalink: /publications
 hide: false
 ---
 
-<script src="https://bibbase.org/service/mendeley/339af71d-9727-3efb-a007-5c685dd1cf47?jsonp=1"></script> 
+<script src="https://bibbase.org/show?bib=florentfo.rest/files/publications.bib&jsonp=1&css=1"></script> 
 
 <!-- top right bottom left
 
