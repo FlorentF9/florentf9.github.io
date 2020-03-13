@@ -5,7 +5,9 @@ permalink: /publications
 hide: false
 ---
 
-<!-- top right bottom left-->
+<script src="https://bibbase.org/service/mendeley/339af71d-9727-3efb-a007-5c685dd1cf47?jsonp=1"></script> 
+
+<!-- top right bottom left
 
 ### 2019
 
@@ -39,3 +41,4 @@ _J Knödlseder, M Mayer, C Deil, J-B Cayrou, E Owen, N Kelley-Hoskins, C-C Lu, R
 Astronomy &amp; Astrophysics, 2016/9/1, vol. 593, pp. A1<br/>
 _[10.1051/0004-6361/201628822](https://doi.org/10.1051/0004-6361/201628822)_<br/>
 [[pdf]](https://www.aanda.org/articles/aa/pdf/2016/09/aa28822-16.pdf)
+-->

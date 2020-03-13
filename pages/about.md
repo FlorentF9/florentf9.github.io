@@ -18,9 +18,11 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
-* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
-
 ## Past events
+
+2020
+
+* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
 
 2019
 
