@@ -79,8 +79,8 @@
 <li>
 	<a href="https://github.com/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_follow_on }} GitHub">
 		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+            <i class="fa fa-github fa-stack-1x"></i>
         </span>
 	</a>
 </li>
@@ -123,8 +123,8 @@
 <li>
 	<a href="{{ site.theme_settings.linkedin }}" title="{{ site.theme_settings.str_follow_on }} LinkedIn">
 		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+            <i class="fa fa-linkedin fa-stack-1x"></i>
         </span>
 	</a>
 </li>
@@ -246,6 +246,28 @@
 		<span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme_settings.scholar %}
+<li>
+	<a href="https://scholar.google.fr/citations?user={{ site.theme_settings.scholar }}" title="{{ site.theme_settings.str_follow_on }} Google Scholar">
+		<span class="fa-stack fa-lg">
+            <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+            <i class="ai ai-google-scholar ai-1x"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme_settings.researchgate %}
+<li>
+	<a href="https://www.researchgate.net/profile/{{ site.theme_settings.researchgate }}" title="{{ site.theme_settings.str_follow_on }} ResearchGate">
+		<span class="fa-stack fa-lg">
+            <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+            <i class="ai ai-researchgate ai-1x"></i>
         </span>
 	</a>
 </li>
