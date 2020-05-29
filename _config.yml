@@ -46,6 +46,7 @@ theme_settings:
   youtube:
   scholar: "vw7dDG0AAAAJ"
   researchgate: "Florent_Forest2"
+  dblp: "Forest:Florent"
   
   # Sharing options
   share_buttons:
