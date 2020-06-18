@@ -8,7 +8,7 @@ hide: false
 
 ## Short bio
 
-I am a second-year PhD student in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [University Paris 13](https://www.univ-paris13.fr/), France. My areas of interest are big data processing and unsupervised machine learning. I like to develop and apply advanced algorithms on large, complex industrial data sets. At the same time, I work at [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
+I am a third-year PhD student in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/), France. My areas of interest are unsupervised machine learning and big data processing. I like to develop and apply advanced algorithms on large, complex industrial data sets. At the same time, I work at [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
 In 2017, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse, one of the top French "grande école", with a specialization in data and decision sciences and aerospace engineering.
 Apart from data science, AI and technology in general, I love music (especially classical, playing the piano) and tennis (mostly on TV but sometimes on the court).
 
@@ -22,6 +22,8 @@ You can find my publications [here](publications), and my full CV is available o
 
 2020
 
+* Our paper introducing a new principle for clustering stability analysis in [available on arXiv](https://arxiv.org/abs/2006.08530)!
+* [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual *[published a French version of a previous [paper](/publications)]* 
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
 
 2019
