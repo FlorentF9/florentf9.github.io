@@ -16,13 +16,20 @@ You can find my publications [here](publications), and my full CV is available o
 
 **Disclaimer**: This website is a purely personal project and none of its content is endorsed by my company or university.
 
+## News
+
+* (September 2020) I am co-organizing the first [workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/), hosted by [IEEE ICDM 2020](http://icdm2020.bigke.org/), with a top-notch committee!
+* (August 2020) skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is [available on Github](https://github.com/FlorentF9/skstab).
+* (June 2020) Our paper introducing a new principle for clustering stability analysis in [available on arXiv](https://arxiv.org/abs/2006.08530)!
+
 ## Upcoming events
+
+* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual *[organizer]*
 
 ## Past events
 
 2020
 
-* Our paper introducing a new principle for clustering stability analysis in [available on arXiv](https://arxiv.org/abs/2006.08530)!
 * [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual *[published a French version of a previous [paper](/publications)]* 
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
 
