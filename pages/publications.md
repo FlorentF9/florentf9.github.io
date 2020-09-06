@@ -1,11 +1,18 @@
 ---
 layout: page
-title: "Publications"
+title: "Research"
 permalink: /publications
 hide: false
 ---
 
+## Publications
+
 <script src="https://bibbase.org/show?bib=florentfo.rest/files/publications.bib&jsonp=1&css=1"></script> 
+
+## Other research activities
+
+* Organizer of the 1st [workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/), hosted by [IEEE ICDM 2020](http://icdm2020.bigke.org/)
+* Reviewer at [CIKM 2020](https://www.cikm2020.org/) (ACM International Conference on Information and Knowledge Management) 
 
 <!-- top right bottom left
 
