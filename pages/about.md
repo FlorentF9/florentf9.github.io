@@ -18,12 +18,15 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## News
 
+* (September 2020) Paper accepted at the annual conference of PHM Society 2020!
 * (September 2020) I am co-organizing the first [workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/), hosted by [IEEE ICDM 2020](http://icdm2020.bigke.org/), with a top-notch committee!
 * (August 2020) skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is [available on Github](https://github.com/FlorentF9/skstab).
 * (June 2020) Our paper introducing a new principle for clustering stability analysis in [available on arXiv](https://arxiv.org/abs/2006.08530)!
 
 ## Upcoming events
 
+* [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual *[presenting a paper]*
+* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual *[presenting a [paper](/publications)]*
 * [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual *[organizer]*
 
 ## Past events
