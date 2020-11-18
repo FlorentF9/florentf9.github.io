@@ -18,6 +18,7 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## News
 
+* (November 2020) The first LITSA workshop at ICDM was a success! Thanks to all participants, organizers and committee members.
 * (October 2020) Our paper applying the Stadion clustering criterion to transformation-invariant time series is accepted at ICPR 2020!
 * (September 2020) Paper on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!
 * (September 2020) I am co-organizing the first [workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/), hosted by [IEEE ICDM 2020](http://icdm2020.bigke.org/), with a top-notch committee!
@@ -26,14 +27,15 @@ You can find my publications [here](publications), and my full CV is available o
 
 ## Upcoming events
 
-* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual *[presenting a [paper](/publications)]*
-* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual *[organizer]*
+* [ICPR (International Conference on Pattern Recognition)](https://www.micc.unifi.it/icpr2020/), January 10-15, virtual *[presenting a paper]*
 * PhD thesis defense, TBD in early 2021, Villetaneuse, France or virtual
 
 ## Past events
 
 2020
 
+* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual *[organizer]*
+* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual *[presenting a [paper](/publications)]*
 * [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual *[presented a paper]*
 * [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual *[published a French version of a previous [paper](/publications)]* 
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
@@ -44,7 +46,7 @@ You can find my publications [here](publications), and my full CV is available o
 * [France is AI](https://franceisai.com/), October 23, Paris, France
 * [International Workshop on Machine Learning & Artificial Intelligence](https://workshopmlai.wp.imt.fr/), October 7-8, Paris, France
 * [Climate Informatics](https://sites.google.com/view/climateinformatics2019/), October 3-4, Paris, France
-* [LDRC (Learning Data Representation for Clustering) Workshop @ PAKDD](https://sites.google.com/view/pakdd-workshop-ldrc2019/), April 14-17, Macau, China *[presented a [paper](/publications)]*
+* [LDRC (Learning Data Representation for Clustering) Workshop](https://sites.google.com/view/pakdd-workshop-ldrc2019/) @ PAKDD 2019, April 14-17, Macau, China *[presented a [paper](/publications)]*
 * [ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)](https://www.elen.ucl.ac.be/esann/), April 24-26, Bruges, Belgium *[presented a [paper](/publications)]*
 * [TS days (Journées sur les données temporelles)](https://project.inria.fr/tsdays/), March 25-26, Rennes, France
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-29, Lausanne, Switzerland
