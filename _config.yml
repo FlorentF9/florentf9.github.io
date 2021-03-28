@@ -38,6 +38,3 @@ plugins:
  - jekyll-feed
  - jekyll-default-layout
  - liquid-md5
-
-sass:
-  sass_dir: _sass
