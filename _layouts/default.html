@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    <div class="content">
-      {{ content }}
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="{% if site.dark_theme %}dark{% else %}light{% endif %}">
+
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<meta charset="{{ site.encoding }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta name="author" content="{{ page.author | default: site.author | escape }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/vendor/academicons.min.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ site.style | default: "theme" | prepend: "/assets/css/" | append: ".css" | relative_url }}">
+{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}" />{% endif %}
+{% if page.mathjax or site.mathjax %}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    Macros: {
+          infer: [`\\begin{array}\[b\]{c c c c}
+          \\style{border-bottom:1px solid black; padding-bottom:7px;}{
+          \\begin{array}\[b\]{c c c c} #2 \\end{array}}
+                &  \\hspace{-.5em}\\raise{-.6em}{#1} \\\\
+          #3 \\\\\[-50em\]
+          \\end{array}`,3,""
+          ]
+        }
+    }
+    });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+{% endif %}
+{% if site.comments.disqus %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
+{% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<header id="header">
+  <div style="width:88%">
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+  <span class="sub">{{ site.status }}</span>
+  <!-- <span class="sub" style="float: right;"><tt>{{ site.email }}</tt></span> -->
+  </div>
+  <div style="width:12%; padding:0; margin: 0"><img src="/assets/img/profil.png"/></div>
+  {% if site.navigation %}
+  <nav>
+    <div id="menu">
+      {% for path in site.navigation %}
+      {% assign node = site.pages | where: "path", path | first %}
+        <a {% if node.title == page.title or page.post and node.title == "Blog" %} id="selected" {% endif %} href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+      {% endfor %}
     </div>
-    {% include footer.html %}
-  </body>
+    <div>
+      {% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}
+    </div>
+  </nav>
+  {% endif %}
+  {% if site.icons %}
+    <nav>
+    {% for link in site.icons %}
+      {% if link[0] == "google-scholar" or link[0] == "dblp" or link[0] == "researchgate" %}
+        <a class="icon" href="{{ link[1] }}"><i class="ai ai-{{ link[0] }}-square ai-lg"></i></a>
+      {% else %}
+        <a class="icon" href="{{ link[1] }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ link[0] }}"></use></svg></a>
+      {% endif %}
+    {% endfor %}
+    </nav>
+  {% endif %}
+</header>
+{{ content }}
+{% if page.previous.url or page.next.url %}
+<footer>
+  {% if page.next.url %}<a href="{{ page.next.url | prepend: site.baseurl }}">« {{ page.next.title }}</a>{% else %} <span></span> {% endif %}
+  {% if page.previous.url %}<a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} »</a>{% else %} <span></span> {% endif %}
+</footer>
+{% endif %}
 </html>

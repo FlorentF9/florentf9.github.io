@@ -1,8 +1,12 @@
 ---
 layout: post
 title: Configuring Spark applications with Typesafe Config
-tags: [tutorial, scala, spark]
-feature-img: assets/img/feature/spark.jpg
+permalink: :year/:month/:day/:title:output_ext
+categories: 
+    - tutorial
+    - scala
+    - spark
+post: true
 ---
 
 Complex and generic Spark applications often require input from the user, in order to specify application parameters or the data sources the application should work with. Using command-line arguments is limited. Lightbend's **[config](https://github.com/lightbend/config)** library allows to use configuration files in applications written in JVM languages, including Spark applications written in Scala.
@@ -12,7 +16,7 @@ Example code for this post is [available on Github](https://github.com/FlorentF9
 * TOC
 {:toc}
 
-## Configuration files VS command-line arguments
+# Configuration files VS command-line arguments
 
 One solution is to use command-line arguments when submitting the application with `spark-submit`. In case of a Scala Spark application packaged as a JAR, command-line arguments are given at the end of the command, as follows:
 
@@ -37,7 +41,7 @@ Then, they can be read from within the `main` method of the application using th
 
 Lightbend's **[config](https://github.com/lightbend/config)** library allows to use configuration files in applications written in JVM languages, including Spark applications written in Scala. It solves all problems listed above, and offers many more useful features. The config library itself is written in Java and can be easily imported in a Scala project. Before going further, here is the link to the [package Java documentation](https://lightbend.github.io/config/latest/api/com/typesafe/config/package-summary.html).
 
-## Minimal example
+# Minimal example
 
 I will first present a minimalistic application that will serve as an example throughout this post. It performs a word count on a text file, filtering out stop words and words with too few occurrences, and outputs the ordered word counts in a CSV file.
 
@@ -88,7 +92,7 @@ object CmdWordCount {
 
 Note that arguments had to be cast and parsed manually (e.g. using `toInt` and `split`). In particular, the empty string `""` in the stop words had to be escaped (`\"\"`) because else, the double quotes will be dropped. 
 
-## Quick set-up of config
+# Quick set-up of config
 
 The aim of this post is not to provide a comprehensive user guide for config. This information can be found on the Github page and in the official documentation (useful links are listed in the last section). I will just show a quick minimal set-up to get your Spark application running with config in local mode and on a YARN cluster.
 
@@ -106,7 +110,7 @@ import com.typesafe.config.{Config, ConfigFactory}
 val conf: Config = ConfigFactory.load()
 ```
 
-## Configuration file
+# Configuration file
 
 Here's our simple configuration file, named *wordcount.conf*:
 
@@ -119,7 +123,7 @@ stopWords   = ["for", "in", "is", "on", "the", "a", "to", "and", "an", "of", "if
 
 It consists in a field with two sub-fields for the input and output filenames, an integer field and a list of strings, written in simple JSON syntax.
 
-## Settings class
+# Settings class
 
 Configuration parameters are accessed using typed getter methods and the _path_ of the parameter. A common solution, recommended by the developers of config, is to create a custom class that will load the configuration and hold the parameter variables, named for example `Settings`. The advantage is that (1) all the parsing logic is done in this class and not along our business logic, (2) by loading variables as non-lazy fields, all exceptions triggered by the parsing of the configuration file will occur at the very beginning and not after the job has been running for an hour. Here is the `Settings` class used in the example project:
 
@@ -138,7 +142,7 @@ class Settings(config: Config) extends Serializable {
 
 In practice, a lot of stuff happens in this class, for example handling optional or complex types. You will often have to use `scala.collection.JavaConverters` or `scala.collection.JavaConversions` for converting between Java and Scala types, because config is a Java library. More to this topic in the Additional remarks section.
 
-## Code with config
+# Code with config
 
 Finally, here is the code of our example application using our configuration file, via the `Settings` class:
 
@@ -173,7 +177,7 @@ object ConfigWordCount {
 }
 ```
 
-## Running local and on YARN
+# Running local and on YARN
 
 When submitting the job, no matter if in local mode or in YARN client or cluster mode, the driver or executors need to be able to access the configuration file. Otherwise, there are two possibilities:
 
@@ -186,7 +190,7 @@ Exception in thread "main" com.typesafe.config.ConfigException$Missing: No confi
 
 Several arguments to `spark-submit` are needed to provide the configuration file, depending on the deploy mode. We will address local mode and YARN client and cluster mode.
 
-### local
+## local
 
 ```shell 
 $ spark-submit --master local[*] [...] --files application.conf --driver-java-options -Dconfig.file=application.conf myApplication.jar
@@ -199,7 +203,7 @@ $ spark-submit --master local[*] --class xyz.florentforest.sparkconfigexample.Co
 --driver-java-options -Dconfig.file=wordcount.conf sparkconfigexample-assembly-1.0.jar 
 ```
 
-### YARN client mode
+## YARN client mode
 
 ```shell 
 $ spark-submit --master yarn --deploy-mode client [...] --files application.conf --driver-java-options -Dconfig.file=application.conf
@@ -213,7 +217,7 @@ $ spark-submit --master yarn --deploy-mode client --class xyz.florentforest.spar
 --driver-java-options -Dconfig.file=wordcount.conf --conf spark.executor.extraJavaOptions=-Dconfig.file=wordcount.conf sparkconfigexample-assembly-1.0.jar 
 ```
 
-### YARN cluster mode
+## YARN cluster mode
 
 ```shell 
 $ spark-submit --master yarn --deploy-mode cluster  [...] --files application.conf --conf spark.driver.extraJavaOptions=-Dconfig.file=application.conf
@@ -227,7 +231,7 @@ $ spark-submit --master yarn --deploy-mode cluster --class xyz.florentforest.spa
 --conf spark.driver.extraJavaOptions=-Dconfig.file=wordcount.conf --conf spark.executor.extraJavaOptions=-Dconfig.file=wordcount.conf sparkconfigexample-assembly-1.0.jar 
 ```
 
-## Additional remarks
+# Additional remarks
 
 The config library has a lot of features that are not displayed in this minimalistic example and are not the point of this post. I will cite some of them:
 
@@ -241,7 +245,7 @@ See the doc for more!
 
 Another important point is the conversion between Java and Scala objects. You will often have to use conversions between Java and Scala types, either using `.asScala` implicits defined in `scala.collection.JavaConverters`, or conversions from `scala.collection.JavaConversions`. When you combine complex types such as lists and JSON maps, conversions can get tricky and you sometimes have to extract the underlying Java objects (there's a method of the Config class called `underlying`) and convert them manually using `.asInstanceOf[...]`. Be careful, as it leads to potential runtime errors! This is a drawback of using a Java library in Scala. Note that someone wrote a [wrapper of config in pure Scala](https://github.com/andr83/scalaconfig), I did not have time to try it but it might be the perfect fit.
 
-## References
+# References
 
 Example project:
 * [https://github.com/FlorentF9/spark-config-example](https://github.com/FlorentF9/spark-config-example)

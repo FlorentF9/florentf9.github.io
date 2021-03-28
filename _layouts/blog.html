@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<article>
+  <header><h1>Posts</h1></header>
+  <ul id="archive">
+    {%- assign posts = paginator.posts | default: site.posts -%}
+    {% for post in posts %}
+    {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
+    <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div>
+      {% comment %} thanks to granteagon's code {% endcomment %}
+      {% assign hex2rgb_chars = 'a,b,c,d,e,f' | split: ',' %}
+      {% assign hex2rgb_remainders = '10,11,12,13,14,15' | split: ',' %}
+      {%- for cat in post.categories -%}
+        {% assign cat_md5 = cat | md5 | split: "" | reverse %}
+        {% assign catbase = 0 %}
+
+        {% comment %} exponentation {% endcomment %}
+        {%- for i in (0..31) -%}
+          {% assign factor = 1 %}
+          {%- for j in (0..i) -%}
+              {% assign factor = factor | times: 16 %}
+          {%- endfor -%}
+
+          {% comment %} verification {% endcomment %}
+          {%- for c in (0..5) -%}
+            {%- if cat_md5[0][i] == hex2rgb_chars[c] -%}
+              {% assign factor = factor | times: hex2rgb_remainders[i] %}
+              {% assign catbase = catbase | plus: factor %}
+              {% continue %}
+            {%- endif -%}
+          {%- endfor -%}
+          {% assign factor = factor | times: cat_md5[i] %}
+          {% assign catbase = catbase | plus: factor %}
+        {%- endfor -%}
+        <span class="category" style="background-color: hsl({{ catbase | modulo: 359 }}, 50%, 50%);">{{ cat }}</span>
+      {%- endfor -%}
+    </div>
+    </li>
+    {% endfor %}
+    {{ content }}
+  </ul>
+</article>
+
+{% if paginator.total_pages > 1 %}
+<footer>
+  <a {% if paginator.previous_page %}class="gray" href="{{ paginator.previous_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>« newer posts</a>
+  <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <a {% if paginator.next_page %}class="gray" href="{{ paginator.next_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>older posts »</a>
+</footer>
+{% endif %}

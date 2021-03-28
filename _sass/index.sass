@@ -1,0 +1,24 @@
+$font-size: calc(0.8rem + 0.25vw) !default
+$font-weight: 300 !default
+$heading-weight: 300 !default
+$line-height: 1.65 !default
+$link-color: #EB811B !default
+$dark: #174c80 !default
+$light: #eeeeee !default
+$alert: #EB811B !default
+
+@function reduce ($percent)
+  @return rgba(mix($dark, $light), $percent / 100)
+
+@function reducealert ($percent)
+  @return rgba(mix($alert, $light), $percent / 100)
+
+@import basic, highlight, layout, darkmode
+
+.light
+  background: $light
+  color: $dark
+
+.dark
+  background: $dark
+  color: $light

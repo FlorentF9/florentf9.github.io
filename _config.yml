@@ -1,120 +1,40 @@
-# SITE CONFIGURATION
-baseurl: ""
-url: "http://florentfo.rest"
-title: Florent Forest # site's title
-description: "Personal site" # used by search engines
+title: "Florent Forest"
+author: "Florent Forest"
+status: "PhD in Computer Science | Data & Machine learning scientist"
+email: "f@florentfo.rest"
+description: "Personal site"
+permalink: /:title/
+lang: "en"
 
+show_footer: false           # show the "previous" and "next" links at the end of each post
+dark_theme: false            # use the dark mode as default
+dark_header: true            # keep the header dark
+dark_footer: false           # keep the footer dark
+# style: minimal             # use a simpler style inspired by the minima theme
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: Florent Forest # blog's title
-  avatar: assets/img/profil.png
-  favicon: assets/favicon.png
-  gravatar: # Email MD5 hash
+navigation:                  # site navigation in the header
+  - index.md
+  - about.md
+  - blog.md
+  - research.md
+  - publications.md
+  - teaching.md
+  - contact.md
 
-  # Header and footer text
-  header_text: > #two or three lines to describe your site
-     <p>Personal site and blog.</p>
-  #header_text_feature_image: assets/img/pexels/triangular.jpeg
-  footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+icons:                      # icons in the header, see http://fontawesome.com/icons
+ envelope: "mailto:f@florentfo.rest"
+ github: "https://github.com/FlorentF9"
+ linkedin: "https://www.linkedin.com/in/florent-forest"
+ google-scholar: "https://scholar.google.fr/citations?user=vw7dDG0AAAAJ"
+ researchgate: "https://www.researchgate.net/profile/Florent-Forest-2"
+#  dblp: "https://dblp.uni-trier.de/pers/hd/f/Forest:Florent"
 
-  # Icons
-  rss: false  # Make sure you created a feed.xml with feed.xml layout
-  email_address: # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: "FlorentF9"
-  google_plus:
-  instagram:
-  keybase:
-  linkedin: https://www.linkedin.com/in/florent-forest/ # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: # "twitter username"
-  vimeo:
-  wordpress:
-  youtube:
-  scholar: "vw7dDG0AAAAJ"
-  researchgate: "Florent_Forest2"
-  dblp: "Forest:Florent"
-  
-  # Sharing options
-  share_buttons:
-    facebook: true
-    twitter: true
-    google_plus: true
-    tumblr:
-    pinterest:
-    pocket:
-    reddit: true
-    linkedin: true
-    wordpress:
-    email: true
-
-  # Scripts / Features 
-  google_analytics: "UA-132667122-1" # Tracking ID, e.g. "UA-000000-01"
+comments:                    # embed disqus or isso comments
+  disqus: true
   disqus_shortname: "florentforest"
-  katex: true # Enable if using math markup
-  
-  special_page:
-    search: 
-      icon: "search" # Assuming page link and icon are the same
-      enabled: false
-    tags:
-      icon: "tags"
-      enabled: true
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_share_on: "Share on"
-  str_add_to: "Add to"
-  str_email: "Email"
-  str_tweet: "Tweet"
-  str_pin_it: "Pin it"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+#  isso: ""
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: true
-  
-  
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
-
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag]
-#theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
+plugins:
+ - jekyll-feed
+ - jekyll-default-layout
+ - liquid-md5

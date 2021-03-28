@@ -1,0 +1,169 @@
+body
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif
+  font-size: 16px
+  font-size: $font-size
+  font-weight: $font-weight
+  line-height: $line-height
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body, blockquote, figure
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $heading-weight
+
+a, b, strong, th
+  font-weight: $font-weight + 100
+
+a
+  color: inherit
+  text-decoration: inherit
+  transition: color .2s
+  &.selected, &:hover
+    color: reducealert(100)
+
+article a
+  color: $link-color
+
+article header a, article footer a
+  color: inherit
+
+time
+  color: #949494
+
+hr
+  border: 1px solid reduce(30)
+  margin: 2em 0
+
+blockquote
+  background: reduce(6)
+  border-left: 4px solid $alert
+  padding: 1px 1.5em
+
+img
+  border-radius: 2px
+  max-width: 100%
+  height: auto
+  margin: .5em 0
+
+table
+  box-shadow: 0 0 0 1px reduce(12) inset
+  border-spacing: 1px
+  width: 100%
+
+tr:hover, tr:nth-child(odd) td
+  background: reduce(6)
+
+th, td
+  box-shadow: 0 0 0 1px reduce(12)
+  padding: .5em 1em
+
+pre
+  background: rgba(34, 34, 34, 0.8)
+  color: white
+  border-radius: 2px
+  font-size: .8em
+  margin: 1.5em 0
+  padding: .8em 1.2em
+  overflow-x: auto
+
+p code
+  font-size: .9em
+  background: reduce(25)
+  opacity: .75
+  border-radius: 2px
+  margin: 0 .1em
+  padding: .2em .4em
+
+.category
+  color: $light
+  border-radius: 10px
+  padding-left: 10px
+  padding-right: 10px
+  padding-top: 2px
+  padding-bottom: 2px
+  margin: 3px
+
+nav
+  font-size: calc(.4vw + .8em)
+
+#header
+  background-color: $dark
+  padding-top: 14px
+  padding-bottom: 14px
+
+nav a
+  display: inline-block
+  margin: 0
+  font-weight: $font-weight
+
+nav #menu a:hover
+  border-bottom: $alert 2px solid
+
+nav #menu #selected
+  border-bottom: $alert 2px solid
+
+.icon
+  padding: 0 4px 0 0
+
+.ai-lg, .fa-lg
+  font-size: 1.2em
+  vertical-align: 15%
+
+header h1 
+  margin-top: 0.4em
+  margin-bottom: 0.1em
+
+article header 
+  text-align: center
+  margin-bottom: 1.6em
+
+article footer 
+  padding: 1em 0
+
+article h1, h2, h3 
+  margin-bottom: 0
+
+article h1 
+  font-size: calc(1vw + 1em)
+  border-bottom: 1px lightgray solid
+
+article h2 
+  font-size: calc(.75vw + .75em)
+
+#post #maintitle 
+  font-size: calc(1.1vw + 1.1em)
+  border-bottom: 1px lightgray solid
+
+#archive h2
+  margin-top: 0
+
+#archive li
+  list-style-type: none
+  margin-bottom: 2em
+
+#header h1
+  font-size: calc(1.2vw + .8em)
+  margin-bottom: 0
+
+.sub
+  font-size: calc(.3vw + .8em)
+  margin-bottom: 0
+
+.bibbase_group_body a
+  font-size: 16px
+
+img.bibbase_icon
+  padding: 0;
+  width: 24px;
+  max-height: 20px;
+  vertical-align: middle;
+
+  filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: grayscale(100%); /* Current draft standard */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); 
+  -o-filter: grayscale(100%);
+  filter: gray; /* IE6+ */
