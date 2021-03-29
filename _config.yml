@@ -1,8 +1,9 @@
 title: "Florent Forest"
 author: "Florent Forest"
-status: "PhD in Computer Science | Data & Machine learning scientist"
+status: "PhD in Computer Science | Data & Machine Learning Scientist"
 email: "f@florentfo.rest"
-description: "Personal site"
+description: "Florent Forest's personal website and blog about computer science, data science, machine learning and other random stuff"
+keywords: "florent forest, florent, forest, website, blog, research, computer science, data science, machine learning"
 permalink: /:title/
 lang: "en"
 
@@ -33,6 +34,8 @@ comments:                    # embed disqus or isso comments
   disqus: true
   disqus_shortname: "florentforest"
 #  isso: ""
+
+google_analytics: "UA-132667122-1"
 
 plugins:
  - jekyll-feed
