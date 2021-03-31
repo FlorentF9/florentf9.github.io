@@ -25,9 +25,26 @@ a
 
 article a
   color: $link-color
+  box-shadow: inset 0 -2px 0 $alert
+  transition: all .3s ease-in-out
+  transition-property: all
+  transition-duration: 0.3s
+  transition-timing-function: ease-in-out
+  transition-delay: 0s
+
+article a:hover
+  color: white
+  box-shadow: inset 0 -20px 0 $alert
 
 article header a, article footer a
   color: inherit
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  box-shadow: none
+  transition: color .2s
+  &.selected, &:hover
+    box-shadow: none
+    color: reducealert(100)
 
 time
   color: #949494
@@ -151,8 +168,22 @@ article h2
   font-size: calc(.3vw + .8em)
   margin-bottom: 0
 
-.bibbase_group_body a
+a.icon
+  box-shadow: none
+  transition: color .2s
+  &.selected, &:hover
+    box-shadow: none
+    color: reducealert(100)
+
+#bibbase a
+  font-weight: $font-weight + 100
+  color: $alert
   font-size: 16px
+  box-shadow: none
+  transition: color .2s
+  &.selected, &:hover
+    box-shadow: none
+    color: reducealert(100)
 
 img.bibbase_icon
   padding: 0
