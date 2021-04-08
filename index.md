@@ -34,3 +34,5 @@ NA
 * [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual *[presented a paper]*
 * [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual *[published a French version of a previous [paper](/publications)]* 
 * [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
+
+[More events](/about)
