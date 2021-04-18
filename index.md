@@ -3,7 +3,11 @@ title: "Home"
 layout: page
 ---
 
-Hi, I'm Florent, welcome to my personal website! I recently finished my PhD in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/), France. My broad areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex industrial data sets. The PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse, France. You can find recent news and events on this page!
+Hi, I'm Florent, welcome to my personal website!
+
+I am now a postdoctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist at the [Nagi Bioscience](https://nagibio.ch/) start-up. I recently finished my PhD in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My broad areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex industrial data sets. The PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
+
+You can find recent news and events on this page!
 
 # News
 
@@ -24,15 +28,15 @@ NA
 
 2021
 
-* PhD thesis defense, March 22, Villetaneuse, France and virtual *[see thesis [manuscript and slides](/research)]*
-* [ICPR (International Conference on Pattern Recognition)](https://www.micc.unifi.it/icpr2020/), January 10-15, virtual *[presented a [paper](/publications)]*
+* PhD thesis defense, March 22, Villetaneuse, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span> and virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[see thesis [manuscript and slides](/research)]*
+* [ICPR (International Conference on Pattern Recognition)](https://www.micc.unifi.it/icpr2020/), January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a [paper](/publications)]*
 
 2020
 
-* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual *[organizer]*
-* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual *[presented a [paper](/publications)]*
-* [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual *[presented a paper]*
-* [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual *[published a French version of a previous [paper](/publications)]* 
-* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland
+* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[organizer]*
+* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a [paper](/publications)]*
+* [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a paper]*
+* [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[published a French version of a previous [paper](/publications)]* 
+* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span>
 
 [More events](/about)
