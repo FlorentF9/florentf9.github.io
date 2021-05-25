@@ -20,8 +20,8 @@ You can find my publications [here](publications), and my CV is available below.
 
 # CV
 
-<p><a href="/files/CV_FlorentForest_2021_EN.pdf"> Download CV in PDF.</a></p>
-<p><embed src="/files/CV_FlorentForest_2021_EN.pdf" width="80%" height="700px" /></p>
+<p><a href="/files/CV_FlorentForest_2021_EN-2.pdf"> Download CV in PDF.</a></p>
+<p><embed src="/files/CV_FlorentForest_2021_EN-2.pdf" width="80%" height="700px" /></p>
 
 # Past events
 
