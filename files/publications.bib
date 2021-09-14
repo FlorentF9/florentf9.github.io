@@ -40,7 +40,18 @@ title = {{Large-scale Vibration Monitoring of Aircraft Engines from Operational 
 year = {2020},
 url_Link = {https://www.phmpapers.org/index.php/phmconf/article/view/1131},
 url_Paper = {https://www.phmpapers.org/index.php/phmconf/article/download/1131/913},
-url_Slides = {pres-PHM-2020.pdf},
+url_Slides = {pres-PHM-2020.pdf}
+}
+@unpublished{Forest2020e,
+abstract = {Self-Organizing Map algorithms have been used for almost 40 years across various application domains such as biology, geology, healthcare, industry and humanities as an interpretable tool to explore, cluster and visualize high-dimensional data sets. In every application, practitioners need to know whether they can \textit{trust} the resulting mapping, and perform model selection to tune algorithm parameters (e.g. the map size). Quantitative evaluation of self-organizing maps (SOM) is a subset of clustering validation, which is a challenging problem as such. Clustering model selection is typically achieved by using clustering validity indices. While they also apply to self-organized clustering models, they ignore the topology of the map, only answering the question: do the SOM code vectors approximate well the data distribution? Evaluating SOM models brings in the additional challenge of assessing their topology: does the mapping preserve neighborhood relationships between the map and the original data? The problem of assessing the performance of SOM models has already been tackled quite thoroughly in literature, giving birth to a family of quality indices incorporating neighborhood constraints, called \textit{topographic} indices. Commonly used examples of such metrics are the topographic error, neighborhood preservation or the topographic product. However, open-source implementations are almost impossible to find. This is the issue we try to solve in this work: after a survey of existing SOM performance metrics, we implemented them in Python and widely used numerical libraries, and provide them as an open-source library, SOMperf. This paper introduces each metric available in our module along with usage examples.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:2011.05847},
+author = {Forest, Florent and Lebbah, Mustapha and Azzag, Hanane and Lacaille, J{\'{e}}r{\^{o}}me},
+eprint = {arXiv:2011.05847},
+title = {{A Survey and Implementation of Performance Metrics for Self-Organized Maps}},
+year = {2020},
+url_Link = {https://arxiv.org/abs/2011.05847},
+url_Paper = {https://arxiv.org/pdf/2011.05847}
 }
 @unpublished{Mourer2020,
 abstract = {Model selection is a major challenge in non-parametric clustering. There is no universally admitted way to evaluate clustering results for the obvious reason that there is no ground truth against which results could be tested, as in supervised learning. The difficulty to find a universal evaluation criterion is a direct consequence of the fundamentally ill-defined objective of clustering. In this perspective, clustering stability has emerged as a natural and model-agnostic principle: an algorithm should find stable structures in the data. If data sets are repeatedly sampled from the same underlying distribution, an algorithm should find similar partitions. However, it turns out that stability alone is not a well-suited tool to determine the number of clusters. For instance, it is unable to detect if the number of clusters is too small. We propose a new principle for clustering validation: a good clustering should be stable, and within each cluster, there should exist no stable partition. This principle leads to a novel internal clustering validity criterion based on between-cluster and within-cluster stability, overcoming limitations of previous stability-based methods. We empirically show the superior ability of additive noise to discover structures, compared with sampling-based perturbation. We demonstrate the effectiveness of our method for selecting the number of clusters through a large number of experiments and compare it with existing evaluation methods.},
@@ -52,7 +63,7 @@ keywords = {validity index,clustering,model selection,stability analysis},
 title = {{Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion}},
 year = {2020},
 url_Link = {https://arxiv.org/abs/2006.08530},
-url_Paper = {https://arxiv.org/pdf/2006.08530.pdf}
+url_Paper = {https://arxiv.org/pdf/2006.08530}
 }
 @inproceedings{Forest2020d,
 abstract = {Dans la lign{\'{e}}e des r{\'{e}}centes avanc{\'{e}}es en apprentissage profond de repr{\'{e}}sentations pour le clustering, ce travail (pr{\'{e}}c{\'{e}}demment publi{\'{e}} en anglais) pr{\'{e}}sente le mod{\`{e}}le DESOM (Deep Embedded SOM), combinant l'apprentisssage non supervis{\'{e}} de repr{\'{e}}sentations et d'une carte auto-organis{\'{e}}e de Kohonen (SOM). Le mod{\`{e}}le, compos{\'{e}} d'un auto-encodeur et d'une couche SOM, est optimis{\'{e}} conjointement, an de r{\'{e}}gulariser l'espace latent et am{\'{e}}liorer la performance de la carte SOM. Nous {\'{e}}valuons les performances de classification et de visualisation ainsi que les b{\'{e}}n{\'{e}}fices de l'apprentissage joint. Mots-clef : carte auto-organis{\'{e}}e, clustering, apprentissage profond, auto-encodeur.},
