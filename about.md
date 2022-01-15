@@ -6,11 +6,11 @@ layout: page
 
 # Short bio
 
-I am now a postdoctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist at the [Nagi Bioscience](https://nagibio.ch/) start-up.
+I am currently a postdoctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist and software engineer at the [Nagi Bioscience](https://nagibio.ch/) start-up.
 
-I recently finished my PhD in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.  My areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex industrial data sets. The PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
+I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.  My areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
 
-In 2017, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span> , one of the top French "grande école", with a specialization in data and decision sciences and aerospace engineering.
+In 2017, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>, one of the top French "grande école", with a specialization in data and decision sciences and aerospace engineering.
 
 Apart from data science, AI and technology in general, I love music (especially classical, playing the piano since childhood), video games and tennis (mostly on TV but sometimes on the court).
 

@@ -5,9 +5,9 @@ layout: page
 
 Hi, I'm Florent, welcome to my personal website!
 
-I am now a post-doctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist at the [Nagi Bioscience](https://nagibio.ch/) start-up. I recently finished my PhD in Computer Science at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My broad areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex industrial data sets. The PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
+I am currently a post-doctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist & software engineer at the [Nagi Bioscience](https://nagibio.ch/) start-up. I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My broad areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
 
-You can find recent news and events on this page!
+You can find recent news and events I attend on this page. Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions and potential collaborations!
 
 # News
 
