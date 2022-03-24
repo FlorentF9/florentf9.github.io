@@ -11,11 +11,14 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 
 # News
 
+* (December 2021) The [second LITSA workshop](https://lipn.github.io/LITSA2021/) will take place virtually (again) at ICDM 2021.
+* (August 2021) We're very glad that the paper *Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering* has been [published](https://link.springer.com/article/10.1007/s00521-021-06331-w) in Neural Computing and Applications!
+* (April 2021) I have joined EPFL to develop the software and data analysis ecosystem around [Nagi Bioscience](https://nagibio.ch)'s revolutionary "worm-on-chip" technology for faster and ethical biological testing.
 * (March 2021) After successfully defending my PhD thesis, I'm now a doctor in Computer Science!
 * (January 2021) I will defend my PhD thesis on March 22, 2021.
-* (November 2020) The first LITSA workshop at ICDM was a success! Thanks to all participants, organizers and committee members.
+* (November 2020) The [first LITSA workshop](https://lipn.github.io/LITSA2020/) at ICDM was a success! Thanks to all participants, organizers and committee members.
 * (October 2020) Our paper applying the Stadion clustering criterion to transformation-invariant time series is accepted at ICPR 2020!
-* (September 2020) Paper on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!
+* (September 2020) [Paper](https://www.phmpapers.org/index.php/phmconf/article/view/1131) on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!
 * (September 2020) I am co-organizing the first [workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/), hosted by [IEEE ICDM 2020](http://icdm2020.bigke.org/), with a top-notch committee!
 * (August 2020) skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is [available on Github](https://github.com/FlorentF9/skstab).
 * (June 2020) Our paper introducing a new principle for clustering stability analysis in [available on arXiv](https://arxiv.org/abs/2006.08530)!
@@ -23,23 +26,34 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 # Upcoming events
 
 <ul>
-<li><a href="https://ai4healthschool.org">Winter School on AI for Health (AI4Health)</a>, January 10-14, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span></li>
+<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, March 27-30, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
 
 # Recent events
 
+2022
+
+<ul>
+<li><a href="https://ai4healthschool.org">Winter School on AI for Health (AI4Health)</a>, January 10-14, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span></li>
+</ul>
+
 2021
 
-* PhD thesis defense, March 22, Villetaneuse, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span> and virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[see thesis [manuscript and slides](/research)]*
-* [ICPR (International Conference on Pattern Recognition)](https://www.micc.unifi.it/icpr2020/), January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a [paper](/publications)]*
+<ul>
+<li><a href="https://lipn.github.io/LITSA2021/">2nd workshop on Large-scale Industrial Time Series Analysis (LITSA)</a> @ <a href="https://icdm2021.auckland.ac.nz/">IEEE ICDM 2021</a>, December 7, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[organizer]</i></li>
+<li>PhD thesis defense, March 22, Villetaneuse, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span> and virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[see thesis <a href="/research">manuscript and slides</a>]</i></li>
+<li><a href="https://www.micc.unifi.it/icpr2020/">ICPR (International Conference on Pattern Recognition</a>, January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
+</ul>
 
 2020
 
-* [1st workshop on Large-scale Industrial Time Series Analysis (LITSA)](https://lipn.github.io/LITSA2020/) @ [IEEE ICDM 2020](http://icdm2020.bigke.org/), November 17, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[organizer]*
-* [Annual conference of the PHM Society](https://www.phmsociety.org/events/conference/phm/20), November 9-13, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a [paper](/publications)]*
-* [AGIFORS Symposium](https://agifors.org/symposium_2020), October 20-23, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[presented a paper]*
-* [CAp: Conférence d'Apprentissage](https://cap-rfiap2020.sciencesconf.org/), June, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> *[published a French version of a previous [paper](/publications)]* 
-* [Applied Machine Learning Days](https://www.appliedmldays.org/), January 26-28, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span>
+<ul>
+<li><a href="https://lipn.github.io/LITSA2020/">1st workshop on Large-scale Industrial Time Series Analysis (LITSA)</a> @ <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, November 17, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[organizer]</i></li>
+<li><a href="https://www.phmsociety.org/events/conference/phm/20">Annual conference of the PHM Society</a>, November 9-13, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
+<li><a href="https://agifors.org/symposium_2020">AGIFORS Symposium</a>, October 20-23, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a paper]</i></li>
+<li><a href="https://cap-rfiap2020.sciencesconf.org/">CAp: Conférence d'Apprentissage</a>, June, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[published a French version of a previous <a href="/publications">paper</a>]</i></li>
+<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, January 26-28, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
+</ul>
 
 <details>
 <summary>2019</summary>
@@ -49,7 +63,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 <li><a href="https://workshopmlai.wp.imt.fr">International Workshop on Machine Learning & Artificial Intelligence</a>, October 7-8, Paris, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span></li>
 <li><a href="https://sites.google.com/view/climateinformatics2019/">Climate Informatics</a>, October 3-4, Paris, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span></li>
 <li><a href="https://sites.google.com/view/pakdd-workshop-ldrc2019/">LDRC (Learning Data Representation for Clustering) workshop</a> @ PAKDD 2019, April 14-17, Macau, China <span class="flag-icon flag-icon-squared flag-icon-mo"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
-<li><a href="">ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)</a>(https://www.elen.ucl.ac.be/esann/), April 24-26, Bruges, Belgium <span class="flag-icon flag-icon-squared flag-icon-be"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
+<li><a href="https://www.esann.org/esann21programme">ESANN (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)</a>, April 24-26, Bruges, Belgium <span class="flag-icon flag-icon-squared flag-icon-be"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
 <li><a href="https://project.inria.fr/tsdays/">TS days (Journées sur les données temporelles)</a>, March 25-26, Rennes, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span></li>
 <li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, January 26-29, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
