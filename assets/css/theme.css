@@ -8,7 +8,7 @@ a, b, strong, th { font-weight: 400; }
 
 a { color: inherit; text-decoration: inherit; transition: color .2s; }
 
-a.selected, a:hover { color: #edb885; }
+a.selected, a:hover { color: #f5c08d; }
 
 article a { color: #174c80; box-shadow: inset 0 -2px 0 #EB811B; transition: all .3s ease-in-out; transition-property: all; transition-duration: 0.2s; transition-timing-function: ease-in-out; transition-delay: 0s; }
 
@@ -18,27 +18,27 @@ article header a, article footer a { color: inherit; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { box-shadow: none; transition: color .2s; }
 
-h1 a.selected, h1 a:hover, h2 a.selected, h2 a:hover, h3 a.selected, h3 a:hover, h4 a.selected, h4 a:hover, h5 a.selected, h5 a:hover, h6 a.selected, h6 a:hover { box-shadow: none; color: #edb885; }
+h1 a.selected, h1 a:hover, h2 a.selected, h2 a:hover, h3 a.selected, h3 a:hover, h4 a.selected, h4 a:hover, h5 a.selected, h5 a:hover, h6 a.selected, h6 a:hover { box-shadow: none; color: #f5c08d; }
 
 time { color: #949494; }
 
-hr { border: 1px solid rgba(131, 157, 183, 0.3); margin: 2em 0; }
+hr { border: 1px solid rgba(139, 166, 192, 0.3); margin: 2em 0; }
 
-blockquote { background: rgba(131, 157, 183, 0.06); border-left: 4px solid #EB811B; padding: 1px 1.5em; }
+blockquote { background: rgba(139, 166, 192, 0.06); border-left: 4px solid #EB811B; padding: 1px 1.5em; }
 
 img { border-radius: 2px; max-width: 100%; height: auto; margin: .5em 0; }
 
-table { box-shadow: 0 0 0 1px rgba(131, 157, 183, 0.12) inset; border-spacing: 1px; width: 100%; }
+table { box-shadow: 0 0 0 1px rgba(139, 166, 192, 0.12) inset; border-spacing: 1px; width: 100%; }
 
-tr:hover, tr:nth-child(odd) td { background: rgba(131, 157, 183, 0.06); }
+tr:hover, tr:nth-child(odd) td { background: rgba(139, 166, 192, 0.06); }
 
-th, td { box-shadow: 0 0 0 1px rgba(131, 157, 183, 0.12); padding: .5em 1em; }
+th, td { box-shadow: 0 0 0 1px rgba(139, 166, 192, 0.12); padding: .5em 1em; }
 
 pre { background: rgba(34, 34, 34, 0.8); color: white; border-radius: 2px; font-size: .8em; margin: 1.5em 0; padding: .8em 1.2em; overflow-x: auto; }
 
-p code { font-size: .9em; background: rgba(131, 157, 183, 0.25); opacity: .75; border-radius: 2px; margin: 0 .1em; padding: .2em .4em; }
+p code { font-size: .9em; background: rgba(139, 166, 192, 0.25); opacity: .75; border-radius: 2px; margin: 0 .1em; padding: .2em .4em; }
 
-.category { color: #eeeeee; border-radius: 10px; padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px; margin: 3px; }
+.category { color: white; border-radius: 10px; padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px; margin: 3px; }
 
 nav { font-size: calc(.4vw + .8em); }
 
@@ -78,11 +78,11 @@ article h2 { font-size: calc(.75vw + .75em); }
 
 a.icon { box-shadow: none; transition: color .2s; }
 
-a.icon.selected, a.icon:hover { box-shadow: none; color: #edb885; }
+a.icon.selected, a.icon:hover { box-shadow: none; color: #f5c08d; }
 
 #bibbase a { font-weight: 400; color: #EB811B; font-size: 16px; box-shadow: none; transition: color .2s; }
 
-#bibbase a.selected, #bibbase a:hover { box-shadow: none; color: #edb885; }
+#bibbase a.selected, #bibbase a:hover { box-shadow: none; color: #f5c08d; }
 
 img.bibbase_icon { padding: 0; width: 24px; max-height: 20px; vertical-align: middle; filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: gray; }
 
@@ -172,13 +172,13 @@ nav { margin: .5em -.8em; }
 
 nav a { padding: 0 .8em; }
 
-@media (prefers-color-scheme: light) { html { background: #eeeeee !important; color: #174c80 !important; } }
+@media (prefers-color-scheme: light) { html { background: white !important; color: #174c80 !important; } }
 
-@media (prefers-color-scheme: dark) { html { background: #174c80 !important; color: #eeeeee !important; } }
+@media (prefers-color-scheme: dark) { html { background: #174c80 !important; color: white !important; } }
 
-.light { background: #eeeeee; color: #174c80; }
+.light { background: white; color: #174c80; }
 
-.dark { background: #174c80; color: #eeeeee; }
+.dark { background: #174c80; color: white; }
 
 body > header, article, body > footer { padding: 1.5em 1em; }
 
