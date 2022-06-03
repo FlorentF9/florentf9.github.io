@@ -26,7 +26,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 # Upcoming events
 
 <ul>
-<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, March 27-30, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
+<li><a href="https://www.terrapinn.com/conference/future-labs-live/index.stm">Future Labs Live</a>, June 7-8, Basel, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
 
 # Recent events
@@ -34,6 +34,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 2022
 
 <ul>
+<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, March 27-30, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 <li><a href="https://ai4healthschool.org">Winter School on AI for Health (AI4Health)</a>, January 10-14, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span></li>
 </ul>
 
