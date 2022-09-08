@@ -6,7 +6,7 @@ layout: page
 
 # Short bio
 
-I am currently a postdoctoral researcher at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [LMIS2 lab](https://lmis2.epfl.ch/), and a data scientist and software engineer at the [Nagi Bioscience](https://nagibio.ch/) start-up.
+I am currently a post-doctoral scientist at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [Intelligent Maintenance and Operations Systems (IMOS)](https://www.epfl.ch/labs/imos/) team. Previously, I was at [LMIS2](https://lmis2.epfl.ch/) working as a data scientist & software engineer with the [Nagi Bioscience](https://nagibio.ch/) start-up.
 
 I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.  My areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
 
@@ -20,6 +20,6 @@ You can find my publications [here](publications), and my CV is available below.
 
 # CV
 
-<p><a href="/files/CV_FlorentForest_2021_EN-2.pdf"> Download CV in PDF.</a></p>
-<p><embed src="/files/CV_FlorentForest_2021_EN-2.pdf" width="80%" height="700px" /></p>
+<p><a href="/files/CV_FlorentForest_2022_EN.pdf"> Download CV in PDF.</a></p>
+<p><embed src="/files/CV_FlorentForest_2022_EN.pdf" width="80%" height="700px"/></p>
 
