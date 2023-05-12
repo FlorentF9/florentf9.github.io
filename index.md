@@ -1,17 +1,19 @@
 ---
-title: "Home"
+title: "home"
 layout: page
 ---
 
 Hi, I'm Florent, welcome to my personal website!
 
-I am currently a post-doctoral scientist at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [Intelligent Maintenance and Operations Systems (IMOS)](https://www.epfl.ch/labs/imos/) team. Previously, I was at [LMIS2](https://lmis2.epfl.ch/) working as a data scientist & software engineer with the [Nagi Bioscience](https://nagibio.ch/) start-up. I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My broad areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
+I am currently a post-doctoral scientist at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [Intelligent Maintenance and Operations Systems (IMOS)](https://www.epfl.ch/labs/imos/) team. Previously, I was at [LMIS2](https://lmis2.epfl.ch/) working as a data scientist & software engineer with the [Nagi Bioscience](https://nagibio.ch/) start-up. I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My broad areas of interest are unsupervised and supervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer. Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
 
 You can find recent news and events I attend on this page. Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions and potential collaborations!
 
 # News
 
 <ul>
+<li>(May 2023) Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted for ESREL 2023.</li>
+<li>(February 2023) Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during PhD, was accepted at the PAKDD 2023 conference.</li>
 <li>(September 2022) I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
 <li>(December 2021) The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
 <li>(August 2021) We're very glad that the paper <i>Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering</i> has been <a href="https://link.springer.com/article/10.1007/s00521-021-06331-w">published</a> in Neural Computing and Applications!</li>
@@ -26,7 +28,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 <li>(November 2020) The <a href="https://lipn.github.io/LITSA2020/">first LITSA workshop</a> at ICDM was a success! Thanks to all participants, organizers and committee members.</li>
 <li>(October 2020) Our paper applying the Stadion clustering criterion to transformation-invariant time series is accepted at ICPR 2020!</li>
 <li>(September 2020) <a href="https://www.phmpapers.org/index.php/phmconf/article/view/1131">Paper</a> on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!</li>
-<li>(September 2020) I am co-organizing the first [workshop on Large-scale Industrial Time Series Analysis <a href="https://lipn.github.io/LITSA2020/">LITSA</a>, hosted by <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, with a top-notch committee!</li>
+<li>(September 2020) I am co-organizing the first workshop on Large-scale Industrial Time Series Analysis <a href="https://lipn.github.io/LITSA2020/">LITSA</a>, hosted by <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, with a top-notch committee!</li>
 <li>(August 2020) skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is <a href="https://github.com/FlorentF9/skstab">available on Github</a>.</li>
 <li>(June 2020) Our paper introducing a new principle for clustering stability analysis in <a href="https://arxiv.org/abs/2006.08530">available on arXiv</a>!</li>
 </ul>
@@ -35,7 +37,9 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 # Upcoming events
 
 <ul>
-
+<li><a href="https://pakdd2023.org/">PAKDD (Pacific-Asia Conference on Knowledge Discovery and Data Mining)</a>, May 25-28, Osaka, Japan <span class="flag-icon flag-icon-squared flag-icon-jp"></span> <i>[presenting a paper]</i></li>
+<li><a href="https://esrel2023.com/">ESREL (European Conference on Safety and Reliability)</a>, September 3-8, Southampton, United Kingdom <span class="flag-icon flag-icon-squared flag-icon-gb"></span> <i>[presenting 2 extended abstracts]</i></li>
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 12-13, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer/speaker]</i></li>
 </ul>
 
 # Recent events
@@ -57,8 +61,8 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 <li><a href="https://www.micc.unifi.it/icpr2020/">ICPR (International Conference on Pattern Recognition</a>, January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
 </ul>
 
-2020
-
+<details>
+<summary>2020</summary>
 <ul>
 <li><a href="https://lipn.github.io/LITSA2020/">1st workshop on Large-scale Industrial Time Series Analysis (LITSA)</a> @ <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, November 17, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[organizer]</i></li>
 <li><a href="https://www.phmsociety.org/events/conference/phm/20">Annual conference of the PHM Society</a>, November 9-13, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
@@ -66,6 +70,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 <li><a href="https://cap-rfiap2020.sciencesconf.org/">CAp: Conférence d'Apprentissage</a>, June, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[published a French version of a previous <a href="/publications">paper</a>]</i></li>
 <li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, January 26-28, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
+</details>
 
 <details>
 <summary>2019</summary>

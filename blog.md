@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "blog"
 permaling: "/blog"
 layout: blog
 ---

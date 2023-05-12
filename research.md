@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "research"
 permalink: "/research"
 layout: page
 ---
@@ -7,6 +7,7 @@ layout: page
 # Areas of interest & application domains
 
 * Machine learning, especially unsupervised (clustering; dimensionality reduction; visualization)
+* Domain adaptation
 * Health monitoring of complex industrial systems (made of [superalloys](https://en.wikipedia.org/wiki/CFM_International_LEAP) or of [living cells](https://en.wikipedia.org/wiki/Caenorhabditis_elegans))
 * Building end-to-end, large-scale, data-driven applications
 * Experience in time series analysis, computer vision and natural language processing
@@ -16,7 +17,9 @@ layout: page
 * Organizer of the *Workshop on Large-scale Industrial Time Series Analysis (LITSA)*
   * [LITSA'20](https://lipn.github.io/LITSA2020/), hosted by IEEE [ICDM 2020](http://icdm2020.bigke.org/)
   * [LITSA'21](https://lipn.github.io/LITSA2021/), hosted by IEEE [ICDM 2021](https://icdm2021.auckland.ac.nz/)
-* Reviewer at *CIKM (ACM International Conference on Information and Knowledge Management)* [2020](https://www.cikm2020.org/), [2021](https://www.cikm2021.org/)
+* Reviewing 
+  * *CIKM (ACM International Conference on Information and Knowledge Management)* 2020, 2021
+  * *IAI (Industrial AI)* 2023
 
 # PhD thesis
 

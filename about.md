@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "about"
 permalink: "/about"
 layout: page
 ---
@@ -8,7 +8,7 @@ layout: page
 
 I am currently a post-doctoral scientist at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [Intelligent Maintenance and Operations Systems (IMOS)](https://www.epfl.ch/labs/imos/) team. Previously, I was at [LMIS2](https://lmis2.epfl.ch/) working as a data scientist & software engineer with the [Nagi Bioscience](https://nagibio.ch/) start-up.
 
-I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.  My areas of interest are unsupervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
+I obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.  My areas of interest are unsupervised and supervised machine learning and large-scale data-driven applications. I like to develop and apply advanced algorithms on large, complex, industrial data sets. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/), a leading aircraft engine manufacturer and part of Safran, one of the world's largest technology groups.
 
 In 2017, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>, one of the top French "grande école", with a specialization in data and decision sciences and aerospace engineering.
 
