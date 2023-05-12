@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<title>Configuring Spark applications with Typesafe Config | Florent Forest</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complex and generic Spark applications often require input from the user, in order to specify application parameters or the data sources the application shou...">
+<meta name="author" content="Florent Forest">
+<meta name="keywords" content="florent forest, florent, forest, website, blog, research, epfl, imos, computer science, software, data science, machine learning">
+<meta name="generator" content="Jekyll v4.2.0">
+<link rel="canonical" href="/2019/01/07/configuring-spark-applications-with-typesafe-config.html">
+<link rel="stylesheet" href="/assets/css/vendor/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/flag-icon.css">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="stylesheet" href="/assets/css/theme.css">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Florent Forest" />
+
+<script src="//true.disqus.com/embed.js" async></script>
+
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-132667122-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+<header id="header">
+  <div style="width:88%">
+    <h1><a href="/">Florent Forest</a></h1>
+  <span class="sub">Post-doctoral Scientist | PhD | Full-stack Data & Machine Learning Scientist</span>
+  <!-- <span class="sub" style="float: right;"><tt>f@florentfo.rest</tt></span> -->
+  </div>
+  <div style="width:12%; padding:0; margin: 0"><img src="/assets/img/profil.png"/></div>
+  
+  <nav>
+    <div id="menu">
+      
+      
+        <a  href="/">Home</a>
+      
+      
+        <a  href="/about">About</a>
+      
+      
+        <a  id="selected"  href="/blog/">Blog</a>
+      
+      
+        <a  href="/research">Research</a>
+      
+      
+        <a  href="/publications">Publications</a>
+      
+      
+        <a  href="/teaching">Teaching</a>
+      
+      
+        <a  href="/contact">Contact</a>
+      
+    </div>
+    <div>
+      
+    </div>
+  </nav>
+  
+  
+    <nav>
+    
+      
+        <a class="icon" href="mailto:f@florentfo.rest"><svg><use xlink:href="/assets/fontawesome/icons.svg#envelope"></use></svg></a>
+      
+    
+      
+        <a class="icon" href="https://github.com/FlorentF9"><svg><use xlink:href="/assets/fontawesome/icons.svg#github"></use></svg></a>
+      
+    
+      
+        <a class="icon" href="https://www.linkedin.com/in/florent-forest"><svg><use xlink:href="/assets/fontawesome/icons.svg#linkedin"></use></svg></a>
+      
+    
+      
+        <a class="icon" href="https://scholar.google.fr/citations?user=vw7dDG0AAAAJ"><i class="ai ai-google-scholar-square ai-lg"></i></a>
+      
+    
+      
+        <a class="icon" href="https://www.researchgate.net/profile/Florent-Forest-2"><i class="ai ai-researchgate-square ai-lg"></i></a>
+      
+    
+    </nav>
+  
+</header>
+<article  id="post" >
+  <a href="/blog">« Return to Blog</a>
+  <header><h1><a href="/2019/01/07/configuring-spark-applications-with-typesafe-config.html">Configuring Spark applications with Typesafe Config</a></h1>
+    <p><time datetime="2019-01-07T00:00:00-06:00">January 07, 2019</time></p>
+    <div>
+      
+      
+      
+        
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <span class="category" style="background-color: hsl(171, 50%, 50%);">tutorial</span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <span class="category" style="background-color: hsl(7, 50%, 50%);">scala</span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <span class="category" style="background-color: hsl(63, 50%, 50%);">spark</span></div>
+  </header>
+<p>Complex and generic Spark applications often require input from the user, in order to specify application parameters or the data sources the application should work with. Using command-line arguments is limited. Lightbend’s <strong><a href="https://github.com/lightbend/config">config</a></strong> library allows to use configuration files in applications written in JVM languages, including Spark applications written in Scala.</p>
+
+<p>Example code for this post is <a href="https://github.com/FlorentF9/spark-config-example">available on Github</a>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#configuration-files-vs-command-line-arguments" id="markdown-toc-configuration-files-vs-command-line-arguments">Configuration files VS command-line arguments</a></li>
+  <li><a href="#minimal-example" id="markdown-toc-minimal-example">Minimal example</a></li>
+  <li><a href="#quick-set-up-of-config" id="markdown-toc-quick-set-up-of-config">Quick set-up of config</a></li>
+  <li><a href="#configuration-file" id="markdown-toc-configuration-file">Configuration file</a></li>
+  <li><a href="#settings-class" id="markdown-toc-settings-class">Settings class</a></li>
+  <li><a href="#code-with-config" id="markdown-toc-code-with-config">Code with config</a></li>
+  <li><a href="#running-local-and-on-yarn" id="markdown-toc-running-local-and-on-yarn">Running local and on YARN</a>    <ul>
+      <li><a href="#local" id="markdown-toc-local">local</a></li>
+      <li><a href="#yarn-client-mode" id="markdown-toc-yarn-client-mode">YARN client mode</a></li>
+      <li><a href="#yarn-cluster-mode" id="markdown-toc-yarn-cluster-mode">YARN cluster mode</a></li>
+    </ul>
+  </li>
+  <li><a href="#additional-remarks" id="markdown-toc-additional-remarks">Additional remarks</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+<h1 id="configuration-files-vs-command-line-arguments">Configuration files VS command-line arguments</h1>
+
+<p>One solution is to use command-line arguments when submitting the application with <code class="language-plaintext highlighter-rouge">spark-submit</code>. In case of a Scala Spark application packaged as a JAR, command-line arguments are given at the end of the command, as follows:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="o">[</span>...] myApplication.jar arg1 arg2 arg3
+</code></pre></div></div>
+
+<p>Then, they can be read from within the <code class="language-plaintext highlighter-rouge">main</code> method of the application using the <code class="language-plaintext highlighter-rouge">args</code> variable. It works similarly in Python for a pyspark application. Command-line arguments work for a small number of simple parameters, but has several disadvantages, as a user:</p>
+
+<ul>
+  <li>Unpractical if there are many arguments (unless you like veeery looong shell commands) and typos are hard to spot</li>
+  <li>Arguments are not named and only identified by their position</li>
+  <li>You WILL enter the arguments in the wrong order</li>
+  <li>No optional arguments</li>
+  <li>It is difficult or not possible to provide complex arguments (e.g. arrays, strings with spaces, structured types, etc.)</li>
+</ul>
+
+<p>…and as a developer:</p>
+
+<ul>
+  <li>All arguments are considered strings and must be cast to the correct type</li>
+  <li>No possibility of managing optional arguments and default values</li>
+  <li>Handling errors (e.g. missing arguments, wrong order or format) is tedious</li>
+  <li>and above all, <strong>reproducibility</strong>: how will you remember with what arguments you submitted that job last week? Ok, you could copy-paste the shell commands into files. But hey, that’s what configuration files are for! A configuration file can be easily put under version control: configuration-as-code!</li>
+</ul>
+
+<p>Lightbend’s <strong><a href="https://github.com/lightbend/config">config</a></strong> library allows to use configuration files in applications written in JVM languages, including Spark applications written in Scala. It solves all problems listed above, and offers many more useful features. The config library itself is written in Java and can be easily imported in a Scala project. Before going further, here is the link to the <a href="https://lightbend.github.io/config/latest/api/com/typesafe/config/package-summary.html">package Java documentation</a>.</p>
+
+<h1 id="minimal-example">Minimal example</h1>
+
+<p>I will first present a minimalistic application that will serve as an example throughout this post. It performs a word count on a text file, filtering out stop words and words with too few occurrences, and outputs the ordered word counts in a CSV file.</p>
+
+<p>In the first version of the application, input and output file names are given as string arguments, the third argument is the minimum number of occurrences to keep a word and the last one is an array of strings containing the stop words that will not be counted. This application can be called as follows:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> <span class="nt">--class</span> xyz.florentforest.sparkconfigexample.CmdWordCount target/scala-2.11/sparkconfigexample-assembly-1.0.jar
+document.txt output-cmd 3 <span class="o">[</span><span class="s2">"for"</span>,<span class="s2">"in"</span>,<span class="s2">"is"</span>,<span class="s2">"on"</span>,<span class="s2">"the"</span>,<span class="s2">"a"</span>,<span class="s2">"to"</span>,<span class="s2">"and"</span>,<span class="s2">"an"</span>,<span class="s2">"of"</span>,<span class="s2">"if"</span>,<span class="s2">"with"</span>,<span class="s2">"you"</span>,<span class="s2">"or"</span>,<span class="s2">"also"</span>,<span class="s2">"##"</span>,<span class="se">\"\"</span><span class="o">]</span>
+</code></pre></div></div>
+
+<p>The Spark code is printed here:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">org.apache.spark.sql.SparkSession</span>
+<span class="k">import</span> <span class="nn">org.apache.spark.sql.functions.</span><span class="o">{</span><span class="n">col</span><span class="o">,</span> <span class="n">not</span><span class="o">,</span> <span class="n">lower</span><span class="o">,</span> <span class="n">desc</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.log4j.</span><span class="o">{</span><span class="nc">LogManager</span><span class="o">,</span> <span class="nc">Level</span><span class="o">}</span>
+
+<span class="k">object</span> <span class="nc">CmdWordCount</span> <span class="o">{</span>
+    <span class="k">def</span> <span class="nf">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="o">{</span>
+        <span class="c1">// Read command-line arguments</span>
+        <span class="c1">// (ok, you could do better and write a dedicated function or use an external library for argument parsing)</span>
+        <span class="k">val</span> <span class="nv">inputFile</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="nf">args</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
+        <span class="k">val</span> <span class="nv">outputFile</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="nf">args</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+        <span class="k">val</span> <span class="nv">minCount</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="nf">args</span><span class="o">(</span><span class="mi">2</span><span class="o">).</span><span class="py">toInt</span>
+        <span class="k">val</span> <span class="nv">stopWords</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="nf">args</span><span class="o">(</span><span class="mi">3</span><span class="o">).</span><span class="py">stripPrefix</span><span class="o">(</span><span class="s">"["</span><span class="o">).</span><span class="py">stripSuffix</span><span class="o">(</span><span class="s">"]"</span><span class="o">)</span>
+                                              <span class="o">.</span><span class="py">split</span><span class="o">(</span><span class="s">","</span><span class="o">)</span>
+                                              <span class="o">.</span><span class="py">map</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">stripPrefix</span><span class="o">(</span><span class="s">"\""</span><span class="o">).</span><span class="py">stripSuffix</span><span class="o">(</span><span class="s">"\""</span><span class="o">))</span>
+
+        <span class="k">val</span> <span class="nv">spark</span><span class="k">:</span> <span class="kt">SparkSession</span> <span class="o">=</span> <span class="nv">SparkSession</span><span class="o">.</span><span class="py">builder</span><span class="o">()</span>
+                                              <span class="o">.</span><span class="py">appName</span><span class="o">(</span><span class="s">"Word Count (cmd)"</span><span class="o">)</span>
+                                              <span class="o">.</span><span class="py">getOrCreate</span><span class="o">()</span>
+        <span class="k">import</span> <span class="nn">spark.implicits._</span>
+
+        <span class="c1">// Business logic</span>
+        <span class="k">val</span> <span class="nv">document</span> <span class="k">=</span> <span class="nv">spark</span><span class="o">.</span><span class="py">read</span><span class="o">.</span><span class="py">textFile</span><span class="o">(</span><span class="n">inputFile</span><span class="o">)</span>
+        <span class="k">val</span> <span class="nv">result</span>   <span class="k">=</span> <span class="nv">document</span><span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">split</span><span class="o">(</span><span class="s">" "</span><span class="o">))</span>
+                               <span class="o">.</span><span class="py">filter</span><span class="o">(</span><span class="nf">not</span><span class="o">(</span><span class="nf">lower</span><span class="o">(</span><span class="nf">col</span><span class="o">(</span><span class="s">"value"</span><span class="o">)).</span><span class="py">isin</span><span class="o">(</span><span class="n">stopWords</span><span class="k">:</span> <span class="k">_</span><span class="kt">*</span><span class="o">)))</span>
+                               <span class="o">.</span><span class="py">groupBy</span><span class="o">(</span><span class="s">"value"</span><span class="o">)</span>
+                               <span class="o">.</span><span class="py">count</span><span class="o">()</span>
+                               <span class="o">.</span><span class="py">filter</span><span class="o">(</span><span class="nf">col</span><span class="o">(</span><span class="s">"count"</span><span class="o">)</span> <span class="o">&gt;=</span> <span class="n">minCount</span><span class="o">)</span>
+                               <span class="o">.</span><span class="py">orderBy</span><span class="o">(</span><span class="nf">desc</span><span class="o">(</span><span class="s">"count"</span><span class="o">))</span>
+        <span class="nv">result</span><span class="o">.</span><span class="py">coalesce</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="py">write</span><span class="o">.</span><span class="py">csv</span><span class="o">(</span><span class="n">outputFile</span><span class="o">)</span>
+
+        <span class="nv">spark</span><span class="o">.</span><span class="py">stop</span><span class="o">()</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Note that arguments had to be cast and parsed manually (e.g. using <code class="language-plaintext highlighter-rouge">toInt</code> and <code class="language-plaintext highlighter-rouge">split</code>). In particular, the empty string <code class="language-plaintext highlighter-rouge">""</code> in the stop words had to be escaped (<code class="language-plaintext highlighter-rouge">\"\"</code>) because else, the double quotes will be dropped.</p>
+
+<h1 id="quick-set-up-of-config">Quick set-up of config</h1>
+
+<p>The aim of this post is not to provide a comprehensive user guide for config. This information can be found on the Github page and in the official documentation (useful links are listed in the last section). I will just show a quick minimal set-up to get your Spark application running with config in local mode and on a YARN cluster.</p>
+
+<p>Here is the line to add config to your sbt build file in its current version (I personnally use sbt but the library can also be imported with maven or downloaded manually):</p>
+
+<pre><code class="language-sbt">"com.typesafe" % "config" % "1.3.2"
+
+</code></pre>
+
+<p>In the application, the configuration is an instance of the <code class="language-plaintext highlighter-rouge">Config</code> class, loaded using the <code class="language-plaintext highlighter-rouge">ConfigFactory</code> class. Without arguments, it loads the configuration file from its default location (<em>application.conf</em>), but we will soon see how to specify the file to the Spark driver and executors.</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">com.typesafe.config.</span><span class="o">{</span><span class="nc">Config</span><span class="o">,</span> <span class="nc">ConfigFactory</span><span class="o">}</span>
+<span class="k">val</span> <span class="nv">conf</span><span class="k">:</span> <span class="kt">Config</span> <span class="o">=</span> <span class="nv">ConfigFactory</span><span class="o">.</span><span class="py">load</span><span class="o">()</span>
+</code></pre></div></div>
+
+<h1 id="configuration-file">Configuration file</h1>
+
+<p>Here’s our simple configuration file, named <em>wordcount.conf</em>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.input  = "document.txt"
+file.output = "output-config"
+minCount    = 3
+stopWords   = ["for", "in", "is", "on", "the", "a", "to", "and", "an", "of", "if", "with", "you", "or", "also", "##", ""]
+</code></pre></div></div>
+
+<p>It consists in a field with two sub-fields for the input and output filenames, an integer field and a list of strings, written in simple JSON syntax.</p>
+
+<h1 id="settings-class">Settings class</h1>
+
+<p>Configuration parameters are accessed using typed getter methods and the <em>path</em> of the parameter. A common solution, recommended by the developers of config, is to create a custom class that will load the configuration and hold the parameter variables, named for example <code class="language-plaintext highlighter-rouge">Settings</code>. The advantage is that (1) all the parsing logic is done in this class and not along our business logic, (2) by loading variables as non-lazy fields, all exceptions triggered by the parsing of the configuration file will occur at the very beginning and not after the job has been running for an hour. Here is the <code class="language-plaintext highlighter-rouge">Settings</code> class used in the example project:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">com.typesafe.config.Config</span>
+<span class="k">import</span> <span class="nn">scala.collection.JavaConverters._</span>
+
+<span class="k">class</span> <span class="nc">Settings</span><span class="o">(</span><span class="n">config</span><span class="k">:</span> <span class="kt">Config</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Serializable</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="nv">inputFile</span> <span class="k">=</span> <span class="nv">config</span><span class="o">.</span><span class="py">getString</span><span class="o">(</span><span class="s">"file.input"</span><span class="o">)</span>
+    <span class="k">val</span> <span class="nv">outputFile</span> <span class="k">=</span> <span class="nv">config</span><span class="o">.</span><span class="py">getString</span><span class="o">(</span><span class="s">"file.output"</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="nv">minCount</span> <span class="k">=</span> <span class="nv">config</span><span class="o">.</span><span class="py">getInt</span><span class="o">(</span><span class="s">"minCount"</span><span class="o">)</span>
+    <span class="k">val</span> <span class="nv">stopWords</span> <span class="k">=</span> <span class="nv">config</span><span class="o">.</span><span class="py">getStringList</span><span class="o">(</span><span class="s">"stopWords"</span><span class="o">).</span><span class="py">asScala</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>In practice, a lot of stuff happens in this class, for example handling optional or complex types. You will often have to use <code class="language-plaintext highlighter-rouge">scala.collection.JavaConverters</code> or <code class="language-plaintext highlighter-rouge">scala.collection.JavaConversions</code> for converting between Java and Scala types, because config is a Java library. More to this topic in the Additional remarks section.</p>
+
+<h1 id="code-with-config">Code with config</h1>
+
+<p>Finally, here is the code of our example application using our configuration file, via the <code class="language-plaintext highlighter-rouge">Settings</code> class:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">org.apache.spark.sql.SparkSession</span>
+<span class="k">import</span> <span class="nn">org.apache.spark.sql.functions.</span><span class="o">{</span><span class="n">col</span><span class="o">,</span> <span class="n">not</span><span class="o">,</span> <span class="n">lower</span><span class="o">,</span> <span class="n">desc</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">com.typesafe.config.</span><span class="o">{</span><span class="nc">Config</span><span class="o">,</span> <span class="nc">ConfigFactory</span><span class="o">}</span>
+
+<span class="k">object</span> <span class="nc">ConfigWordCount</span> <span class="o">{</span>
+    <span class="k">def</span> <span class="nf">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="o">{</span>
+        <span class="c1">// Load configuration into Settings class</span>
+        <span class="k">val</span> <span class="nv">conf</span><span class="k">:</span> <span class="kt">Config</span> <span class="o">=</span> <span class="nv">ConfigFactory</span><span class="o">.</span><span class="py">load</span><span class="o">()</span>
+        <span class="k">val</span> <span class="nv">settings</span><span class="k">:</span> <span class="kt">Settings</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Settings</span><span class="o">(</span><span class="n">conf</span><span class="o">)</span>
+
+        <span class="k">val</span> <span class="nv">spark</span><span class="k">:</span> <span class="kt">SparkSession</span> <span class="o">=</span> <span class="nv">SparkSession</span><span class="o">.</span><span class="py">builder</span><span class="o">()</span>
+                                              <span class="o">.</span><span class="py">appName</span><span class="o">(</span><span class="s">"Word Count (config)"</span><span class="o">)</span>
+                                              <span class="o">.</span><span class="py">getOrCreate</span><span class="o">()</span>
+        <span class="k">import</span> <span class="nn">spark.implicits._</span>
+
+        <span class="c1">// Business logic</span>
+        <span class="k">val</span> <span class="nv">document</span> <span class="k">=</span> <span class="nv">spark</span><span class="o">.</span><span class="py">read</span><span class="o">.</span><span class="py">textFile</span><span class="o">(</span><span class="nv">settings</span><span class="o">.</span><span class="py">inputFile</span><span class="o">)</span>
+        <span class="k">val</span> <span class="nv">result</span>   <span class="k">=</span> <span class="nv">document</span><span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">split</span><span class="o">(</span><span class="s">" "</span><span class="o">))</span>
+                               <span class="o">.</span><span class="py">filter</span><span class="o">(</span><span class="nf">not</span><span class="o">(</span><span class="nf">lower</span><span class="o">(</span><span class="nf">col</span><span class="o">(</span><span class="s">"value"</span><span class="o">)).</span><span class="py">isin</span><span class="o">(</span><span class="nv">settings</span><span class="o">.</span><span class="py">stopWords</span><span class="k">:</span> <span class="k">_</span><span class="kt">*</span><span class="o">)))</span>
+                               <span class="o">.</span><span class="py">groupBy</span><span class="o">(</span><span class="s">"value"</span><span class="o">)</span>
+                               <span class="o">.</span><span class="py">count</span><span class="o">()</span>
+                               <span class="o">.</span><span class="py">filter</span><span class="o">(</span><span class="nf">col</span><span class="o">(</span><span class="s">"count"</span><span class="o">)</span> <span class="o">&gt;=</span> <span class="nv">settings</span><span class="o">.</span><span class="py">minCount</span><span class="o">)</span>
+                               <span class="o">.</span><span class="py">orderBy</span><span class="o">(</span><span class="nf">desc</span><span class="o">(</span><span class="s">"count"</span><span class="o">))</span>
+        <span class="nv">result</span><span class="o">.</span><span class="py">coalesce</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="py">write</span><span class="o">.</span><span class="py">csv</span><span class="o">(</span><span class="nv">settings</span><span class="o">.</span><span class="py">outputFile</span><span class="o">)</span>
+
+        <span class="nv">spark</span><span class="o">.</span><span class="py">stop</span><span class="o">()</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h1 id="running-local-and-on-yarn">Running local and on YARN</h1>
+
+<p>When submitting the job, no matter if in local mode or in YARN client or cluster mode, the driver or executors need to be able to access the configuration file. Otherwise, there are two possibilities:</p>
+
+<ol>
+  <li>If the application was built with a reference configuration file (<em>reference.conf</em>) in the <em>src/main/resources</em> directory, this one will be used as a default.</li>
+  <li>Else, you will get the following exception, telling that config cannot find the key <em>file.input</em> we tried to access:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exception in thread "main" com.typesafe.config.ConfigException$Missing: No configuration setting found for key 'file.input'
+</code></pre></div></div>
+
+<p>Several arguments to <code class="language-plaintext highlighter-rouge">spark-submit</code> are needed to provide the configuration file, depending on the deploy mode. We will address local mode and YARN client and cluster mode.</p>
+
+<h2 id="local">local</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> <span class="o">[</span>...] <span class="nt">--files</span> application.conf <span class="nt">--driver-java-options</span> <span class="nt">-Dconfig</span>.file<span class="o">=</span>application.conf myApplication.jar
+</code></pre></div></div>
+
+<p>The <em>–files</em> argument allows to ship files with the application code, and the driver java option tells config (running in the driver) the path of our file. For the example application, the command is:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> <span class="nt">--class</span> xyz.florentforest.sparkconfigexample.ConfigWordCount <span class="nt">--files</span> wordcount.conf
+<span class="nt">--driver-java-options</span> <span class="nt">-Dconfig</span>.file<span class="o">=</span>wordcount.conf sparkconfigexample-assembly-1.0.jar 
+</code></pre></div></div>
+
+<h2 id="yarn-client-mode">YARN client mode</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client <span class="o">[</span>...] <span class="nt">--files</span> application.conf <span class="nt">--driver-java-options</span> <span class="nt">-Dconfig</span>.file<span class="o">=</span>application.conf
+<span class="nt">--conf</span> spark.executor.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>application.conf myApplication.jar
+</code></pre></div></div>
+
+<p>In YARN client mode, we need to add the java option for the executors using the correspondig Spark configuration variable <em>spark.executor.extraJavaOptions</em>. Thus, for our example we have:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client <span class="nt">--class</span> xyz.florentforest.sparkconfigexample.ConfigWordCount <span class="nt">--files</span> wordcount.conf
+<span class="nt">--driver-java-options</span> <span class="nt">-Dconfig</span>.file<span class="o">=</span>wordcount.conf <span class="nt">--conf</span> spark.executor.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>wordcount.conf sparkconfigexample-assembly-1.0.jar 
+</code></pre></div></div>
+
+<h2 id="yarn-cluster-mode">YARN cluster mode</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster  <span class="o">[</span>...] <span class="nt">--files</span> application.conf <span class="nt">--conf</span> spark.driver.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>application.conf
+<span class="nt">--conf</span> spark.executor.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>application.conf myApplication.jar
+</code></pre></div></div>
+
+<p>In cluster mode, the command is the same, excepted that we must use <em>spark.driver.extraJavaOptions</em> instead of <em>–driver-java-options</em>.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster <span class="nt">--class</span> xyz.florentforest.sparkconfigexample.ConfigWordCount <span class="nt">--files</span> wordcount.conf
+<span class="nt">--conf</span> spark.driver.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>wordcount.conf <span class="nt">--conf</span> spark.executor.extraJavaOptions<span class="o">=</span><span class="nt">-Dconfig</span>.file<span class="o">=</span>wordcount.conf sparkconfigexample-assembly-1.0.jar 
+</code></pre></div></div>
+
+<h1 id="additional-remarks">Additional remarks</h1>
+
+<p>The config library has a lot of features that are not displayed in this minimalistic example and are not the point of this post. I will cite some of them:</p>
+
+<ul>
+  <li>projects can be built with a default reference configuration named <em>reference.conf</em>. Validity of a configuration can be checked against the reference configuration.</li>
+  <li>variables in the configuration file can be nested structured objects with JSON syntax (or if you prefer, like Python dictionaries). I use this a lot in my projects.</li>
+  <li>the JSON and dot syntaxes can be mixed</li>
+  <li>you can use special syntaxes to refer to other configuration variables or even system environment variables</li>
+  <li>handling optional arguments (with Scala’s <code class="language-plaintext highlighter-rouge">Option</code> type) is explained in the library’s README</li>
+</ul>
+
+<p>See the doc for more!</p>
+
+<p>Another important point is the conversion between Java and Scala objects. You will often have to use conversions between Java and Scala types, either using <code class="language-plaintext highlighter-rouge">.asScala</code> implicits defined in <code class="language-plaintext highlighter-rouge">scala.collection.JavaConverters</code>, or conversions from <code class="language-plaintext highlighter-rouge">scala.collection.JavaConversions</code>. When you combine complex types such as lists and JSON maps, conversions can get tricky and you sometimes have to extract the underlying Java objects (there’s a method of the Config class called <code class="language-plaintext highlighter-rouge">underlying</code>) and convert them manually using <code class="language-plaintext highlighter-rouge">.asInstanceOf[...]</code>. Be careful, as it leads to potential runtime errors! This is a drawback of using a Java library in Scala. Note that someone wrote a <a href="https://github.com/andr83/scalaconfig">wrapper of config in pure Scala</a>, I did not have time to try it but it might be the perfect fit.</p>
+
+<h1 id="references">References</h1>
+
+<p>Example project:</p>
+<ul>
+  <li><a href="https://github.com/FlorentF9/spark-config-example">https://github.com/FlorentF9/spark-config-example</a></li>
+</ul>
+
+<p>Github projects:</p>
+<ul>
+  <li><a href="https://github.com/lightbend/config">https://github.com/lightbend/config</a></li>
+  <li><a href="https://github.com/andr83/scalaconfig">https://github.com/andr83/scalaconfig</a></li>
+</ul>
+
+<p>Documentation:</p>
+<ul>
+  <li><a href="https://lightbend.github.io/config/latest/api/com/typesafe/config/package-summary.html">https://lightbend.github.io/config/latest/api/com/typesafe/config/package-summary.html</a></li>
+  <li><a href="https://spark.apache.org/docs/latest/configuration.html#runtime-environment">https://spark.apache.org/docs/latest/configuration.html#runtime-environment</a></li>
+</ul>
+
+<p>Related StackOverflow questions:</p>
+<ul>
+  <li><a href="https://stackoverflow.com/questions/28166667/how-to-pass-d-parameter-or-environment-variable-to-spark-job">https://stackoverflow.com/questions/28166667/how-to-pass-d-parameter-or-environment-variable-to-spark-job</a></li>
+  <li><a href="https://stackoverflow.com/questions/40507436/using-typesafe-config-with-spark-on-yarn">https://stackoverflow.com/questions/40507436/using-typesafe-config-with-spark-on-yarn</a></li>
+  <li><a href="https://stackoverflow.com/questions/48315355/reading-a-config-file-which-is-placed-on-my-linux-node-in-scala">https://stackoverflow.com/questions/48315355/reading-a-config-file-which-is-placed-on-my-linux-node-in-scala</a></li>
+</ul>
+
+  
+  
+  <hr><div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = "florentforest";
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+</article>
+
+
+
+
+</html>
