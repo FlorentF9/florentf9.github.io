@@ -62,7 +62,7 @@ article footer { padding: 1em 0; }
 
 article h1, h2, h3 { margin-bottom: 0; }
 
-article h1 { font-size: calc(1vw + 1em); border-bottom: 1px lightgray solid; }
+article h1 { font-size: calc(0.5vw + 1em); border-bottom: 1px lightgray solid; }
 
 article h2 { font-size: calc(.75vw + .75em); }
 
