@@ -8,18 +8,19 @@ layout: page
 
 * Machine learning, especially unsupervised (clustering; dimensionality reduction; visualization)
 * Domain adaptation
+* Explainable AI (XAI)
 * Health monitoring of complex industrial systems (made of [superalloys](https://en.wikipedia.org/wiki/CFM_International_LEAP) or of [living cells](https://en.wikipedia.org/wiki/Caenorhabditis_elegans))
 * Building end-to-end, large-scale, data-driven applications
 * Experience in time series analysis, computer vision and natural language processing
 
 # Research activities
 
-* Organizer of the *Workshop on Large-scale Industrial Time Series Analysis (LITSA)*
-  * [LITSA'20](https://lipn.github.io/LITSA2020/), hosted by IEEE [ICDM 2020](http://icdm2020.bigke.org/)
-  * [LITSA'21](https://lipn.github.io/LITSA2021/), hosted by IEEE [ICDM 2021](https://icdm2021.auckland.ac.nz/)
-* Reviewing 
-  * *CIKM (ACM International Conference on Information and Knowledge Management)* 2020, 2021
-  * *IAI (Industrial AI)* 2023
+Organizer:
+  * Intelligent Maintenance Conference (IMC) [2023](http://intelligent-maintenance.ch/)
+  * Workshop on Large-scale Industrial Time Series Analysis (LITSA) [2023](https://lipn.github.io/LITSA2023/) ; [2021](https://lipn.github.io/LITSA2021/) ; [2020](https://lipn.github.io/LITSA2020/)
+  * Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
+
+Reviewer: MSSP (Mechanical Systems and Signal Processing) ; CIKM (ACM International Conference on Information and Knowledge Management) ; IAI (Industrial AI)
 
 # PhD thesis
 

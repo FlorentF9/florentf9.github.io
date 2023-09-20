@@ -12,7 +12,7 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 # News
 
 <ul>
-<li>(May 2023) Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted for ESREL 2023.</li>
+<li>(May 2023) Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
 <li>(February 2023) Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during PhD, was accepted at the PAKDD 2023 conference.</li>
 <li>(September 2022) I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
 <li>(December 2021) The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
@@ -37,12 +37,18 @@ You can find recent news and events I attend on this page. Feel free to reach ou
 # Upcoming events
 
 <ul>
-<li><a href="https://pakdd2023.org/">PAKDD (Pacific-Asia Conference on Knowledge Discovery and Data Mining)</a>, May 25-28, Osaka, Japan <span class="flag-icon flag-icon-squared flag-icon-jp"></span> <i>[presenting a paper]</i></li>
-<li><a href="https://esrel2023.com/">ESREL (European Conference on Safety and Reliability)</a>, September 3-8, Southampton, United Kingdom <span class="flag-icon flag-icon-squared flag-icon-gb"></span> <i>[presenting 2 extended abstracts]</i></li>
-<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 12-13, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer/speaker]</i></li>
+
 </ul>
 
 # Recent events
+
+2023
+
+<ul>
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 12-13, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer, speaker, session chair]</i></li>
+<li><a href="https://esrel2023.com/">ESREL (European Conference on Safety and Reliability)</a>, September 3-8, Southampton, United Kingdom <span class="flag-icon flag-icon-squared flag-icon-gb"></span> <i>[presenting 2 extended abstracts]</i></li>
+<li><a href="https://pakdd2023.org/">PAKDD (Pacific-Asia Conference on Knowledge Discovery and Data Mining)</a>, May 25-28, Osaka, Japan <span class="flag-icon flag-icon-squared flag-icon-jp"></span> <i>[presenting a paper]</i></li>
+</ul>
 
 2022
 
