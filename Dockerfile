@@ -1,3 +1,3 @@
 FROM jekyll/jekyll
 
-RUN gem install rouge jekyll-default-layout liquid-md5
+RUN gem install rouge jekyll-default-layout liquid-md5 webrick
