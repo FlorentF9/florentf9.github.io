@@ -1,6 +1,6 @@
 ---
 title: "PhD thesis"
-permalink: "/research/phdthesis"
+permalink: "/phdthesis"
 layout: page
 ---
 

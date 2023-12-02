@@ -3,8 +3,6 @@ gem install rouge jekyll-default-layout liquid-md5 webrick
 jekyll build
 jekyll serve --incremental
 
-
-sudo docker run --rm -v $(pwd):/srv/jekyll -p 4000:4000 -it website jekyll build
 cd _site
 git checkout gh-pages
 git add .
