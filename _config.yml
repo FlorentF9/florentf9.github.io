@@ -1,6 +1,6 @@
 title: "Florent Forest"
 author: "Florent Forest"
-status: "Researcher | PhD | Full-stack Data & Machine Learning Scientist"
+status: "Machine Learning Researcher"
 email: "f@florentfo.rest"
 description: "Florent Forest's personal website and blog about software, data science, machine learning and other random stuff"
 keywords: "florent forest, florent, forest, website, blog, research, epfl, imos, computer science, software, data science, machine learning"
@@ -15,10 +15,9 @@ dark_footer: false           # keep the footer dark
 
 navigation:                  # site navigation in the header
   - index.md
-  - about.md
   - blog.md
-  - research.md
   - publications.md
+  - projects.md
   - teaching.md
   - contact.md
 
@@ -35,7 +34,7 @@ comments:                    # embed disqus or isso comments
   disqus_shortname: "florentforest"
 #  isso: ""
 
-google_analytics: "UA-132667122-1"
+# google_analytics: "UA-132667122-1"
 
 plugins:
  - jekyll-feed
