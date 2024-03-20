@@ -1,10 +1,10 @@
-body { font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif; font-size: 16px; font-size: calc(0.7rem + 0.25vw); font-weight: 300; line-height: 1.65; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif; font-size: 16px; font-size: calc(0.7rem + 0.25vw); font-weight: 400; line-height: 1.65; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 body, blockquote, figure { margin: 0; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
-a, b, strong, th { font-weight: 400; }
+a, b, strong, th { font-weight: 500; }
 
 a { color: inherit; text-decoration: inherit; transition: color .2s; }
 
@@ -46,7 +46,7 @@ nav { font-size: calc(.4vw + .7em); }
 
 #header { background-color: #174c80; padding-top: 0; padding-bottom: 8px; }
 
-nav a { display: inline-block; margin: 0; font-weight: 300; }
+nav a { display: inline-block; margin: 0; font-weight: 400; }
 
 nav #menu a:hover { border-bottom: #EB811B 2px solid; }
 
@@ -82,7 +82,7 @@ a.icon { box-shadow: none; transition: color .2s; }
 
 a.icon.selected, a.icon:hover { box-shadow: none; color: #f5c08d; }
 
-#bibbase a { font-weight: 400; color: #EB811B; font-size: 16px; box-shadow: none; transition: color .2s; }
+#bibbase a { font-weight: 500; color: #EB811B; font-size: 16px; box-shadow: none; transition: color .2s; }
 
 #bibbase a.selected, #bibbase a:hover { box-shadow: none; color: #f5c08d; }
 

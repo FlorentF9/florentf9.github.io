@@ -1,4 +1,114 @@
-@article{Forest2021a,
+@misc{hassan2024thermonerf,
+	title = {{ThermoNeRF}: {Multimodal} {Neural} {Radiance} {Fields} for {Thermal} {Novel} {View} {Synthesis}},
+	copyright = {All rights reserved},
+	shorttitle = {{ThermoNeRF}},
+	doi = {10.48550/arXiv.2403.12154},
+	abstract = {Thermal scene reconstruction exhibit great potential for applications across a broad spectrum of fields, including building energy consumption analysis and non-destructive testing. However, existing methods typically require dense scene measurements and often rely on RGB images for 3D geometry reconstruction, with thermal information being projected post-reconstruction. This two-step strategy, adopted due to the lack of texture in thermal images, can lead to disparities between the geometry and temperatures of the reconstructed objects and those of the actual scene. To address this challenge, we propose ThermoNeRF, a novel multimodal approach based on Neural Radiance Fields, capable of rendering new RGB and thermal views of a scene jointly. To overcome the lack of texture in thermal images, we use paired RGB and thermal images to learn scene density, while distinct networks estimate color and temperature information. Furthermore, we introduce ThermoScenes, a new dataset to palliate the lack of available RGB+thermal datasets for scene reconstruction. Experimental results validate that ThermoNeRF achieves accurate thermal image synthesis, with an average mean absolute error of 1.5\${\textasciicircum}{\textbackslash}circ\$C, an improvement of over 50\% compared to using concatenated RGB+thermal data with Nerfacto, a state-of-the-art NeRF method.},
+	urldate = {2024-03-20},
+	publisher = {arXiv},
+	author = {Hassan, Mariam and Forest, Florent and Fink, Olga and Mielle, Malcolm},
+	month = mar,
+	year = {2024},
+	note = {arXiv:2403.12154 [cs]},
+    url_Link = {http://arxiv.org/abs/2403.12154},
+    url_Paper = {http://arxiv.org/pdf/2403.12154},
+}
+
+@misc{forest2023clibratedadaptive,
+	title = {Calibrated {Adaptive} {Teacher} for {Domain} {Adaptive} {Intelligent} {Fault} {Diagnosis}},
+	copyright = {All rights reserved},
+	doi = {10.48550/arXiv.2312.02826},
+	abstract = {Intelligent Fault Diagnosis (IFD) based on deep learning has proven to be an effective and flexible solution, attracting extensive research. Deep neural networks can learn rich representations from vast amounts of representative labeled data for various applications. In IFD, they achieve high classification performance from signals in an end-to-end manner, without requiring extensive domain knowledge. However, deep learning models usually only perform well on the data distribution they have been trained on. When applied to a different distribution, they may experience performance drops. This is also observed in IFD, where assets are often operated in working conditions different from those in which labeled data have been collected. Unsupervised domain adaptation (UDA) deals with the scenario where labeled data are available in a source domain, and only unlabeled data are available in a target domain, where domains may correspond to operating conditions. Recent methods rely on training with confident pseudo-labels for target samples. However, the confidence-based selection of pseudo-labels is hindered by poorly calibrated confidence estimates in the target domain, primarily due to over-confident predictions, which limits the quality of pseudo-labels and leads to error accumulation. In this paper, we propose a novel UDA method called Calibrated Adaptive Teacher (CAT), where we propose to calibrate the predictions of the teacher network throughout the self-training process, leveraging post-hoc calibration techniques. We evaluate CAT on domain-adaptive IFD and perform extensive experiments on the Paderborn benchmark for bearing fault diagnosis under varying operating conditions. Our proposed method achieves state-of-the-art performance on most transfer tasks.},
+	publisher = {arXiv},
+	author = {Forest, Florent and Fink, Olga},
+	month = dec,
+	year = {2023},
+	note = {arXiv:2312.02826 [cs, eess, stat]},
+    url_Link = {http://arxiv.org/abs/2312.02826},
+    url_Paper = {http://arxiv.org/pdf/2312.02826},
+}
+
+@misc{forest2023classification,
+	title = {From {Classification} to {Segmentation} with {Explainable} {AI}: {A} {Study} on {Crack} {Detection} and {Growth} {Monitoring}},
+	copyright = {All rights reserved},
+	shorttitle = {From {Classification} to {Segmentation} with {Explainable} {AI}},
+	doi = {10.48550/arXiv.2309.11267},
+	abstract = {Monitoring surface cracks in infrastructure is crucial for structural health monitoring. Automatic visual inspection offers an effective solution, especially in hard-to-reach areas. Machine learning approaches have proven their effectiveness but typically require large annotated datasets for supervised training. Once a crack is detected, monitoring its severity often demands precise segmentation of the damage. However, pixel-level annotation of images for segmentation is labor-intensive. To mitigate this cost, one can leverage explainable artificial intelligence (XAI) to derive segmentations from the explanations of a classifier, requiring only weak image-level supervision. This paper proposes applying this methodology to segment and monitor surface cracks. We evaluate the performance of various XAI methods and examine how this approach facilitates severity quantification and growth monitoring. Results reveal that while the resulting segmentation masks may exhibit lower quality than those produced by supervised methods, they remain meaningful and enable severity monitoring, thus reducing substantial labeling costs.},
+	publisher = {arXiv},
+	author = {Forest, Florent and Porta, Hugo and Tuia, Devis and Fink, Olga},
+	month = sep,
+	year = {2023},
+	note = {arXiv:2309.11267 [cs, eess]},
+    url_Link = {http://arxiv.org/abs/2309.11267},
+    url_Paper = {http://arxiv.org/pdf/2309.11267}
+}
+
+@inproceedings{forest2023calibratedself,
+	title = {Calibrated {Self}-{Training} for {Cross}-{Domain} {Bearing} {Fault} {Diagnosis}},
+	copyright = {All rights reserved},
+	isbn = {978-981-18807-1-1},
+	doi = {10.3850/978-981-18-8071-1_P249-cd},
+	abstract = {Fault diagnosis of rolling bearings is a crucial task in Prognostics and Health Management, as rolling elements are ubiquitous in industrial assets. Data-driven approaches based on deep neural networks have made signiﬁcant progress in this area. However, they require collecting large representative labeled data sets. However, in industrial settings, assets are often operated in conditions different from the ones in which labeled data were collected, requiring a transfer between working conditions. In this work, we tackle the classiﬁcation of bearing fault types and severity levels in the setting of unsupervised domain adaptation (UDA), where labeled data are available in a source domain and only unlabeled data are available in a different but related target domain. We focus on UDA with self-training methods, based on pseudo-labeling of target samples. One major challenge in these methods is to avoid error accumulation due to low-quality pseudo-labels. To address this challenge, we propose incorporating post-hoc calibration, such as the well-known temperature scaling, into the self-training process to increase the quality of selected pseudo-labels. We implement our proposed calibration approach in two self-training algorithms, Calibrated Pseudo-Labeling and Calibrated Adaptive Teacher, and demonstrate their competitive results on the Paderborn University (PU) benchmark for fault diagnosis of rolling bearings under varying operating conditions.},
+	language = {en},
+	booktitle = {Proceeding of the 33rd {European} {Safety} and {Reliability} {Conference}},
+	publisher = {Research Publishing Services},
+	author = {Forest, Florent and Fink, Olga},
+	year = {2023},
+	pages = {3406--3407},
+    url_Link = {https://www.rpsonline.com.sg/proceedings/esrel2023/html/P249.html},
+    url_Paper = {https://www.rpsonline.com.sg/proceedings/esrel2023/pdf/P249},
+}
+
+@inproceedings{forest2023segmenting,
+	title = {Segmenting {Without} {Annotating}: {Crack} {Segmentation} and {Monitoring} via {Post}-{Hoc} {Classifier} {Explanations}},
+	copyright = {All rights reserved},
+	isbn = {978-981-18807-1-1},
+	shorttitle = {Segmenting {Without} {Annotating}},
+	doi = {10.3850/978-981-18-8071-1_P290-cd},
+	abstract = {Monitoring the cracks in walls, roads and other types of infrastructure is essential to ensure the safety of a structure, and plays an important role in structural health monitoring. Automatic visual inspection allows an efﬁcient, costeffective and safe health monitoring, especially in hard-to-reach locations. To this aim, data-driven approaches based on machine learning have demonstrated their effectiveness, at the expense of annotating large sets of images for supervised training. Once a damage has been detected, one also needs to monitor the evolution of its severity, in order to trigger a timely maintenance operation and avoid any catastrophic consequence. This evaluation requires a precise segmentation of the damage. However, pixel-level annotation of images for segmentation is labor-intensive. On the other hand, labeling images for a classiﬁcation task is relatively cheap in comparison. To circumvent the cost of annotating images for segmentation, recent works inspired by explainable AI (XAI) have proposed to use the post-hoc explanations of a classiﬁer to obtain a segmentation of the input image. In this work, we study the application of XAI techniques to the detection and monitoring of cracks in masonry wall surfaces. We benchmark different post-hoc explainability methods in terms of segmentation quality and accuracy of the damage severity quantiﬁcation (for example, the width of a crack), thus enabling timely decision-making.},
+	language = {en},
+	booktitle = {Proceeding of the 33rd {European} {Safety} and {Reliability} {Conference}},
+	publisher = {Research Publishing Services},
+	author = {Forest, Florent and Porta, Hugo and Tuia, Devis and Fink, Olga},
+	year = {2023},
+	pages = {1392--1393},
+    url_Link = {https://www.rpsonline.com.sg/proceedings/esrel2023/html/P290.html},
+    url_Paper = {https://www.rpsonline.com.sg/proceedings/esrel2023/pdf/P290},
+}
+
+@article{che2023predictive,
+    title = {Predictive {Health} {Assessment} for {Lithium}-ion {Batteries} with {Probabilistic} {Degradation} {Prediction} and {Accelerating} {Aging} {Detection}},
+    copyright = {All rights reserved},
+    issn = {0951-8320},
+    doi = {10.1016/j.ress.2023.109603},
+    abstract = {Predictive health assessment is of vital importance for smarter battery management to ensure optimal and safe operations and thus make the most use of battery life. This paper proposes a general framework for battery aging prognostics in order to provide the predictions of battery knee, lifetime, state of health degradation, and aging rate variations, as well as the assessment of battery health. Early information is used to predict knee slope and other life-related information via deep multi-task learning, where the convolutional-long-short-term memory-bayesian neural network is proposed. The structure is also used for online state of health and degradation rate predictions for the detection of accelerating aging. The two probabilistic predicted boundaries identify the accelerating aging regions for battery health assessment. To avoid wrong and premature alarms, the empirical model is used for data preprocessing and the slope is predicted together with the state of health via multi-task learning. A cloud-edge framework is considered where fine-tuning is adopted for performance improvement during cycling. The proposed general framework is flexible for adjustment to different practical requirements and can be extrapolated to other batteries aged under different conditions. The results indicate that the early predictions are improved using the proposed method compared to multiple single feature-based benchmarks, and that integration of the algorithm is improved. The sequence prediction is reliable for different predicted lengths with root mean square errors of less than 1.41\%, and the detection of accelerating aging can guide reliable predictive health management.},
+    journal = {Reliability Engineering \& System Safety},
+    author = {Che, Yunhong and Zheng, Yusheng and Forest, Florent Evariste and Sui, Xin and Hu, Xiaosong and Teodorescu, Remus},
+    month = aug,
+    year = {2023},
+    keywords = {Transfer learning, Battery degradation prediction, Knee point detection, Multi-task learning, Predictive health assessment, Probabilistic prediction},
+    pages = {109603},
+    url_Link = {https://www.sciencedirect.com/science/article/pii/S0951832023005173}
+}
+
+@inproceedings{mourer2023selecting,
+    address = {Osaka, Japan},
+    title = {Selecting the {Number} of {Clusters} \${K}\$ with a {Stability} {Trade}-off: an {Internal} {Validation} {Criterion}},
+    copyright = {All rights reserved},
+    shorttitle = {Selecting the {Number} of {Clusters} \${K}\$ with a {Stability} {Trade}-off},
+    doi = {10.48550/arXiv.2006.08530},
+    abstract = {Model selection is a major challenge in non-parametric clustering. There is no universally admitted way to evaluate clustering results for the obvious reason that no ground truth is available. The difficulty to find a universal evaluation criterion is a consequence of the ill-defined objective of clustering. In this perspective, clustering stability has emerged as a natural and model-agnostic principle: an algorithm should find stable structures in the data. If data sets are repeatedly sampled from the same underlying distribution, an algorithm should find similar partitions. However, stability alone is not well-suited to determine the number of clusters. For instance, it is unable to detect if the number of clusters is too small. We propose a new principle: a good clustering should be stable, and within each cluster, there should exist no stable partition. This principle leads to a novel clustering validation criterion based on between-cluster and within-cluster stability, overcoming limitations of previous stability-based methods. We empirically demonstrate the effectiveness of our criterion to select the number of clusters and compare it with existing methods. Code is available at https://github.com/FlorentF9/skstab.},
+    booktitle = {{PAKDD}},
+    author = {Mourer, Alex and Forest, Florent and Lebbah, Mustapha and Azzag, Hanane and Lacaille, Jérôme},
+    month = may,
+    year = {2023},
+    note = {arXiv:2006.08530 [cs, stat]},
+    keywords = {validity index,clustering,model selection,stability analysis},
+    url_Link = {http://arxiv.org/abs/2006.08530},
+    url_Paper = {http://arxiv.org/pdf/2006.08530},
+}
+
+@article{forest2021deepembedded,
 abstract = {A recent research area in unsupervised learning is the combination of representation learning with deep neural networks and data clustering. The success of deep learning for supervised tasks is widely established. However, recent research has demonstrated how neural networks are able to learn representations to improve clustering in their intermediate feature space, using specific regularizations. By considering representation learning and clustering as a joint task, models learn clustering-friendly spaces and outperform two-stage approaches where dimensionality reduction and clustering are performed separately. Recently, this idea has been extended to topology-preserving clustering models, known as self-organizing maps (SOM). This work is a thorough study on the deep embedded self-organizing map (DESOM), a model composed of an autoencoder and a SOM layer, training jointly the code vectors and network weights to learn SOM-friendly representations. In other words, SOM induces a form a regularization to improve the quality of quantization and topology in latent space. After detailing the architecture, loss and training algorithm, we study hyperparameters with a series of experiments. Different SOM-based models are evaluated in terms of clustering, visualization and classification on benchmark datasets. We study benefits and trade-offs of joint representation learning and self-organization. DESOM achieves competitive results, requires no pretraining and produces topologically organized visualizations.},
 author = {{Forest, Florent and Lebbah, Mustapha and Azzag, Hanene and Lacaille, J{\'{e}}r{\^{o}}me}},
 doi = {10.1007/s00521-021-06331-w},
@@ -10,7 +120,8 @@ year = {2021},
 url_Link = {https://link.springer.com/article/10.1007/s00521-021-06331-w},
 url_Paper = {https://www.researchgate.net/journal/Neural-Computing-and-Applications-1433-3058/publication/353679111_Deep_embedded_self-organizing_maps_for_joint_representation_learning_and_topology-preserving_clustering/links/610a2059169a1a0103daf991/Deep-embedded-self-organizing-maps-for-joint-representation-learning-and-topology-preserving-clustering.pdf}
 }
-@phdthesis{Forest2021,
+
+@phdthesis{forest2021unsupervised,
 author = {Forest, Florent},
 pages = {326},
 school = {Universit{\'{e}} Sorbonne Paris Nord},
@@ -21,16 +132,19 @@ url_Link = {http://theses.fr/s194400},
 url_Paper = {Forest2021-manuscrit.pdf},
 url_Slides = {Forest2021-defense.pdf}
 }
-@inproceedings{Forest2020a,
+
+@inproceedings{forest2020invariance,
 abstract = {Time series clustering is a challenging task due to the specificities of this type of data. Temporal correlation and invariance to transformations such as shifting, warping or noise prevent the use of standard data mining methods. Time series clustering has been mostly studied under the angle of finding efficient algorithms and distance metrics adapted to the specific nature of time series data. Much less attention has been devoted to the general problem of model selection. Clustering stability has emerged as a universal and model-agnostic principle for clustering model selection. This principle can be stated as follows: an algorithm should find a structure in the data that is resilient to perturbation by sampling or noise. We propose to apply stability analysis to time series by leveraging prior knowledge on the nature and invariances of the data. These invariances determine the perturbation process used to assess stability. Based on a recently introduced criterion combining between-cluster and within-cluster stability, we propose an invariance-guided method for model selection, applicable to a wide range of clustering algorithms. Experiments conducted on artificial and benchmark data sets demonstrate the ability of our criterion to discover structure and select the correct number of clusters, whenever data invariances are known beforehand.},
 author = {Forest, Florent and Mourer, Alex and Lebbah, Mustapha and Azzag, Hanane and Lacaille, J{\'{e}}r{\^{o}}me},
 booktitle = {International Conference on Pattern Recognition (ICPR)},
 title = {{An Invariance-guided Stability Criterion for Time Series Clustering Validation}},
 year = {2020},
+url_Link = {https://ieeexplore.ieee.org/abstract/document/9412020},
 url_Paper = {ICPR-2020-InvarianceGuidedStabilityTSC-full-paper.pdf},
 url_Slides = {pres-ICPR-2020.pdf}
 }
-@inproceedings{Forest2020,
+
+@inproceedings{forest2020largescale,
 abstract = {Vibration analysis is an important component of industrial equipment health monitoring. Aircraft engines in particular are complex rotating machines where vibrations, mainly caused by unbalance, misalignment, or damaged bearings, put engine parts under dynamic structural stress. Thus, monitoring the vibratory behavior of engines is essential to detect anomalies and trends, avoid faults and improve availability. Intrinsic properties of parts can be described by the evolution of vibration as function of rotation speed, called a vibration signature. This work presents a methodology for large-scale vibration monitoring on operating civil aircraft engines, based on unsupervised learning algorithms and a flight recorder database. Firstly, we present a pipeline for massive extraction of vibration signatures from raw flight data, consisting in time-domain medium-frequency sensor measurements. Then, signatures are classified and visualized using interpretable self-organized clustering algorithms, yielding a visual cartography of vibration profiles. Domain experts can then extract various insights from resulting models. An abnormal temporal evolution of a signature gives early warning before failure of an engine. In a post-finding situation after an event has occurred, similar at-risk engines are detectable. The approach is global, end-to-end and scalable, which is yet uncommon in our industry, and has been tested on real flight data.},
 author = {Forest, Florent and Cochard, Quentin and Noyer, Cecile and Cabut, Adrien and Joncour, Marc and Lacaille, J{\'{e}}r{\^{o}}me and Lebbah, Mustapha and Azzag, Hanene},
 booktitle = {Annual Conference of the PHM Society},
@@ -42,7 +156,8 @@ url_Link = {https://www.phmpapers.org/index.php/phmconf/article/view/1131},
 url_Paper = {https://www.phmpapers.org/index.php/phmconf/article/download/1131/913},
 url_Slides = {pres-PHM-2020.pdf}
 }
-@unpublished{Forest2020e,
+
+@unpublished{forest2020survey,
 abstract = {Self-Organizing Map algorithms have been used for almost 40 years across various application domains such as biology, geology, healthcare, industry and humanities as an interpretable tool to explore, cluster and visualize high-dimensional data sets. In every application, practitioners need to know whether they can \textit{trust} the resulting mapping, and perform model selection to tune algorithm parameters (e.g. the map size). Quantitative evaluation of self-organizing maps (SOM) is a subset of clustering validation, which is a challenging problem as such. Clustering model selection is typically achieved by using clustering validity indices. While they also apply to self-organized clustering models, they ignore the topology of the map, only answering the question: do the SOM code vectors approximate well the data distribution? Evaluating SOM models brings in the additional challenge of assessing their topology: does the mapping preserve neighborhood relationships between the map and the original data? The problem of assessing the performance of SOM models has already been tackled quite thoroughly in literature, giving birth to a family of quality indices incorporating neighborhood constraints, called \textit{topographic} indices. Commonly used examples of such metrics are the topographic error, neighborhood preservation or the topographic product. However, open-source implementations are almost impossible to find. This is the issue we try to solve in this work: after a survey of existing SOM performance metrics, we implemented them in Python and widely used numerical libraries, and provide them as an open-source library, SOMperf. This paper introduces each metric available in our module along with usage examples.},
 archivePrefix = {arXiv},
 arxivId = {arXiv:2011.05847},
@@ -53,19 +168,8 @@ year = {2020},
 url_Link = {https://arxiv.org/abs/2011.05847},
 url_Paper = {https://arxiv.org/pdf/2011.05847}
 }
-@unpublished{Mourer2020,
-abstract = {Model selection is a major challenge in non-parametric clustering. There is no universally admitted way to evaluate clustering results for the obvious reason that there is no ground truth against which results could be tested, as in supervised learning. The difficulty to find a universal evaluation criterion is a direct consequence of the fundamentally ill-defined objective of clustering. In this perspective, clustering stability has emerged as a natural and model-agnostic principle: an algorithm should find stable structures in the data. If data sets are repeatedly sampled from the same underlying distribution, an algorithm should find similar partitions. However, it turns out that stability alone is not a well-suited tool to determine the number of clusters. For instance, it is unable to detect if the number of clusters is too small. We propose a new principle for clustering validation: a good clustering should be stable, and within each cluster, there should exist no stable partition. This principle leads to a novel internal clustering validity criterion based on between-cluster and within-cluster stability, overcoming limitations of previous stability-based methods. We empirically show the superior ability of additive noise to discover structures, compared with sampling-based perturbation. We demonstrate the effectiveness of our method for selecting the number of clusters through a large number of experiments and compare it with existing evaluation methods.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:2006.08530v1},
-author = {Mourer, Alex and Forest, Florent and Lebbah, Mustapha and Azzag, Hanane and Lacaille, J{\'{e}}r{\^{o}}me},
-eprint = {arXiv:2006.08530v1},
-keywords = {validity index,clustering,model selection,stability analysis},
-title = {{Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion}},
-year = {2020},
-url_Link = {https://arxiv.org/abs/2006.08530},
-url_Paper = {https://arxiv.org/pdf/2006.08530}
-}
-@inproceedings{Forest2020d,
+
+@inproceedings{forest2020carte,
 abstract = {Dans la lign{\'{e}}e des r{\'{e}}centes avanc{\'{e}}es en apprentissage profond de repr{\'{e}}sentations pour le clustering, ce travail (pr{\'{e}}c{\'{e}}demment publi{\'{e}} en anglais) pr{\'{e}}sente le mod{\`{e}}le DESOM (Deep Embedded SOM), combinant l'apprentisssage non supervis{\'{e}} de repr{\'{e}}sentations et d'une carte auto-organis{\'{e}}e de Kohonen (SOM). Le mod{\`{e}}le, compos{\'{e}} d'un auto-encodeur et d'une couche SOM, est optimis{\'{e}} conjointement, an de r{\'{e}}gulariser l'espace latent et am{\'{e}}liorer la performance de la carte SOM. Nous {\'{e}}valuons les performances de classification et de visualisation ainsi que les b{\'{e}}n{\'{e}}fices de l'apprentissage joint. Mots-clef : carte auto-organis{\'{e}}e, clustering, apprentissage profond, auto-encodeur.},
 author = {Forest, Florent and Lebbah, Mustapha and Azzag, Hanene and Lacaille, J{\'{e}}r{\^{o}}me},
 booktitle = {CAp2020: Conf{\'{e}}rence d'Apprentissage},
@@ -75,7 +179,8 @@ url_Link = {https://hal.archives-ouvertes.fr/hal-02859997},
 url_Paper = {https://hal.archives-ouvertes.fr/hal-02859997/document},
 year = {2020}
 }
-@inproceedings{Forest2019a,
+
+@inproceedings{forest2019deeparchitectures,
 abstract = {Recent research has demonstrated how deep neural networks are able to learn representations to improve data clustering. By considering representation learning and clustering as a joint task, models learn clustering-friendly spaces and achieve superior performance, com- pared with standard two-stage approaches where dimensionality reduc- tion and clustering are performed separately. We extend this idea to topology-preserving clustering models, known as self-organizing maps (SOM). First, we present the Deep Embedded Self-Organizing Map (DE- SOM), a model composed of a fully-connected autoencoder and a custom SOM layer, where the SOM code vectors are learnt jointly with the au- toencoder weights. Then, we show that this generic architecture can be extended to image and sequence data by using convolutional and recur- rent architectures, and present variants of these models. First results demonstrate advantages of the DESOM architecture in terms of cluster- ing performance, visualization and training time.},
 author = {Forest, Florent and Lebbah, Mustapha and Azzag, Hanane and Lacaille, J{\'{e}}r{\^{o}}me},
 booktitle = {Workshop on Learning Data Representations for Clustering (LDRC), PAKDD},
@@ -86,7 +191,8 @@ year = {2019},
 url_Link = {https://link.springer.com/chapter/10.1007/978-3-030-26142-9_10},
 url_Paper = {LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf}
 }
-@inproceedings{Forest2019,
+
+@inproceedings{forest2019deepembedded,
 abstract = {In the wake of recent advances in joint clustering and deep learning, we introduce the Deep Embedded Self-Organizing Map, a model that jointly learns representations and the code vectors of a self-organizing map. Our model is composed of an autoencoder and a custom SOM layer that are optimized in a joint training procedure, motivated by the idea that the SOM prior could help learning SOM-friendly representations. We eval- uate SOM-based models in terms of clustering quality and unsupervised clustering accuracy, and study the benefits of joint training.},
 author = {Forest, Florent and Lebbah, Mustapha and Azzag, Hanane and Lacaille, J{\'{e}}r{\^{o}}me},
 booktitle = {European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN)},
@@ -98,14 +204,8 @@ url_Paper = {https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2019-30.pdf
 url_Slides = {ESANN-2019-DeepEmbeddedSOM-pres.pdf},
 url_Code = {https://github.com/FlorentF9/DESOM}
 }
-@misc{Forest2019b,
-author = {Forest, Florent},
-title = {{Poster: Clustering de donn{\'{e}}es massives - Analyse de donn{\'{e}}es de turbofans}},
-year = {2019},
-source_type = {poster},
-url_Paper = {poster-journeeED-2019.pdf}
-}
-@inproceedings{Forest2018,
+
+@inproceedings{forest2018generic,
 abstract = {A major application of data analytics for aircraft engine manufacturers is engine health monitoring, which consists in improving availability and operation of engines by leveraging operational data and past events. Traditional tools can no longer handle the increasing volume and velocity of data collected on modern aircraft. We propose a generic and scalable pipeline for large-scale analytics of operational data from a recent type of aircraft engine, oriented towards health monitoring applications. Based on Hadoop and Spark, our approach enables domain experts to scale their algorithms and extract features from tens of thousands of flights stored on a cluster. All computations are performed using the Spark framework, however custom functions and algorithms can be integrated without knowledge of distributed programming. Unsupervised learning algorithms are integrated for clustering and dimensionality reduction of the flight features, in order to allow efficient visualization and interpretation through a dedicated web application. The use case guiding our work is a methodology for engine fleet monitoring with a self-organizing map. Finally, this pipeline is meant to be end-to-end, fully customizable and ready for use in an industrial setting.},
 author = {Forest, Florent and Lacaille, J{\'{e}}r{\^{o}}me and Lebbah, Mustapha and Azzag, Hanane},
 booktitle = {IEEE International Conference on Big Data},
@@ -117,7 +217,8 @@ year = {2018},
 url_Link = {https://ieeexplore.ieee.org/document/8622297},
 url_Paper = {IEEEBigData-2018-ForestLacailleLebbahAzzag-full-paper.pdf}
 }
-@article{Knodlseder2016,
+
+@article{knodlseder2016gammalib,
 abstract = {The field of gamma-ray astronomy has seen important progress during the last decade, yet to date no common software framework has been developed for the scientific analysis of gamma-ray telescope data. We propose to fill this gap by means of the GammaLib software, a generic library that we have developed to support the analysis of gamma-ray event data. GammaLib was written in C++ and all functionality is available in Python through an extension module. Based on this framework we have developed the ctools software package, a suite of software tools that enables flexible workflows to be built for the analysis of Imaging Air Cherenkov Telescope event data. The ctools are inspired by science analysis software available for existing high-energy astronomy instruments, and they follow the modular ftools model developed by the High Energy Astrophysics Science Archive Research Center. The ctools were written in Python and C++, and can be either used from the command line via shell scripts or directly from Python. In this paper we present the GammaLib and ctools software versions 1.0 that were released at the end of 2015. GammaLib and ctools are ready for the science analysis of Imaging Air Cherenkov Telescope event data, and also support the analysis of Fermi-LAT data and the exploitation of the COMPTEL legacy data archive. We propose using ctools as the science tools software for the Cherenkov Telescope Array Observatory.},
 archivePrefix = {arXiv},
 arxivId = {1606.00393},

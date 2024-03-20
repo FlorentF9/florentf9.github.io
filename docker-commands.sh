@@ -4,7 +4,6 @@ jekyll build
 jekyll serve --incremental
 
 cd _site
-git checkout gh-pages
 git add .
 git cm "Jekyll _site build"
 git push
