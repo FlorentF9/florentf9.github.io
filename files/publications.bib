@@ -14,7 +14,22 @@
     url_Paper = {http://arxiv.org/pdf/2403.12154},
 }
 
-@misc{forest2023clibratedadaptive,
+@misc{nejjar2024uncertainty,
+	title = {Uncertainty-{Guided} {Alignment} for {Unsupervised} {Domain} {Adaptation} in {Regression}},
+	copyright = {All rights reserved},
+	doi = {10.48550/arXiv.2401.13721},
+	abstract = {Unsupervised Domain Adaptation for Regression (UDAR) aims to adapt a model from a labeled source domain to an unlabeled target domain for regression tasks. Recent successful works in UDAR mostly focus on subspace alignment, involving the alignment of a selected subspace within the entire feature space. This contrasts with the feature alignment methods used for classification, which aim at aligning the entire feature space and have proven effective but are less so in regression settings. Specifically, while classification aims to identify separate clusters across the entire embedding dimension, regression induces less structure in the data representation, necessitating additional guidance for efficient alignment. In this paper, we propose an effective method for UDAR by incorporating guidance from uncertainty. Our approach serves a dual purpose: providing a measure of confidence in predictions and acting as a regularization of the embedding space. Specifically, we leverage the Deep Evidential Learning framework, which outputs both predictions and uncertainties for each input sample. We propose aligning the parameters of higher-order evidential distributions between the source and target domains using traditional alignment methods at the feature or posterior level. Additionally, we propose to augment the feature space representation by mixing source samples with pseudo-labeled target samples based on label similarity. This cross-domain mixing strategy produces more realistic samples than random mixing and introduces higher uncertainty, facilitating further alignment. We demonstrate the effectiveness of our approach on four benchmarks for UDAR, on which we outperform existing methods.},
+	urldate = {2024-03-21},
+	publisher = {arXiv},
+	author = {Nejjar, Ismail and Frusque, Gaëtan and Forest, Florent and Fink, Olga},
+	month = jan,
+	year = {2024},
+	note = {arXiv:2401.13721 [cs]},
+	url_Link = {http://arxiv.org/abs/2401.13721},
+	url_Paper = {http://arxiv.org/pdf/2401.13721},
+}
+
+@misc{forest2023calibratedadaptive,
 	title = {Calibrated {Adaptive} {Teacher} for {Domain} {Adaptive} {Intelligent} {Fault} {Diagnosis}},
 	copyright = {All rights reserved},
 	doi = {10.48550/arXiv.2312.02826},
@@ -83,7 +98,7 @@
     doi = {10.1016/j.ress.2023.109603},
     abstract = {Predictive health assessment is of vital importance for smarter battery management to ensure optimal and safe operations and thus make the most use of battery life. This paper proposes a general framework for battery aging prognostics in order to provide the predictions of battery knee, lifetime, state of health degradation, and aging rate variations, as well as the assessment of battery health. Early information is used to predict knee slope and other life-related information via deep multi-task learning, where the convolutional-long-short-term memory-bayesian neural network is proposed. The structure is also used for online state of health and degradation rate predictions for the detection of accelerating aging. The two probabilistic predicted boundaries identify the accelerating aging regions for battery health assessment. To avoid wrong and premature alarms, the empirical model is used for data preprocessing and the slope is predicted together with the state of health via multi-task learning. A cloud-edge framework is considered where fine-tuning is adopted for performance improvement during cycling. The proposed general framework is flexible for adjustment to different practical requirements and can be extrapolated to other batteries aged under different conditions. The results indicate that the early predictions are improved using the proposed method compared to multiple single feature-based benchmarks, and that integration of the algorithm is improved. The sequence prediction is reliable for different predicted lengths with root mean square errors of less than 1.41\%, and the detection of accelerating aging can guide reliable predictive health management.},
     journal = {Reliability Engineering \& System Safety},
-    author = {Che, Yunhong and Zheng, Yusheng and Forest, Florent Evariste and Sui, Xin and Hu, Xiaosong and Teodorescu, Remus},
+    author = {Che, Yunhong and Zheng, Yusheng and Forest, Florent and Sui, Xin and Hu, Xiaosong and Teodorescu, Remus},
     month = aug,
     year = {2023},
     keywords = {Transfer learning, Battery degradation prediction, Knee point detection, Multi-task learning, Predictive health assessment, Probabilistic prediction},
