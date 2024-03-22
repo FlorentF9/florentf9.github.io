@@ -38,13 +38,17 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 </ul>
 </details>
 
-<!-- # Upcoming events
+# Upcoming events
 
 <ul>
-
-</ul> -->
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span><i>[organizer]</i></li>
+</ul>
 
 # Recent events
+
+<ul>
+<li><a href="https://uic.org/">UIC</a> Workshop on AI for Predictive Maintenance, March 20, Bern, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span><i>[speaker]</i></li>
+</ul>
 
 2023
 
@@ -112,24 +116,32 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Research activities
 
 My main areas of interest and application domains are:
-
 * Machine learning, supervised and unsupervised
 * Domain adaptation
 * Explainable AI (XAI)
+* Industrial and engineering applications of AI
 * Health monitoring of complex industrial systems (made of [superalloys](https://en.wikipedia.org/wiki/CFM_International_LEAP) or [living cells](https://en.wikipedia.org/wiki/Caenorhabditis_elegans))
 * Building end-to-end, large-scale, data-driven applications
 * Experience in time series analysis, computer vision and natural language processing
 
 I am organizer in following events:
-  * Intelligent Maintenance Conference (IMC) [2024](http://intelligent-maintenance.ch/) ; [2023](http://intelligent-maintenance.ch/archive/2023/index.html)
-  * Workshop on Large-scale Industrial Time Series Analysis (LITSA) [2023](https://lipn.github.io/LITSA2023/) ; [2021](https://lipn.github.io/LITSA2021/) ; [2020](https://lipn.github.io/LITSA2020/)
-  * Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
+* Intelligent Maintenance Conference (IMC) [2024](http://intelligent-maintenance.ch/) ; [2023](http://intelligent-maintenance.ch/archive/2023/index.html)
+* Workshop on Large-scale Industrial Time Series Analysis (LITSA) [2023](https://lipn.github.io/LITSA2023/) ; [2021](https://lipn.github.io/LITSA2021/) ; [2020](https://lipn.github.io/LITSA2020/)
+* Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
 
 I have been reviewing for following journals and conferences:
-* Neurocomputing ; MSSP (Mechanical Systems and Signal Processing) ; IEEE Sensors
+* Neurocomputing ; MSSP (Mechanical Systems and Signal Processing) ; EAAI (Engineering Applications of Artificial Intelligence) ; IEEE Sensors journal
 * CIKM (ACM International Conference on Information and Knowledge Management) ; IAI (Industrial AI) ; LITSA workshop
 
-I have also been supervising students: [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis) ; [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis); [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis) ; Hana Salvetova (semester project) ; [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (semester project) ; Mariam Hassan (Master thesis, co-supervision with Schindler) ; Antoine Laborde (Master thesis, co-supervision with Schindler).
+I have also been supervising students, in alphabetical order:
+* [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis)
+* [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis)
+* [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler)
+* Antoine Laborde (Master thesis, co-supervision with Schindler)
+* [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project)
+* Hana Salvetova (Bachelor semester project)
+* Kseniia Shevchenko (Master thesis)
+* [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis) -- Researcher, Department of Highways (Thailand) 
 
 <!-- # Selected publications -->
 
