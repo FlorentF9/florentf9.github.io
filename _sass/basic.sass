@@ -178,15 +178,32 @@ a.icon
     box-shadow: none
     color: reducealert(100)
 
-#bibbase a
-  font-weight: $font-weight + 100
-  color: $alert
+#bibbase
   font-size: 16px
+  font-weight: 300
+
+#bibbase a
+  font-size: 16px
+  font-weight: 400
+  color: $alert
   box-shadow: none
   transition: color .2s
   &.selected, &:hover
     box-shadow: none
     color: reducealert(100)
+
+.bibbase_group
+  color: $light
+  background-color: $blue
+
+.bibbase_paper_title
+  display: block
+  font-size: 18px
+
+.bibbase_paper_author
+  display: block
+  font-weight: 300
+  font-size: 16px
 
 img.bibbase_icon
   padding: 0
