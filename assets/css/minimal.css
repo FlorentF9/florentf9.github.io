@@ -82,9 +82,17 @@ a.icon { box-shadow: none; transition: color .2s; }
 
 a.icon.selected, a.icon:hover { box-shadow: none; color: #f5c08d; }
 
-#bibbase a { font-weight: 500; color: #EB811B; font-size: 16px; box-shadow: none; transition: color .2s; }
+#bibbase { font-size: 16px; font-weight: 300; }
+
+#bibbase a { font-size: 16px; font-weight: 400; color: #EB811B; box-shadow: none; transition: color .2s; }
 
 #bibbase a.selected, #bibbase a:hover { box-shadow: none; color: #f5c08d; }
+
+.bibbase_group { color: white; background-color: #174c80; }
+
+.bibbase_paper_title { display: block; font-size: 18px; }
+
+.bibbase_paper_author { display: block; font-weight: 300; font-size: 16px; }
 
 img.bibbase_icon { padding: 0; width: 24px; max-height: 20px; vertical-align: middle; filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: gray; }
 
