@@ -42,8 +42,8 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
-<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
 <li><a href="http://esrel2024.com/">ESREL (European Safety and Reliability Conference)</a>, June 23-27, Cracow, Poland <span class="flag-icon flag-icon-squared flag-icon-pl"></span> <i>[presenting an extended abstract]</i></li>
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
 </ul>
 
 # Recent events
