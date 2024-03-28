@@ -16,14 +16,15 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # News
 
 <ul>
+<li>(February 2024) Our extended abstract on data augmentation for road damage detection, a result of work done by Punnawat Siripatthiti during his Master thesis, is accepted for presentation at ESREL 2024.</li>
 <li>(May 2023) Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
-<li>(February 2023) Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during PhD, was accepted at the PAKDD 2023 conference.</li>
-<li>(September 2022) I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
+<li>(February 2023) Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
 </ul>
 
 <details>
 <summary>Old</summary>
 <ul>
+<li>(September 2022) I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
 <li>(December 2021) The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
 <li>(August 2021) We're very glad that the paper <i>Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering</i> has been <a href="https://link.springer.com/article/10.1007/s00521-021-06331-w">published</a> in Neural Computing and Applications!</li>
 <li>(April 2021) I have joined EPFL to develop the software and data analysis ecosystem around <a href="https://nagibio.ch">Nagi Bioscience</a>'s revolutionary "worm-on-chip" technology for faster and ethical biological testing.</li>
@@ -41,20 +42,21 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
-<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span><i>[organizer]</i></li>
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
+<li><a href="http://esrel2024.com/">ESREL (European Safety and Reliability Conference)</a>, June 23-27, Cracow, Poland <span class="flag-icon flag-icon-squared flag-icon-pl"></span> <i>[presenting an extended abstract]</i></li>
 </ul>
 
 # Recent events
 
 <ul>
-<li><a href="https://uic.org/">UIC</a> Workshop on AI for Predictive Maintenance, March 20, Bern, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span><i>[speaker]</i></li>
+<li><a href="https://uic.org/">UIC</a> Workshop on AI for Predictive Maintenance, March 20, Bern, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[speaker]</i></li>
 </ul>
 
 2023
 
 <ul>
 <li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 12-13, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer, speaker, session chair]</i></li>
-<li><a href="https://esrel2023.com/">ESREL (European Conference on Safety and Reliability)</a>, September 3-8, Southampton, United Kingdom <span class="flag-icon flag-icon-squared flag-icon-gb"></span> <i>[presenting 2 extended abstracts]</i></li>
+<li><a href="https://esrel2023.com/">ESREL (European Safety and Reliability Conference)</a>, September 3-8, Southampton, United Kingdom <span class="flag-icon flag-icon-squared flag-icon-gb"></span> <i>[presenting 2 extended abstracts]</i></li>
 <li><a href="https://pakdd2023.org/">PAKDD (Pacific-Asia Conference on Knowledge Discovery and Data Mining)</a>, May 25-28, Osaka, Japan <span class="flag-icon flag-icon-squared flag-icon-jp"></span> <i>[presenting a paper]</i></li>
 </ul>
 
@@ -115,8 +117,8 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 
 # Research activities
 
-My main areas of interest and application domains are:
-* Machine learning, supervised and unsupervised
+Main areas of interest and application domains:
+* Machine learning (supervised, unsupervised and weakly-supervised)
 * Domain adaptation
 * Explainable AI (XAI)
 * Industrial and engineering applications of AI
@@ -124,16 +126,16 @@ My main areas of interest and application domains are:
 * Building end-to-end, large-scale, data-driven applications
 * Experience in time series analysis, computer vision and natural language processing
 
-I am organizer in following events:
+Organizer:
 * Intelligent Maintenance Conference (IMC) [2024](http://intelligent-maintenance.ch/) ; [2023](http://intelligent-maintenance.ch/archive/2023/index.html)
 * Workshop on Large-scale Industrial Time Series Analysis (LITSA) [2023](https://lipn.github.io/LITSA2023/) ; [2021](https://lipn.github.io/LITSA2021/) ; [2020](https://lipn.github.io/LITSA2020/)
 * Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
 
-I have been reviewing for following journals and conferences:
-* Neurocomputing ; MSSP (Mechanical Systems and Signal Processing) ; EAAI (Engineering Applications of Artificial Intelligence) ; IEEE Sensors journal
-* CIKM (ACM International Conference on Information and Knowledge Management) ; IAI (Industrial AI) ; LITSA workshop
+Reviewer:
+* Journals: Engineering Applications of Artificial Intelligence, IEEE Sensors, Mechanical Systems and Signal Processing, Neurocomputing
+* Conferences: CIKM (ACM International Conference on Information and Knowledge Management), ESREL, IAI (Industrial AI), LITSA workshops
 
-I have also been supervising students, in alphabetical order:
+Supervised students (in alphabetical order):
 * [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis)
 * [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis)
 * [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler)
