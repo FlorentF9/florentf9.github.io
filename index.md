@@ -7,7 +7,7 @@ layout: page
 
 I am currently a scientist at [EPFL](https://www.epfl.ch/) <span class="flag-icon flag-icon-squared flag-icon-ch"></span> in the [Intelligent Maintenance and Operations Systems (IMOS)](https://www.epfl.ch/labs/imos/) lab. Previously, I was working as a data scientist & software engineer at [Nagi Bioscience](https://nagibio.ch/). I have obtained my PhD in Computer Science in 2021 at [LIPN](http://lipn.univ-paris13.fr), the CS lab of [Université Sorbonne Paris Nord (Paris 13)](https://www.univ-paris13.fr/) <span class="flag-icon flag-icon-squared flag-icon-fr"></span>. My PhD project was an industry collaboration with [Safran Aircraft Engines](https://www.safran-aircraft-engines.com/). Before, I graduated from [ISAE-Supaero](https://www.isae-supaero.fr/) engineering school in Toulouse <span class="flag-icon flag-icon-squared flag-icon-fr"></span>.
 
-My broad areas of interest are unsupervised and supervised machine learning, with a focus on robustness (domain adaptation) and interpretability (XAI). I also like building large-scale data-driven applications and developing advanced algorithms on complex industrial data sets. 
+My broad areas of interest are unsupervised and supervised machine learning, with a focus on robustness (domain adaptation), interpretability (XAI) and engineering applications. I also like building large-scale data-driven applications and developing advanced algorithms on complex industrial data sets.
 
 You can download my (probably outdated) [CV](/files/CV_FlorentForest_2022_EN.pdf).
 
@@ -15,40 +15,45 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 
 # News
 
-<ul>
-<li>(February 2024) Our extended abstract on data augmentation for road damage detection, a result of work done by Punnawat Siripatthiti during his Master thesis, is accepted for presentation at ESREL 2024.</li>
-<li>(May 2023) Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
-<li>(February 2023) Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
+⚠️ Open positions: I'm looking for a motivated Master thesis/project student to work on a challenging project on computer vision for railway infrastructure inspection (posting [here](https://sirop.org/app/0712ecf8-2675-4426-95fe-7b6cf24a9d11)). Find other open projects of our lab [here](https://www.epfl.ch/labs/imos/student-projects/).
+
+<ul class="events">
+<li style="list-style-type:'Jul 2024'">🎉 Our paper <i>A Simple Approach to Source-Free Object Detection</i> has been accepted at the ECCV 2024 conference!</li>
+<li style="list-style-type:'Jun 2024'">🎉 Our <a href="https://www.sciencedirect.com/science/article/pii/S0926580524002334">paper</a> <i>From classification to segmentation with explainable AI: A study on crack detection and growth monitoring</i> has been accepted for publication in Automation in Construction.</li>
+<li style="list-style-type:'Feb 2024'">🎉 Our extended abstract on data augmentation for road damage detection, a result of work done by Punnawat Siripatthiti during his Master thesis, is accepted for presentation at ESREL 2024.</li>
+<li style="list-style-type:'May 2023'">🎉 Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
+<li style="list-style-type:'Feb 2023'">🎉 Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
 </ul>
 
 <details>
 <summary>Old</summary>
-<ul>
-<li>(September 2022) I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
-<li>(December 2021) The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
-<li>(August 2021) We're very glad that the paper <i>Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering</i> has been <a href="https://link.springer.com/article/10.1007/s00521-021-06331-w">published</a> in Neural Computing and Applications!</li>
-<li>(April 2021) I have joined EPFL to develop the software and data analysis ecosystem around <a href="https://nagibio.ch">Nagi Bioscience</a>'s revolutionary "worm-on-chip" technology for faster and ethical biological testing.</li>
-<li>(March 2021) After successfully defending my PhD thesis, I'm now a doctor in Computer Science!</li>
-<li>(January 2021) I will defend my PhD thesis on March 22, 2021.</li>
-<li>(November 2020) The <a href="https://lipn.github.io/LITSA2020/">first LITSA workshop</a> at ICDM was a success! Thanks to all participants, organizers and committee members.</li>
-<li>(October 2020) Our paper applying the Stadion clustering criterion to transformation-invariant time series is accepted at ICPR 2020!</li>
-<li>(September 2020) <a href="https://www.phmpapers.org/index.php/phmconf/article/view/1131">Paper</a> on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!</li>
-<li>(September 2020) I am co-organizing the first workshop on Large-scale Industrial Time Series Analysis <a href="https://lipn.github.io/LITSA2020/">LITSA</a>, hosted by <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, with a top-notch committee!</li>
-<li>(August 2020) skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is <a href="https://github.com/FlorentF9/skstab">available on Github</a>.</li>
-<li>(June 2020) Our paper introducing a new principle for clustering stability analysis in <a href="https://arxiv.org/abs/2006.08530">available on arXiv</a>!</li>
+<ul class="events">
+<li style="list-style-type:'Sep 2022'">➡️ I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
+<li style="list-style-type:'Dec 2021'">📅 The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
+<li style="list-style-type:'Aug 2021'">🎉 We're very glad that the paper <i>Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering</i> has been <a href="https://link.springer.com/article/10.1007/s00521-021-06331-w">published</a> in Neural Computing and Applications!</li>
+<li style="list-style-type:'Apr 2021'">➡️ I have joined EPFL to develop the software and data analysis ecosystem around <a href="https://nagibio.ch">Nagi Bioscience</a>'s revolutionary "worm-on-chip" technology for faster and ethical biological testing.</li>
+<li style="list-style-type:'Mar 2021'">🎓 After successfully defending my PhD thesis, I'm now a doctor in Computer Science!</li>
+<li style="list-style-type:'Jan 2021'">📅 I will defend my PhD thesis on March 22, 2021.</li>
+<li style="list-style-type:'Nov 2020'">👏 The <a href="https://lipn.github.io/LITSA2020/">first LITSA workshop</a> at ICDM was a success! Thanks to all participants, organizers and committee members.</li>
+<li style="list-style-type:'Oct 2020'">🎉 Our paper applying the Stadion clustering criterion to transformation-invariant time series is accepted at ICPR 2020!</li>
+<li style="list-style-type:'Sep 2020'">🎉 Our <a href="https://www.phmpapers.org/index.php/phmconf/article/view/1131">paper</a> on large-scale vibration monitoring accepted at the annual conference of PHM Society 2020!</li>
+<li style="list-style-type:'Sep 2020'">📅 I am co-organizing the first workshop on Large-scale Industrial Time Series Analysis <a href="https://lipn.github.io/LITSA2020/">LITSA</a>, hosted by <a href="http://icdm2020.bigke.org/">IEEE ICDM 2020</a>, with a top-notch committee!</li>
+<li style="list-style-type:'Aug 2020'">💾 skstab, a Python module for clustering stability analysis with a scikit-learn compatible API, is <a href="https://github.com/FlorentF9/skstab">available on Github</a>.</li>
+<li style="list-style-type:'Jun 2020'">📰 Our paper introducing a new principle for clustering stability analysis in <a href="https://arxiv.org/abs/2006.08530">available on arXiv</a>!</li>
 </ul>
 </details>
 
 # Upcoming events
 
 <ul>
-<li><a href="http://esrel2024.com/">ESREL (European Safety and Reliability Conference)</a>, June 23-27, Cracow, Poland <span class="flag-icon flag-icon-squared flag-icon-pl"></span> <i>[presenting an extended abstract]</i></li>
 <li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
+<li><a href="https://eccv2024.ecva.net/">ECCV (European Conference on Computer Vision)</a>, September 29-October 4, Milano, Italy <span class="flag-icon flag-icon-squared flag-icon-it"></span> <i>[presenting a paper]</i></li>
 </ul>
 
 # Recent events
 
 <ul>
+<li><a href="http://esrel2024.com/">ESREL (European Safety and Reliability Conference)</a>, June 23-27, Cracow, Poland <span class="flag-icon flag-icon-squared flag-icon-pl"></span> <i>[presenting an extended abstract]</i></li>
 <li><a href="https://uic.org/">UIC</a> Workshop on AI for Predictive Maintenance, March 20, Bern, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[speaker]</i></li>
 </ul>
 
@@ -75,7 +80,7 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 <ul>
 <li><a href="https://lipn.github.io/LITSA2021/">2nd workshop on Large-scale Industrial Time Series Analysis (LITSA)</a> @ <a href="https://icdm2021.auckland.ac.nz/">IEEE ICDM 2021</a>, December 7, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[organizer]</i></li>
 <li>PhD thesis defense, March 22, Villetaneuse, France <span class="flag-icon flag-icon-squared flag-icon-fr"></span> and virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[see thesis <a href="/research">manuscript and slides</a>]</i></li>
-<li><a href="https://www.micc.unifi.it/icpr2020/">ICPR (International Conference on Pattern Recognition</a>, January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
+<li><a href="https://www.micc.unifi.it/icpr2020/">ICPR (International Conference on Pattern Recognition)</a>, January 10-15, virtual <span class="flag-icon flag-icon-squared flag-icon-globe"></span> <i>[presented a <a href="/publications">paper</a>]</i></li>
 </ul>
 </details>
 
@@ -136,14 +141,14 @@ Reviewer:
 * Conferences: CIKM (ACM International Conference on Information and Knowledge Management), ESREL, IAI (Industrial AI), LITSA workshops
 
 Supervised students (in alphabetical order):
-* [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis)
+* [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis) -- Research intern, McGill University (Canada)
 * [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis)
-* [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler)
+* [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler) -- PhD student, EPFL VITA lab (Switzerland)
 * Antoine Laborde (Master thesis, co-supervision with Schindler)
 * [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project)
 * Hana Salvetova (Bachelor semester project)
 * Kseniia Shevchenko (Master thesis)
-* [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis) -- Researcher, Department of Highways (Thailand) 
+* [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis) -- Researcher, Department of Highways (Thailand)
 
 <!-- # Selected publications -->
 
