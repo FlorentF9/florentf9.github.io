@@ -2,7 +2,7 @@
 	title = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}: {Effective} {Self}-{Training} {Strategies} and {Performance} {Insights}},
 	shorttitle = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}},
 	abstract = {This paper focuses on source-free domain adaptation for object detection in computer vision. This task is challenging and of great practical interest, due to the cost of obtaining annotated data sets for every new domain. Recent research has proposed various solutions for Source-Free Object Detection (SFOD), most being variations of teacher-student architectures with diverse feature alignment, regularization and pseudo-label selection strategies. Our work investigates simpler approaches and their performance compared to more complex SFOD methods in several adaptation scenarios. We highlight the importance of batch normalization layers in the detector backbone, and show that adapting only the batch statistics is a strong baseline for SFOD. We propose a simple extension of a Mean Teacher with strong-weak augmentation in the source-free setting, Source-Free Unbiased Teacher (SF-UT), and show that it actually outperforms most of the previous SFOD methods. Additionally, we showcase that an even simpler strategy consisting in training on a fixed set of pseudo-labels can achieve similar performance to the more complex teacher-student mutual learning, while being computationally efficient and mitigating the major issue of teacher-student collapse. We conduct experiments on several adaptation tasks using benchmark driving datasets including (Foggy)Cityscapes, Sim10k and KITTI, and achieve a notable improvement of 4.7% AP50 on Cityscapes->Foggy-Cityscapes compared with the latest state-of-the-art in SFOD. Source code is available at https://github.com/EPFL-IMOS/simple-SFOD.},
-	booktitle = {{ECCV} 2024},
+	booktitle = {{ECCV}},
 	author = {Hao, Yan and Forest, Florent and Fink, Olga},
 	month = sep,
 	year = {2024},
@@ -28,6 +28,21 @@
 	url_Link = {https://www.sciencedirect.com/science/article/pii/S0926580524002334},
 	url_Code = {https://github.com/EPFL-IMOS/crack-explanations},
 	bibbase_note = {<img src="assets/img/papers/crack-explain.png">}
+}
+
+@inproceedings{siripathitti2024cutandpaste,
+	title = {Cut-and-{Paste} with {Precision}: a {Content} and {Perspective}-aware {Data} {Augmentation} for {Road} {Damage} {Detection}},
+	shorttitle = {Cut-and-{Paste} with {Precision}},
+	doi = {10.48550/arXiv.2406.18586},
+	abstract = {Damage to road pavement can develop into cracks, potholes, spallings, and other issues posing significant challenges to the integrity, safety, and durability of the road structure. Detecting and monitoring the evolution of these damages is crucial for maintaining the condition and structural health of road infrastructure. In recent years, researchers have explored various data-driven methods for image-based damage detection in road monitoring applications. The field gained attention with the introduction of the Road Damage Detection Challenge (RDDC2018), encouraging competition in developing object detectors on street-view images from various countries. Leading teams have demonstrated the effectiveness of ensemble models, mostly based on the YOLO and Faster R-CNN series. Data augmentations have also shown benefits in object detection within the computer vision field, including transformations such as random flipping, cropping, cutting out patches, as well as cut-and-pasting object instances. Applying cut-and-paste augmentation to road damages appears to be a promising approach to increase data diversity. However, the standard cut-and-paste technique, which involves sampling an object instance from a random image and pasting it at a random location onto the target image, has demonstrated limited effectiveness for road damage detection. This method overlooks the location of the road and disregards the difference in perspective between the sampled damage and the target image, resulting in unrealistic augmented images. In this work, we propose an improved Cut-and-Paste augmentation technique that is both content-aware (i.e. considers the true location of the road in the image) and perspective-aware (i.e. takes into account the difference in perspective between the injected damage and the target image).},
+	urldate = {2024-07-11},
+	booktitle = {Proceedings of the 34th {European} {Safety} and {Reliability} {Conference} ({ESREL})},
+	author = {Siripathitti, Punnawat and Forest, Florent and Fink, Olga},
+	month = jun,
+	year = {2024},
+	url_Link = {http://arxiv.org/abs/2406.18586},
+	url_Paper = {http://arxiv.org/pdf/2406.18586.pdf},
+	bibbase_note = {<img src="assets/img/papers/cut-paste.png">}
 }
 
 @misc{forest2024interpretable,
@@ -114,7 +129,7 @@
 	doi = {10.3850/978-981-18-8071-1_P249-cd},
 	abstract = {Fault diagnosis of rolling bearings is a crucial task in Prognostics and Health Management, as rolling elements are ubiquitous in industrial assets. Data-driven approaches based on deep neural networks have made signiﬁcant progress in this area. However, they require collecting large representative labeled data sets. However, in industrial settings, assets are often operated in conditions different from the ones in which labeled data were collected, requiring a transfer between working conditions. In this work, we tackle the classiﬁcation of bearing fault types and severity levels in the setting of unsupervised domain adaptation (UDA), where labeled data are available in a source domain and only unlabeled data are available in a different but related target domain. We focus on UDA with self-training methods, based on pseudo-labeling of target samples. One major challenge in these methods is to avoid error accumulation due to low-quality pseudo-labels. To address this challenge, we propose incorporating post-hoc calibration, such as the well-known temperature scaling, into the self-training process to increase the quality of selected pseudo-labels. We implement our proposed calibration approach in two self-training algorithms, Calibrated Pseudo-Labeling and Calibrated Adaptive Teacher, and demonstrate their competitive results on the Paderborn University (PU) benchmark for fault diagnosis of rolling bearings under varying operating conditions.},
 	language = {en},
-	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference}},
+	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference} (ESREL)},
 	author = {Forest, Florent and Fink, Olga},
 	year = {2023},
 	pages = {3406--3407},
@@ -130,7 +145,7 @@
 	doi = {10.3850/978-981-18-8071-1_P290-cd},
 	abstract = {Monitoring the cracks in walls, roads and other types of infrastructure is essential to ensure the safety of a structure, and plays an important role in structural health monitoring. Automatic visual inspection allows an efﬁcient, costeffective and safe health monitoring, especially in hard-to-reach locations. To this aim, data-driven approaches based on machine learning have demonstrated their effectiveness, at the expense of annotating large sets of images for supervised training. Once a damage has been detected, one also needs to monitor the evolution of its severity, in order to trigger a timely maintenance operation and avoid any catastrophic consequence. This evaluation requires a precise segmentation of the damage. However, pixel-level annotation of images for segmentation is labor-intensive. On the other hand, labeling images for a classiﬁcation task is relatively cheap in comparison. To circumvent the cost of annotating images for segmentation, recent works inspired by explainable AI (XAI) have proposed to use the post-hoc explanations of a classiﬁer to obtain a segmentation of the input image. In this work, we study the application of XAI techniques to the detection and monitoring of cracks in masonry wall surfaces. We benchmark different post-hoc explainability methods in terms of segmentation quality and accuracy of the damage severity quantiﬁcation (for example, the width of a crack), thus enabling timely decision-making.},
 	language = {en},
-	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference}},
+	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference}  (ESREL)},
 	author = {Forest, Florent and Porta, Hugo and Tuia, Devis and Fink, Olga},
 	year = {2023},
 	pages = {1392--1393},
