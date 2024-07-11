@@ -1,3 +1,17 @@
+@inproceedings{hao2024simplifying,
+	title = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}: {Effective} {Self}-{Training} {Strategies} and {Performance} {Insights}},
+	shorttitle = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}},
+	abstract = {This paper focuses on source-free domain adaptation for object detection in computer vision. This task is challenging and of great practical interest, due to the cost of obtaining annotated data sets for every new domain. Recent research has proposed various solutions for Source-Free Object Detection (SFOD), most being variations of teacher-student architectures with diverse feature alignment, regularization and pseudo-label selection strategies. Our work investigates simpler approaches and their performance compared to more complex SFOD methods in several adaptation scenarios. We highlight the importance of batch normalization layers in the detector backbone, and show that adapting only the batch statistics is a strong baseline for SFOD. We propose a simple extension of a Mean Teacher with strong-weak augmentation in the source-free setting, Source-Free Unbiased Teacher (SF-UT), and show that it actually outperforms most of the previous SFOD methods. Additionally, we showcase that an even simpler strategy consisting in training on a fixed set of pseudo-labels can achieve similar performance to the more complex teacher-student mutual learning, while being computationally efficient and mitigating the major issue of teacher-student collapse. We conduct experiments on several adaptation tasks using benchmark driving datasets including (Foggy)Cityscapes, Sim10k and KITTI, and achieve a notable improvement of 4.7% AP50 on Cityscapes->Foggy-Cityscapes compared with the latest state-of-the-art in SFOD. Source code is available at https://github.com/EPFL-IMOS/simple-SFOD.},
+	booktitle = {{ECCV} 2024},
+	author = {Hao, Yan and Forest, Florent and Fink, Olga},
+	month = sep,
+	year = {2024},
+	url_Link = {http://arxiv.org/abs/2407.07586},
+	url_Paper = {http://arxiv.org/pdf/2407.07586.pdf},
+	url_Code = {https://github.com/EPFL-IMOS/simple-SFOD},
+	bibbase_note = {<img src="assets/img/papers/sfod.png">}
+}
+
 @article{forest2024classification,
 	title = {From classification to segmentation with explainable {AI}: {A} study on crack detection and growth monitoring},
 	volume = {165},
@@ -12,6 +26,7 @@
 	keywords = {Attribution maps, Crack detection, Crack segmentation, Deep learning, Explainable AI, Growth monitoring, Severity quantification},
 	pages = {105497},
 	url_Link = {https://www.sciencedirect.com/science/article/pii/S0926580524002334},
+	url_Code = {https://github.com/EPFL-IMOS/crack-explanations},
 	bibbase_note = {<img src="assets/img/papers/crack-explain.png">}
 }
 
@@ -58,6 +73,7 @@
 	note = {arXiv:2403.12154 [cs]},
 	url_Link = {http://arxiv.org/abs/2403.12154},
 	url_Paper = {http://arxiv.org/pdf/2403.12154.pdf},
+	url_Code = {https://github.com/SchindlerEPFL/thermo-nerf},
 	bibbase_note = {<img src="assets/img/papers/thermonerf.png">}
 }
 
@@ -153,6 +169,7 @@
     keywords = {validity index,clustering,model selection,stability analysis},
     url_Link = {http://arxiv.org/abs/2006.08530},
     url_Paper = {http://arxiv.org/pdf/2006.08530.pdf},
+	url_Code = {https://github.com/FlorentF9/skstab},
     bibbase_note = {<img src="assets/img/papers/stadion.png">}
 }
 
@@ -167,6 +184,7 @@ title = {{Deep Embedded Self-Organizing Map for Joint Representation Learning an
 year = {2021},
 url_Link = {https://link.springer.com/article/10.1007/s00521-021-06331-w},
 url_Paper = {https://www.researchgate.net/journal/Neural-Computing-and-Applications-1433-3058/publication/353679111_Deep_embedded_self-organizing_maps_for_joint_representation_learning_and_topology-preserving_clustering/links/610a2059169a1a0103daf991/Deep-embedded-self-organizing-maps-for-joint-representation-learning-and-topology-preserving-clustering.pdf},
+url_Code = {https://github.com/FlorentF9/DESOM},
 bibbase_note = {<img src="assets/img/papers/desom.png">}
 }
 
@@ -221,6 +239,7 @@ year = {2020},
 month = nov,
 url_Link = {https://arxiv.org/abs/2011.05847},
 url_Paper = {https://arxiv.org/pdf/2011.05847.pdf},
+url_Code = {https://github.com/FlorentF9/SOMperf},
 bibbase_note = {<img src="assets/img/papers/somperf.png">}
 }
 
@@ -245,6 +264,7 @@ title = {{Deep Architectures for Joint Clustering and Visualization with Self-Or
 year = {2019},
 url_Link = {https://link.springer.com/chapter/10.1007/978-3-030-26142-9_10},
 url_Paper = {LDRC-2019-DeepArchitecturesJointClusteringVisualization-full-paper.pdf},
+url_Code = {https://github.com/FlorentF9/DESOM},
 bibbase_note = {<img src="assets/img/papers/convdesom.png">}
 }
 
@@ -292,5 +312,6 @@ volume = {593},
 year = {2016},
 url_Link = {https://www.aanda.org/articles/aa/abs/2016/09/aa28822-16/aa28822-16.html},
 url_Paper = {https://www.aanda.org/articles/aa/pdf/2016/09/aa28822-16.pdf},
+url_Code = {http://cta.irap.omp.eu/gammalib/},
 bibbase_note = {<img src="assets/img/papers/gammalib.png">}
 }
