@@ -42,6 +42,12 @@ layout: page
     <img class="repo-card" alt="SchindlerEPFL/thermo-nerf" src="https://github-readme-stats.vercel.app/api/pin/?username=SchindlerEPFL&amp;repo=thermo-nerf&amp;theme=default_repocard&amp;show_owner=false&amp">
 </a>
 
+### Multivariate Time Series Generation
+
+<a class="repo-link" href="https://github.com/MadaneA/MTS-CGAN" target="_blank" rel="noopener noreferrer">
+    <img class="repo-card" alt="MadaneA/MTS-CGAN" src="https://github-readme-stats.vercel.app/api/pin/?username=MadaneA&amp;repo=MTS-CGAN&amp;theme=default_repocard&amp;show_owner=false&amp">
+</a>
+
 ### Other
 
 <a class="repo-link" href="https://github.com/FlorentF9/SatelliteSimulator" target="_blank" rel="noopener noreferrer">
