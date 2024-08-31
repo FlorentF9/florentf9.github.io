@@ -15,14 +15,16 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 
 # News
 
-⚠️ Open positions: I'm looking for a motivated Master thesis/project student to work on a challenging project on computer vision for railway infrastructure inspection (posting [here](https://sirop.org/app/0712ecf8-2675-4426-95fe-7b6cf24a9d11)). Find other open projects of our lab [here](https://www.epfl.ch/labs/imos/student-projects/).
+<!-- ⚠️ Open positions: I'm looking for a motivated Master thesis/project student to work on a challenging project on computer vision for railway infrastructure inspection (posting [here](https://sirop.org/app/0712ecf8-2675-4426-95fe-7b6cf24a9d11)). Find other open projects of our lab [here](https://www.epfl.ch/labs/imos/student-projects/). -->
 
 <ul class="events">
-<li style="list-style-type:'Jul 2024'">🎉 Our paper <i>A Simple Approach to Source-Free Object Detection</i> has been accepted at the ECCV 2024 conference!</li>
+<li style="list-style-type:'Sep 2024'">🔥 Brace yourselves for the 8th <a href="https://intelligent-maintenance.ch/">IMC conference</a> and 1st IMC-HOW? Workshops taking place next week on Sept. 2-4!</li>
+<li style="list-style-type:'Aug 2024'">🎉 Two papers accepted at ECCV 2024 workshops <a href = "https://uncertainty-cv.github.io/2024/">Uncertainty Quantification for Computer Vision (UnCV)</a> and <a href="https://neural-fields-beyond-cams.github.io/">Neural Fields Beyond Conventional Cameras</a></li>
+<li style="list-style-type:'Jul 2024'">🎉 Our <a href="http://arxiv.org/abs/2407.07586">paper</a> <i>Simplifying Source-Free Domain Adaptation for Object Detection: Effective Self-Training Strategies and Performance Insights</i> has been accepted at the ECCV 2024 conference!</li>
 <li style="list-style-type:'Jun 2024'">🎉 Our <a href="https://www.sciencedirect.com/science/article/pii/S0926580524002334">paper</a> <i>From classification to segmentation with explainable AI: A study on crack detection and growth monitoring</i> has been accepted for publication in Automation in Construction.</li>
 <li style="list-style-type:'Feb 2024'">🎉 Our extended abstract on data augmentation for road damage detection, a result of work done by Punnawat Siripatthiti during his Master thesis, is accepted for presentation at ESREL 2024.</li>
 <li style="list-style-type:'May 2023'">🎉 Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
-<li style="list-style-type:'Feb 2023'">🎉 Our work <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
+<li style="list-style-type:'Feb 2023'">🎉 Our <a href="http://arxiv.org/abs/2006.08530">work</a> <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
 </ul>
 
 <details>
@@ -46,7 +48,7 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
-<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 3-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
+<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 2-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
 <li><a href="https://eccv2024.ecva.net/">ECCV (European Conference on Computer Vision)</a>, September 29-October 4, Milano, Italy <span class="flag-icon flag-icon-squared flag-icon-it"></span> <i>[presenting a paper]</i></li>
 </ul>
 
@@ -137,17 +139,18 @@ Organizer:
 * Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
 
 Reviewer:
-* Journals: Engineering Applications of Artificial Intelligence, IEEE Sensors, Mechanical Systems and Signal Processing, Neurocomputing
-* Conferences: CIKM (ACM International Conference on Information and Knowledge Management), ESREL, IAI (Industrial AI), LITSA workshops
+* Journals: Annals of Data Science, Annual Reviews in Control, Engineering Applications of Artificial Intelligence, IEEE Sensors, MDPI Mathematics, Mechanical Systems and Signal Processing, Neurocomputing, Neural Computing and Applications
+* Conferences: CIKM (ACM Int. Conf. on Information and Knowledge Management), ECAI, ESREL, IAI (Industrial AI), LITSA workshops, PHM-Europe
 
 Supervised students (in alphabetical order):
 * [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis) -- Research intern, McGill University (Canada)
 * [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis)
 * [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler) -- PhD student, EPFL VITA lab (Switzerland)
-* Antoine Laborde (Master thesis, co-supervision with Schindler)
-* [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project)
+* [Antoine Laborde](https://www.linkedin.com/in/antoine-laborde-ml/) (Master thesis, co-supervision with Schindler) -- AI engineer, inspire AG (Switzerland)
+* Uddhava Yann Monney (Master thesis)
+* [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project) -- Civil engineer, Pini group (Switzerland)
 * Hana Salvetova (Bachelor semester project)
-* Kseniia Shevchenko (Master thesis)
+* [Kseniia Shevchenko](https://www.linkedin.com/in/kseniia-shevchenko-5751341b6/) (Master thesis)
 * [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis) -- Researcher, Department of Highways (Thailand)
 
 <!-- # Selected publications -->
