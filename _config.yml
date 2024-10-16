@@ -19,6 +19,7 @@ navigation:                  # site navigation in the header
   - publications.md
   - projects.md
   - teaching.md
+  - press.md
   - contact.md
 
 icons:                      # icons in the header, see http://fontawesome.com/icons

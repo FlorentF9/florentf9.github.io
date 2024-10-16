@@ -131,28 +131,28 @@ nav #menu #selected
   font-size: 1.2em
   vertical-align: 15%
 
-header h1 
+header h1
   margin-top: 0.4em
   margin-bottom: 0.1em
 
-article header 
+article header
   text-align: center
   margin-bottom: 1.6em
 
-article footer 
+article footer
   padding: 1em 0
 
-article h1, h2, h3 
+article h1, h2, h3
   margin-bottom: 0
 
-article h1 
+article h1
   font-size: calc(0.5vw + 1em)
   border-bottom: 1px lightgray solid
 
-article h2 
+article h2
   font-size: calc(.75vw + .75em)
 
-#post #maintitle 
+#post #maintitle
   font-size: calc(1.1vw + 1.1em)
   border-bottom: 1px lightgray solid
 
@@ -218,7 +218,7 @@ img.bibbase_icon
   filter: grayscale(100%) /* Current draft standard */
   -webkit-filter: grayscale(100%) /* New WebKit */
   -moz-filter: grayscale(100%)
-  -ms-filter: grayscale(100%) 
+  -ms-filter: grayscale(100%)
   -o-filter: grayscale(100%)
   filter: gray /* IE6+ */
 
@@ -238,5 +238,14 @@ ul.events li
   padding-left: 1em
 
 ul.events li::marker
-  font-family: monospace, monospace;
+  font-family: monospace, monospace
   font-size: medium
+
+.ellipsis
+  font-weight: normal
+  font-size: 16px
+  overflow: hidden
+  text-overflow: ellipsis
+  -moz-binding: url('ellipsis-xbl.xml#ellipsis')
+  white-space: nowrap
+  max-width: 80%

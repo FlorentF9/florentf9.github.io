@@ -9,7 +9,7 @@ I am currently a scientist at [EPFL](https://www.epfl.ch/) <span class="flag-ico
 
 My broad areas of interest are unsupervised and supervised machine learning, with a focus on robustness (domain adaptation), interpretability (XAI) and engineering applications. I also like building large-scale data-driven applications and developing advanced algorithms on complex industrial data sets.
 
-You can download my (probably outdated) [CV](/files/CV_FlorentForest_2022_EN.pdf).
+You can download my (maybe outdated) [CV](/files/CV_FlorentForest_2024.pdf).
 
 Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions and potential collaborations.
 
@@ -48,13 +48,12 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
-<li><a href="http://intelligent-maintenance.ch/">Intelligent Maintenance Conference</a>, September 2-4, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[organizer]</i></li>
-<li><a href="https://eccv2024.ecva.net/">ECCV (European Conference on Computer Vision)</a>, September 29-October 4, Milano, Italy <span class="flag-icon flag-icon-squared flag-icon-it"></span> <i>[presenting a paper]</i></li>
 </ul>
 
 # Recent events
 
 <ul>
+<li><a href="https://eccv2024.ecva.net/">ECCV (European Conference on Computer Vision)</a>, September 29-October 4, Milano, Italy <span class="flag-icon flag-icon-squared flag-icon-it"></span> <i>[presenting 1 main conf and 2 workshop papers]</i></li>
 <li><a href="http://esrel2024.com/">ESREL (European Safety and Reliability Conference)</a>, June 23-27, Cracow, Poland <span class="flag-icon flag-icon-squared flag-icon-pl"></span> <i>[presenting an extended abstract]</i></li>
 <li><a href="https://uic.org/">UIC</a> Workshop on AI for Predictive Maintenance, March 20, Bern, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span> <i>[speaker]</i></li>
 </ul>
@@ -139,19 +138,22 @@ Organizer:
 * Atelier Mécanismes d'Attention et Apprentissage Automatique (M3A) [2023](https://m3a2023.sciencesconf.org/)
 
 Reviewer:
-* Journals: Annals of Data Science, Annual Reviews in Control, Engineering Applications of Artificial Intelligence, IEEE Sensors, MDPI Mathematics, Mechanical Systems and Signal Processing, Neurocomputing, Neural Computing and Applications
+* Journals: Annals of Data Science, Annual Reviews in Control, Engineering Applications of Artificial Intelligence, IEEE Sensors, MDPI Mathematics, Machine Learning, Mechanical Systems and Signal Processing, Neurocomputing, Neural Computing and Applications
 * Conferences: CIKM (ACM Int. Conf. on Information and Knowledge Management), ECAI, ESREL, IAI (Industrial AI), LITSA workshops, PHM-Europe
 
 Supervised students (in alphabetical order):
-* [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis) -- Research intern, McGill University (Canada)
-* [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis)
-* [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis, co-supervision with Schindler) -- PhD student, EPFL VITA lab (Switzerland)
-* [Antoine Laborde](https://www.linkedin.com/in/antoine-laborde-ml/) (Master thesis, co-supervision with Schindler) -- AI engineer, inspire AG (Switzerland)
-* Uddhava Yann Monney (Master thesis)
-* [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project) -- Civil engineer, Pini group (Switzerland)
-* Hana Salvetova (Bachelor semester project)
-* [Kseniia Shevchenko](https://www.linkedin.com/in/kseniia-shevchenko-5751341b6/) (Master thesis)
-* [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis) -- Researcher, Department of Highways (Thailand)
+* Loïc d'Alcantara (Master thesis 2024/2025, with IMDM SA)
+* [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis 2023/2024, with IMDM SA) -- Research intern, McGill University (Canada)
+* Étienne Chassaing (Master thesis 2024, co-supervision with Schindler)
+* Giada Ehrlich (Master semester project 2024/2025)
+* [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis 2022/2023)
+* [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis 2023/2024, co-supervision with Schindler) -- PhD student, EPFL VITA lab (Switzerland)
+* [Antoine Laborde](https://www.linkedin.com/in/antoine-laborde-ml/) (Master thesis 2023/2024, co-supervision with Schindler) -- AI engineer, inspire AG (Switzerland)
+* Uddhava Yann Monney (Master thesis 2024)
+* [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project 2023/2024) -- Civil engineer, Pini group (Switzerland)
+* Hana Salvetova (Bachelor semester project 2023/2024)
+* [Kseniia Shevchenko](https://www.linkedin.com/in/kseniia-shevchenko-5751341b6/) (Master thesis 2024)
+* [Punnawat Siripatthiti](https://www.linkedin.com/in/punnawat-siripatthiti-864762175/) (Master thesis 2023) -- Researcher, Department of Highways (Thailand)
 
 <!-- # Selected publications -->
 
