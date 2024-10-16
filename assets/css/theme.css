@@ -106,6 +106,8 @@ ul.events li { padding-left: 1em; }
 
 ul.events li::marker { font-family: monospace, monospace; font-size: medium; }
 
+.ellipsis { font-weight: normal; font-size: 16px; overflow: hidden; text-overflow: ellipsis; -moz-binding: url("ellipsis-xbl.xml#ellipsis"); white-space: nowrap; max-width: 80%; }
+
 .c { color: #a29f90; }
 
 .err { color: #960050; background-color: #1e0010; }
