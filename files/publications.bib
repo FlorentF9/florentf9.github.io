@@ -1,15 +1,45 @@
+@article{bouhadra_knowledge-based_2024,
+	title = {Knowledge-based and {Expert} {Systems} in {Prognostics} and {Health} {Management}: a {Survey}},
+	shorttitle = {Knowledge-based and {Expert} {Systems} in {Prognostics} and {Health} {Management}},
+	author = {Bouhadra, Kalil and Forest, Florent},
+	doi = {10.36001/ijphm.2024.v15i2.3986},
+	abstract = {Prognostics and Health Management (PHM) has become increasingly popular in recent years, and data-driven methods and artificial intelligence have emerged as dominant tools within the PHM field. This trend is mainly due to the increasing use of sensors and the ability of machine learning techniques to leverage condition monitoring data. However, despite their utility and effectiveness, these techniques are not without drawbacks. One major issue is that data-driven methods often lack transparency in their reasoning, which is crucial for understanding fault occurrences and diagnostics. Additionally, the availability of data can be a challenge. In some cases, data are scarce or hard to obtain, either due to the cost of installing necessary sensors or the rarity of the required information. Lastly, the insights derived from data can sometimes diverge from those obtained through expert analysis and established norms. This contrasts with knowledge-based approaches such as expert systems, which formally organize the knowledge acquired from norms and experts, and then deduce the desired conclusion. While research is increasingly exploring data-driven techniques, industry tends to still frequently employ knowledge-based methods. To fill this gap, this paper offers a detailed survey of knowledge-based and expert systems in PHM, examining methodologies such as propositional logic, fuzzy logic, Dempster-Shafer theory and Bayesian networks. It assesses the integration and impact of these techniques in PHM for fault detection, diagnosis and prognosis, highlighting their strengths, limitations, and potential future developments. The study provides a thorough evaluation of current developments and contributes significant insights into the current capabilities and future directions of knowledge-based techniques in enhancing decision-making processes in PHM.},
+	journal = {International Journal of Prognostics and Health Management},
+	issn = {2153-2648},
+	month = oct,
+	year = {2024},
+	volume = {15},
+	number = {2},
+	url_Link = {http://papers.phmsociety.org/index.php/ijphm/article/view/3986},
+	url_Paper = {http://papers.phmsociety.org/index.php/ijphm/article/download/3986/2543},
+	bibbase_note = {<img src="assets/img/papers/es-phm.png">}
+}
+
 @inproceedings{hao2024simplifying,
 	title = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}: {Effective} {Self}-{Training} {Strategies} and {Performance} {Insights}},
 	shorttitle = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}},
 	abstract = {This paper focuses on source-free domain adaptation for object detection in computer vision. This task is challenging and of great practical interest, due to the cost of obtaining annotated data sets for every new domain. Recent research has proposed various solutions for Source-Free Object Detection (SFOD), most being variations of teacher-student architectures with diverse feature alignment, regularization and pseudo-label selection strategies. Our work investigates simpler approaches and their performance compared to more complex SFOD methods in several adaptation scenarios. We highlight the importance of batch normalization layers in the detector backbone, and show that adapting only the batch statistics is a strong baseline for SFOD. We propose a simple extension of a Mean Teacher with strong-weak augmentation in the source-free setting, Source-Free Unbiased Teacher (SF-UT), and show that it actually outperforms most of the previous SFOD methods. Additionally, we showcase that an even simpler strategy consisting in training on a fixed set of pseudo-labels can achieve similar performance to the more complex teacher-student mutual learning, while being computationally efficient and mitigating the major issue of teacher-student collapse. We conduct experiments on several adaptation tasks using benchmark driving datasets including (Foggy)Cityscapes, Sim10k and KITTI, and achieve a notable improvement of 4.7% AP50 on Cityscapes->Foggy-Cityscapes compared with the latest state-of-the-art in SFOD. Source code is available at https://github.com/EPFL-IMOS/simple-SFOD.},
-	booktitle = {{ECCV}},
+	booktitle = {{Computer Vision – ECCV 2024}},
 	author = {Hao, Yan and Forest, Florent and Fink, Olga},
-	month = sep,
+	month = oct,
 	year = {2024},
-	url_Link = {http://arxiv.org/abs/2407.07586},
+	doi = {10.1007/978-3-031-72949-2_12},
+	url_Link = {https://link.springer.com/chapter/10.1007/978-3-031-72949-2_12},
 	url_Paper = {http://arxiv.org/pdf/2407.07586.pdf},
 	url_Code = {https://github.com/EPFL-IMOS/simple-SFOD},
 	bibbase_note = {<img src="assets/img/papers/sfod.png">}
+}
+
+@misc{xu_exploiting_2024,
+	title = {Exploiting {Semantic} {Scene} {Reconstruction} for {Estimating} {Building} {Envelope} {Characteristics}},
+	abstract = {Achieving the EU's climate neutrality goal requires retrofitting existing buildings to reduce energy use and emissions. A critical step in this process is the precise assessment of geometric building envelope characteristics to inform retrofitting decisions. Previous methods for estimating building characteristics, such as window-to-wall ratio, building footprint area, and the location of architectural elements, have primarily relied on applying deep-learning-based detection or segmentation techniques on 2D images. However, these approaches tend to focus on planar facade properties, limiting their accuracy and comprehensiveness when analyzing complete building envelopes in 3D. While neural scene representations have shown exceptional performance in indoor scene reconstruction, they remain under-explored for external building envelope analysis. This work addresses this gap by leveraging cutting-edge neural surface reconstruction techniques based on signed distance function (SDF) representations for 3D building analysis. We propose BuildNet3D, a novel framework to estimate geometric building characteristics from 2D image inputs. By integrating SDF-based representation with semantic modality, BuildNet3D recovers fine-grained 3D geometry and semantics of building envelopes, which are then used to automatically extract building characteristics. Our framework is evaluated on a range of complex building structures, demonstrating high accuracy and generalizability in estimating window-to-wall ratio and building footprint. The results underscore the effectiveness of BuildNet3D for practical applications in building analysis and retrofitting.},
+	author = {Xu, Chenghao and Mielle, Malcolm and Laborde, Antoine and Waseem, Ali and Forest, Florent and Fink, Olga},
+	month = oct,
+	year = {2024},
+	note = {arXiv:2410.22383},
+	url_Link = {http://arxiv.org/abs/2410.22383},
+	url_Paper = {http://arxiv.org/pdf/2410.22383.pdf},
+	bibbase_note = {<img src="assets/img/papers/buildnet3d.png">}
 }
 
 @article{forest2024classification,
@@ -30,12 +60,39 @@
 	bibbase_note = {<img src="assets/img/papers/crack-explain.png">}
 }
 
+@inproceedings{madane_aesim_2024,
+	title = {{AESim}: {A} {Data}-{Driven} {Aircraft} {Engine} {Simulator}},
+	shorttitle = {{AESim}},
+	url = {https://www.ijcai.org/proceedings/2024/1021.pdf},
+	booktitle = {Thirty-{Third} {International} {Joint} {Conference} on {Artificial} {Intelligence} \{{IJCAI}-24\}},
+	author = {Madane, Abdellah and Forest, Florent and Azzag, Hanane and Lebbah, Mustapha and Lacaille, Jérôme},
+	month = aug,
+	year = {2024},
+	pages = {8737--8740},
+	url_Link = {https://www.ijcai.org/proceedings/2024/1021},
+	url_Paper = {https://www.ijcai.org/proceedings/2024/1021.pdf},
+	bibbase_note = {<img src="assets/img/papers/aesim.png">}
+}
+
+@inproceedings{madane_one-pass_2024,
+	title = {One-{Pass} {Generation} of {Multivariate} {Time} {Series} through {Conditional} {Multivariate} {Modeling}},
+	url = {https://ieeexplore.ieee.org/abstract/document/10651016},
+	doi = {10.1109/IJCNN60899.2024.10651016},
+	abstract = {In recent years, exploring deep generative models for generating time series has garnered significant interest within the research community. These models have found wide-ranging applications in areas such as data augmentation, scenario simulation, and the imputation of missing data. The authenticity of the generated time series has seen remarkable advancements with the integration of recurrent neural networks (RNNs) and generative adversarial networks (GANs). RNNs used to represent the state-of-the-art (SOA) in processing sequence dependencies until the advent of Transformers, which redefined the SOA, especially in Natural Language Processing and Computer Vision. The introduction of a transformer-based GAN represented an innovative step forward, aiming to address the limitations inherent in RNNs. However, this model’s efficacy is constrained when faced with unimodal data distribution assumptions, leading to arbitrary outputs in complex distribution scenarios. This paper introduces a novel Multivariate Time Series Conditional GAN (MTS-CGAN), that leverages transformer-based architectures in generator and discriminator networks. MTS-CGAN conditions the generation process on a specific encoded context (categorical and MTS inputs), enabling one-pass generation of multivariate time series, and accommodating mixed distribution frameworks, outperforming existing models. We evaluate MTS-CGAN using quantitative metrics across multiple multivariate time series datasets. Furthermore, we propose also an innovative adaptation of the Frechet Inception Distance (FID), tailored for time series, to assess the quality of the generated data. This research demonstrates the potential of MTS-CGAN in generating high-fidelity multivariate time series.},
+	booktitle = {2024 {International} {Joint} {Conference} on {Neural} {Networks} ({IJCNN})},
+	author = {Madane, Abdellah and Forest, Florent and Azzag, Hanane and Lebbah, Mustapha and Lacaille, Jerôme},
+	month = jun,
+	year = {2024},
+	pages = {1--9},
+	url_Link = {https://ieeexplore.ieee.org/abstract/document/10651016},
+	bibbase_note = {<img src="assets/img/papers/mtscgan.png">}
+}
+
 @inproceedings{siripathitti2024cutandpaste,
 	title = {Cut-and-{Paste} with {Precision}: a {Content} and {Perspective}-aware {Data} {Augmentation} for {Road} {Damage} {Detection}},
 	shorttitle = {Cut-and-{Paste} with {Precision}},
 	doi = {10.48550/arXiv.2406.18586},
 	abstract = {Damage to road pavement can develop into cracks, potholes, spallings, and other issues posing significant challenges to the integrity, safety, and durability of the road structure. Detecting and monitoring the evolution of these damages is crucial for maintaining the condition and structural health of road infrastructure. In recent years, researchers have explored various data-driven methods for image-based damage detection in road monitoring applications. The field gained attention with the introduction of the Road Damage Detection Challenge (RDDC2018), encouraging competition in developing object detectors on street-view images from various countries. Leading teams have demonstrated the effectiveness of ensemble models, mostly based on the YOLO and Faster R-CNN series. Data augmentations have also shown benefits in object detection within the computer vision field, including transformations such as random flipping, cropping, cutting out patches, as well as cut-and-pasting object instances. Applying cut-and-paste augmentation to road damages appears to be a promising approach to increase data diversity. However, the standard cut-and-paste technique, which involves sampling an object instance from a random image and pasting it at a random location onto the target image, has demonstrated limited effectiveness for road damage detection. This method overlooks the location of the road and disregards the difference in perspective between the sampled damage and the target image, resulting in unrealistic augmented images. In this work, we propose an improved Cut-and-Paste augmentation technique that is both content-aware (i.e. considers the true location of the road in the image) and perspective-aware (i.e. takes into account the difference in perspective between the injected damage and the target image).},
-	urldate = {2024-07-11},
 	booktitle = {Proceedings of the 34th {European} {Safety} and {Reliability} {Conference} ({ESREL})},
 	author = {Siripathitti, Punnawat and Forest, Florent and Fink, Olga},
 	month = jun,
@@ -112,7 +169,6 @@
 	copyright = {All rights reserved},
 	doi = {10.48550/arXiv.2312.02826},
 	abstract = {Intelligent Fault Diagnosis (IFD) based on deep learning has proven to be an effective and flexible solution, attracting extensive research. Deep neural networks can learn rich representations from vast amounts of representative labeled data for various applications. In IFD, they achieve high classification performance from signals in an end-to-end manner, without requiring extensive domain knowledge. However, deep learning models usually only perform well on the data distribution they have been trained on. When applied to a different distribution, they may experience performance drops. This is also observed in IFD, where assets are often operated in working conditions different from those in which labeled data have been collected. Unsupervised domain adaptation (UDA) deals with the scenario where labeled data are available in a source domain, and only unlabeled data are available in a target domain, where domains may correspond to operating conditions. Recent methods rely on training with confident pseudo-labels for target samples. However, the confidence-based selection of pseudo-labels is hindered by poorly calibrated confidence estimates in the target domain, primarily due to over-confident predictions, which limits the quality of pseudo-labels and leads to error accumulation. In this paper, we propose a novel UDA method called Calibrated Adaptive Teacher (CAT), where we propose to calibrate the predictions of the teacher network throughout the self-training process, leveraging post-hoc calibration techniques. We evaluate CAT on domain-adaptive IFD and perform extensive experiments on the Paderborn benchmark for bearing fault diagnosis under varying operating conditions. Our proposed method achieves state-of-the-art performance on most transfer tasks.},
-	publisher = {arXiv},
 	author = {Forest, Florent and Fink, Olga},
 	month = dec,
 	year = {2023},
@@ -128,7 +184,6 @@
 	isbn = {978-981-18807-1-1},
 	doi = {10.3850/978-981-18-8071-1_P249-cd},
 	abstract = {Fault diagnosis of rolling bearings is a crucial task in Prognostics and Health Management, as rolling elements are ubiquitous in industrial assets. Data-driven approaches based on deep neural networks have made signiﬁcant progress in this area. However, they require collecting large representative labeled data sets. However, in industrial settings, assets are often operated in conditions different from the ones in which labeled data were collected, requiring a transfer between working conditions. In this work, we tackle the classiﬁcation of bearing fault types and severity levels in the setting of unsupervised domain adaptation (UDA), where labeled data are available in a source domain and only unlabeled data are available in a different but related target domain. We focus on UDA with self-training methods, based on pseudo-labeling of target samples. One major challenge in these methods is to avoid error accumulation due to low-quality pseudo-labels. To address this challenge, we propose incorporating post-hoc calibration, such as the well-known temperature scaling, into the self-training process to increase the quality of selected pseudo-labels. We implement our proposed calibration approach in two self-training algorithms, Calibrated Pseudo-Labeling and Calibrated Adaptive Teacher, and demonstrate their competitive results on the Paderborn University (PU) benchmark for fault diagnosis of rolling bearings under varying operating conditions.},
-	language = {en},
 	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference} (ESREL)},
 	author = {Forest, Florent and Fink, Olga},
 	year = {2023},
@@ -144,7 +199,6 @@
 	shorttitle = {Segmenting {Without} {Annotating}},
 	doi = {10.3850/978-981-18-8071-1_P290-cd},
 	abstract = {Monitoring the cracks in walls, roads and other types of infrastructure is essential to ensure the safety of a structure, and plays an important role in structural health monitoring. Automatic visual inspection allows an efﬁcient, costeffective and safe health monitoring, especially in hard-to-reach locations. To this aim, data-driven approaches based on machine learning have demonstrated their effectiveness, at the expense of annotating large sets of images for supervised training. Once a damage has been detected, one also needs to monitor the evolution of its severity, in order to trigger a timely maintenance operation and avoid any catastrophic consequence. This evaluation requires a precise segmentation of the damage. However, pixel-level annotation of images for segmentation is labor-intensive. On the other hand, labeling images for a classiﬁcation task is relatively cheap in comparison. To circumvent the cost of annotating images for segmentation, recent works inspired by explainable AI (XAI) have proposed to use the post-hoc explanations of a classiﬁer to obtain a segmentation of the input image. In this work, we study the application of XAI techniques to the detection and monitoring of cracks in masonry wall surfaces. We benchmark different post-hoc explainability methods in terms of segmentation quality and accuracy of the damage severity quantiﬁcation (for example, the width of a crack), thus enabling timely decision-making.},
-	language = {en},
 	booktitle = {Proceedings of the 33rd {European} {Safety} and {Reliability} {Conference}  (ESREL)},
 	author = {Forest, Florent and Porta, Hugo and Tuia, Devis and Fink, Olga},
 	year = {2023},
@@ -186,6 +240,17 @@
     url_Paper = {http://arxiv.org/pdf/2006.08530.pdf},
 	url_Code = {https://github.com/FlorentF9/skstab},
     bibbase_note = {<img src="assets/img/papers/stadion.png">}
+}
+
+@inproceedings{madane_transformer-based_2023,
+	title = {Transformer-based conditional generative adversarial network for multivariate time series generation},
+	abstract = {Conditional generation of time-dependent data is a task that has much interest, whether for data augmentation, scenario simulation, completing missing data, or other purposes. Recent works proposed a Transformer-based Time series generative adversarial network (TTS-GAN) to address the limitations of recurrent neural networks. However, this model assumes a unimodal distribution and tries to generate samples around the expectation of the real data distribution. One of its limitations is that it may generate a random multivariate time series; it may fail to generate samples in the presence of multiple sub-components within an overall distribution. One could train models to fit each sub-component separately to overcome this limitation. Our work extends the TTS-GAN by conditioning its generated output on a particular encoded context allowing the use of one model to fit a mixture distribution with multiple sub-components. Technically, it is a conditional generative adversarial network that models realistic multivariate time series under different types of conditions, such as categorical variables or multivariate time series. We evaluate our model on UniMiB Dataset, which contains acceleration data following the XYZ axes of human activities collected using Smartphones. We use qualitative evaluations and quantitative metrics such as Principal Component Analysis (PCA), and we introduce a modified version of the Frechet inception distance (FID) to measure the performance of our model and the statistical similarities between the generated and the real data distributions. We show that this transformer-based CGAN can generate realistic high-dimensional and long data sequences under different kinds of conditions.},
+	booktitle = {{PAKDD} {International} {Workshop} on {Temporal} {Analytics}},
+	author = {Madane, Abdellah and Dilmi, Mohamed-djallel and Forest, Florent and Azzag, Hanane and Lebbah, Mustapha and Lacaille, Jerome},
+	month = may,
+	year = {2023},
+	url_Link = {http://arxiv.org/abs/2210.02089},
+	url_Paper = {http://arxiv.org/pdf/2210.02089.pdf},
 }
 
 @article{forest2021deepembedded,

@@ -48,6 +48,7 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
+<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, February 11-14, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
 
 # Recent events
