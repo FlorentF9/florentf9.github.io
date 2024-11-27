@@ -1,3 +1,19 @@
+@article{forest2023calibratedadaptive,
+	title = {Calibrated {Adaptive} {Teacher} for {Domain}-{Adaptive} {Intelligent} {Fault} {Diagnosis}},
+	author = {Forest, Florent and Fink, Olga},
+	journal = {Sensors},
+	month = nov,
+	year = {2024},
+	volume = {24},
+	number = {23},
+	issn = {1424-8220},
+	doi = {10.3390/s24237539},
+	abstract = {Intelligent fault diagnosis (IFD) based on deep learning can achieve high accuracy from raw condition monitoring signals. However, models usually perform well on the training distribution only, and experience severe performance drops when applied to a different distribution. This is also observed in fault diagnosis, where assets are often operated in working conditions different from the ones in which the labeled data have been collected. The scenario where labeled data are available in a source domain and only unlabeled data are available in a target domain has been addressed recently by unsupervised domain adaptation (UDA) approaches for IFD. Recent methods have relied on self-training with confident pseudo-labels for the unlabeled target samples. However, the confidence-based selection of pseudo-labels is hindered by poorly calibrated uncertainty estimates in the target domain, primarily due to over-confident predictions, which limits the quality of pseudo-labels and leads to error accumulation. In this paper, we propose a novel method called Calibrated Adaptive Teacher (CAT), where we propose to calibrate the predictions of the teacher network on target samples throughout the self-training process, leveraging post hoc calibration techniques. We evaluate CAT on domain-adaptive IFD and perform extensive experiments on the Paderborn University (PU) benchmark for fault diagnosis of rolling bearings under varying operating conditions, using both time- and frequency-domain inputs. We compare four different calibration techniques within our framework, where temperature scaling is both the most effective and lightweight one. The resulting method—CAT+TempScaling—achieves state-of-the-art performance on most transfer tasks, with on average 7.5% higher accuracy and 4 times lower calibration error compared to domain-adversarial neural networks (DANNs) across the twelve PU transfer tasks.},
+    url_Link = {https://www.mdpi.com/1424-8220/24/23/7539},
+	url_Code = {https://github.com/EPFL-IMOS/CAT},
+	bibbase_note = {<img src="assets/img/papers/cat.png">}
+}
+
 @article{bouhadra_knowledge-based_2024,
 	title = {Knowledge-based and {Expert} {Systems} in {Prognostics} and {Health} {Management}: a {Survey}},
 	shorttitle = {Knowledge-based and {Expert} {Systems} in {Prognostics} and {Health} {Management}},
@@ -19,7 +35,7 @@
 	title = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}: {Effective} {Self}-{Training} {Strategies} and {Performance} {Insights}},
 	shorttitle = {Simplifying {Source}-{Free} {Domain} {Adaptation} for {Object} {Detection}},
 	abstract = {This paper focuses on source-free domain adaptation for object detection in computer vision. This task is challenging and of great practical interest, due to the cost of obtaining annotated data sets for every new domain. Recent research has proposed various solutions for Source-Free Object Detection (SFOD), most being variations of teacher-student architectures with diverse feature alignment, regularization and pseudo-label selection strategies. Our work investigates simpler approaches and their performance compared to more complex SFOD methods in several adaptation scenarios. We highlight the importance of batch normalization layers in the detector backbone, and show that adapting only the batch statistics is a strong baseline for SFOD. We propose a simple extension of a Mean Teacher with strong-weak augmentation in the source-free setting, Source-Free Unbiased Teacher (SF-UT), and show that it actually outperforms most of the previous SFOD methods. Additionally, we showcase that an even simpler strategy consisting in training on a fixed set of pseudo-labels can achieve similar performance to the more complex teacher-student mutual learning, while being computationally efficient and mitigating the major issue of teacher-student collapse. We conduct experiments on several adaptation tasks using benchmark driving datasets including (Foggy)Cityscapes, Sim10k and KITTI, and achieve a notable improvement of 4.7% AP50 on Cityscapes->Foggy-Cityscapes compared with the latest state-of-the-art in SFOD. Source code is available at https://github.com/EPFL-IMOS/simple-SFOD.},
-	booktitle = {{Computer Vision – ECCV 2024}},
+	booktitle = {{ECCV 2024}},
 	author = {Hao, Yan and Forest, Florent and Fink, Olga},
 	month = oct,
 	year = {2024},
@@ -64,7 +80,7 @@
 	title = {{AESim}: {A} {Data}-{Driven} {Aircraft} {Engine} {Simulator}},
 	shorttitle = {{AESim}},
 	url = {https://www.ijcai.org/proceedings/2024/1021.pdf},
-	booktitle = {Thirty-{Third} {International} {Joint} {Conference} on {Artificial} {Intelligence} \{{IJCAI}-24\}},
+	booktitle = {IJCAI},
 	author = {Madane, Abdellah and Forest, Florent and Azzag, Hanane and Lebbah, Mustapha and Lacaille, Jérôme},
 	month = aug,
 	year = {2024},
@@ -162,20 +178,6 @@
 	url_Link = {http://arxiv.org/abs/2401.13721},
 	url_Paper = {http://arxiv.org/pdf/2401.13721.pdf},
 	bibbase_note = {<img src="assets/img/papers/uga.png">}
-}
-
-@misc{forest2023calibratedadaptive,
-	title = {Calibrated {Adaptive} {Teacher} for {Domain} {Adaptive} {Intelligent} {Fault} {Diagnosis}},
-	copyright = {All rights reserved},
-	doi = {10.48550/arXiv.2312.02826},
-	abstract = {Intelligent Fault Diagnosis (IFD) based on deep learning has proven to be an effective and flexible solution, attracting extensive research. Deep neural networks can learn rich representations from vast amounts of representative labeled data for various applications. In IFD, they achieve high classification performance from signals in an end-to-end manner, without requiring extensive domain knowledge. However, deep learning models usually only perform well on the data distribution they have been trained on. When applied to a different distribution, they may experience performance drops. This is also observed in IFD, where assets are often operated in working conditions different from those in which labeled data have been collected. Unsupervised domain adaptation (UDA) deals with the scenario where labeled data are available in a source domain, and only unlabeled data are available in a target domain, where domains may correspond to operating conditions. Recent methods rely on training with confident pseudo-labels for target samples. However, the confidence-based selection of pseudo-labels is hindered by poorly calibrated confidence estimates in the target domain, primarily due to over-confident predictions, which limits the quality of pseudo-labels and leads to error accumulation. In this paper, we propose a novel UDA method called Calibrated Adaptive Teacher (CAT), where we propose to calibrate the predictions of the teacher network throughout the self-training process, leveraging post-hoc calibration techniques. We evaluate CAT on domain-adaptive IFD and perform extensive experiments on the Paderborn benchmark for bearing fault diagnosis under varying operating conditions. Our proposed method achieves state-of-the-art performance on most transfer tasks.},
-	author = {Forest, Florent and Fink, Olga},
-	month = dec,
-	year = {2023},
-	note = {arXiv:2312.02826 [cs, eess, stat]},
-    url_Link = {http://arxiv.org/abs/2312.02826},
-    url_Paper = {http://arxiv.org/pdf/2312.02826.pdf},
-	bibbase_note = {<img src="assets/img/papers/cat.png">}
 }
 
 @inproceedings{forest2023calibratedself,
