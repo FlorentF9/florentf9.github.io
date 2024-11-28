@@ -29,6 +29,9 @@ layout: page
 <a class="repo-link" href="https://github.com/EPFL-IMOS/simple-SFOD" target="_blank" rel="noopener noreferrer">
     <img class="repo-card" alt="EPFL-IMOS/simple-SFOD" src="https://github-readme-stats.vercel.app/api/pin/?username=EPFL-IMOS&amp;repo=simple-SFOD&amp;theme=default_repocard&amp;show_owner=false&amp">
 </a>
+<a class="repo-link" href="https://github.com/EPFL-IMOS/CAT" target="_blank" rel="noopener noreferrer">
+    <img class="repo-card" alt="EPFL-IMOS/CAT" src="https://github-readme-stats.vercel.app/api/pin/?username=EPFL-IMOS&amp;repo=CAT&amp;theme=default_repocard&amp;show_owner=false&amp">
+</a>
 
 ### Explainable AI
 
@@ -53,3 +56,8 @@ layout: page
 <a class="repo-link" href="https://github.com/FlorentF9/SatelliteSimulator" target="_blank" rel="noopener noreferrer">
     <img class="repo-card" alt="FlorentF9/SatelliteSimulator" src="https://github-readme-stats.vercel.app/api/pin/?username=FlorentF9&amp;repo=SatelliteSimulator&amp;theme=default_repocard&amp;show_owner=false&amp">
 </a>
+
+# Datasets
+
+<b>ThermoScenes</b> <a class="repo-link" href="https://doi.org/10.5281/zenodo.10835108"><img style="margin: -0.25em 0" src="https://zenodo.org/badge/DOI/10.5281/zenodo.10835108.svg"/></a><br/>
+Paired RGB+thermal images for multimodal 3D scene reconstruction (16 scenes including 8 building façades).
