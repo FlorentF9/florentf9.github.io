@@ -4,6 +4,4 @@ sudo docker run --rm -v "$PWD:/srv/jekyll" -p 4000:4000 -it --entrypoint sh jeky
 
 # Pushing changes to gh-pages branch
 cd _site
-git add .
-git cm "Jekyll _site build"
-git push
+git add . && git cm "Jekyll _site build" && git push

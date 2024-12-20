@@ -18,18 +18,20 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 <!-- ⚠️ Open positions: I'm looking for a motivated Master thesis/project student to work on a challenging project on computer vision for railway infrastructure inspection (posting [here](https://sirop.org/app/0712ecf8-2675-4426-95fe-7b6cf24a9d11)). Find other open projects of our lab [here](https://www.epfl.ch/labs/imos/student-projects/). -->
 
 <ul class="events">
+<li style="list-style-type:'Nov 2024'">🎉 Our <a href="https://www.mdpi.com/1424-8220/24/23/7539">paper</a> <i>Calibrated Adaptive Teacher for Domain-Adaptive Intelligent Fault Diagnosis</i> has been accepted for publication in the Sensors journal!</li>
+<li style="list-style-type:'Oct 2024'">🎉 Our <a href="http://papers.phmsociety.org/index.php/ijphm/article/view/3986">survey paper</a> on <i>Knowledge-based and Expert Systems in Prognostics and Health Management</i>, written following Kalil's master thesis in our lab, has been published in the International Journal of the PHM Society (IJPHM).</li>
 <li style="list-style-type:'Sep 2024'">🔥 Brace yourselves for the 8th <a href="https://intelligent-maintenance.ch/">IMC conference</a> and 1st IMC-HOW? Workshops taking place next week on Sept. 2-4!</li>
 <li style="list-style-type:'Aug 2024'">🎉 Two papers accepted at ECCV 2024 workshops <a href = "https://uncertainty-cv.github.io/2024/">Uncertainty Quantification for Computer Vision (UnCV)</a> and <a href="https://neural-fields-beyond-cams.github.io/">Neural Fields Beyond Conventional Cameras</a></li>
 <li style="list-style-type:'Jul 2024'">🎉 Our <a href="http://arxiv.org/abs/2407.07586">paper</a> <i>Simplifying Source-Free Domain Adaptation for Object Detection: Effective Self-Training Strategies and Performance Insights</i> has been accepted at the ECCV 2024 conference!</li>
 <li style="list-style-type:'Jun 2024'">🎉 Our <a href="https://www.sciencedirect.com/science/article/pii/S0926580524002334">paper</a> <i>From classification to segmentation with explainable AI: A study on crack detection and growth monitoring</i> has been accepted for publication in Automation in Construction.</li>
 <li style="list-style-type:'Feb 2024'">🎉 Our extended abstract on data augmentation for road damage detection, a result of work done by Punnawat Siripatthiti during his Master thesis, is accepted for presentation at ESREL 2024.</li>
-<li style="list-style-type:'May 2023'">🎉 Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
-<li style="list-style-type:'Feb 2023'">🎉 Our <a href="http://arxiv.org/abs/2006.08530">work</a> <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
 </ul>
 
 <details>
 <summary>Old</summary>
 <ul class="events">
+<li style="list-style-type:'May 2023'">🎉 Two extended abstracts on domain adaptation and explainable AI applied to engineering applications are accepted at ESREL 2023.</li>
+<li style="list-style-type:'Feb 2023'">🎉 Our <a href="http://arxiv.org/abs/2006.08530">work</a> <i>Selecting the Number of Clusters K with a Stability Trade-off: an Internal Validation Criterion</i>, a collaboration with Alex Mourer during our PhDs, was accepted at the PAKDD 2023 conference.</li>
 <li style="list-style-type:'Sep 2022'">➡️ I have joined Olga Fink's research group <a href="https://www.epfl.ch/labs/imos/">IMOS (Intelligent Maintenance and Operations Systems)</a>!</li>
 <li style="list-style-type:'Dec 2021'">📅 The <a href="https://lipn.github.io/LITSA2021/">second LITSA workshop</a> will take place virtually (again) at ICDM 2021.</li>
 <li style="list-style-type:'Aug 2021'">🎉 We're very glad that the paper <i>Deep embedded self-organizing maps for joint representation learning and topology-preserving clustering</i> has been <a href="https://link.springer.com/article/10.1007/s00521-021-06331-w">published</a> in Neural Computing and Applications!</li>
@@ -143,14 +145,15 @@ Reviewer:
 * Conferences: CIKM (ACM Int. Conf. on Information and Knowledge Management), ECAI, ESREL, IAI (Industrial AI), LITSA workshops, PHM-Europe
 
 Supervised students (in alphabetical order):
-* Loïc d'Alcantara (Master thesis 2024/2025, with IMDM SA)
+* L. A. (Master thesis 2024/2025, with IMDM SA)
 * [Kalil Bouhadra](https://www.linkedin.com/in/kalil-bouhadra-731727183/) (Master thesis 2023/2024, with IMDM SA) -- Research intern, McGill University (Canada)
 * Étienne Chassaing (Master thesis 2024, co-supervision with Schindler)
 * Giada Ehrlich (Master semester project 2024/2025)
 * [Yan Hao](https://honeyhaoyan.github.io/) (Master thesis 2022/2023)
 * [Mariam Hassan](https://scholar.google.fr/citations?user=RHHfk44AAAAJ) (Master thesis 2023/2024, co-supervision with Schindler) -- PhD student, EPFL VITA lab (Switzerland)
 * [Antoine Laborde](https://www.linkedin.com/in/antoine-laborde-ml/) (Master thesis 2023/2024, co-supervision with Schindler) -- AI engineer, inspire AG (Switzerland)
-* Uddhava Yann Monney (Master thesis 2024)
+* Uddhava Yann Monney (Master thesis 2024/2025)
+* Juliette Parchet (Master thesis 2024/2025, co-supervision with Schindler)
 * [Esteban Requena](https://www.linkedin.com/in/esteban-requena-9655221b9/) (Master semester project 2023/2024) -- Civil engineer, Pini group (Switzerland)
 * Hana Salvetova (Bachelor semester project 2023/2024)
 * [Kseniia Shevchenko](https://www.linkedin.com/in/kseniia-shevchenko-5751341b6/) (Master thesis 2024)
