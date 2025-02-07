@@ -9,7 +9,7 @@ I am currently a scientist at [EPFL](https://www.epfl.ch/) <span class="flag-ico
 
 My broad areas of interest are unsupervised and supervised machine learning, with a focus on robustness (domain adaptation), interpretability (XAI) and engineering applications. I also like building large-scale data-driven applications and developing advanced algorithms on complex industrial data sets.
 
-You can download my (maybe outdated) [CV](/files/CV_FlorentForest_2024.pdf).
+You can download my (maybe outdated) [CV](/files/CV_FlorentForest_2025.pdf).
 
 Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions and potential collaborations.
 
