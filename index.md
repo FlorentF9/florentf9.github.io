@@ -50,10 +50,15 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 # Upcoming events
 
 <ul>
-<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, February 11-14, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
 </ul>
 
 # Recent events
+
+<ul>
+<li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, February 11-14, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>
+</ul>
+
+2024
 
 <ul>
 <li><a href="https://eccv2024.ecva.net/">ECCV (European Conference on Computer Vision)</a>, September 29-October 4, Milano, Italy <span class="flag-icon flag-icon-squared flag-icon-it"></span> <i>[presenting 1 main conf and 2 workshop papers]</i></li>
