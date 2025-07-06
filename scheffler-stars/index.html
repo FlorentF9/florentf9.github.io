@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheffler's Stars Optical Illusion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2>Controls</h2>
+            <div class="control-group">
+                <label for="rotationSpeed">Rotation Speed (deg/s):</label>
+                <input type="number" id="rotationSpeed" value="10">
+            </div>
+            <div class="control-group">
+                <label for="bgSpeed">Background Speed (px/s):</label>
+                <input type="number" id="bgSpeed" value="10">
+            </div>
+            <div class="control-group">
+                <label for="dotCount">Number of Dots:</label>
+                <input type="number" id="dotCount" value="16">
+            </div>
+            <div class="control-group">
+                <label for="dotSize">Dot Size (px):</label>
+                <input type="number" id="dotSize" value="8">
+            </div>
+            <div class="control-group">
+                <label for="circleDiameter">Circle Diameter (px):</label>
+                <input type="number" id="circleDiameter" value="300">
+            </div>
+            <div class="control-group">
+                <label for="bgPattern">Background Pattern:</label>
+                <select id="bgPattern">
+                    <option value="stars">Stars</option>
+                    <option value="cracked">Cracked</option>
+                    <option value="svg">SVG Pattern</option>
+                </select>
+            </div>
+        </div>
+        <canvas id="starsCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
