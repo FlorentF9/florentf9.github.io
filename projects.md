@@ -39,10 +39,13 @@ layout: page
     <img class="repo-card" alt="EPFL-IMOS/crack-explanations" src="https://github-readme-stats.vercel.app/api/pin/?username=EPFL-IMOS&amp;repo=crack-explanations&amp;theme=default_repocard&amp;show_owner=false&amp">
 </a>
 
-### Thermal 3D Models
+### Building & Thermal 3D Models
 
 <a class="repo-link" href="https://github.com/SchindlerEPFL/thermo-nerf" target="_blank" rel="noopener noreferrer">
     <img class="repo-card" alt="SchindlerEPFL/thermo-nerf" src="https://github-readme-stats.vercel.app/api/pin/?username=SchindlerEPFL&amp;repo=thermo-nerf&amp;theme=default_repocard&amp;show_owner=false&amp">
+</a>
+<a class="repo-link" href="https://github.com/EPFL-IMOS/BuildNet3D" target="_blank" rel="noopener noreferrer">
+    <img class="repo-card" alt="EPFL-IMOS/BuildNet3D" src="https://github-readme-stats.vercel.app/api/pin/?username=EPFL-IMOS&amp;repo=nuildnet3d&amp;theme=default_repocard&amp;show_owner=false&amp">
 </a>
 
 ### Multivariate Time Series Generation
