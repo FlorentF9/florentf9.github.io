@@ -9,15 +9,15 @@ I am currently a scientist at [EPFL](https://www.epfl.ch/) <span class="flag-ico
 
 My broad areas of interest are unsupervised and supervised machine learning, with a focus on robustness (domain adaptation), interpretability (XAI) and engineering applications. I also like building large-scale data-driven applications and developing advanced algorithms on complex industrial data sets.
 
-You can download my (maybe outdated) [CV](/files/CV_FlorentForest_2025.pdf).
+You can download my (maybe outdated) [CV](/files/CV_FlorentForest_2026.pdf).
 
 Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions and potential collaborations.
 
 # News
 
-<!-- ⚠️ Open positions: I'm looking for a motivated Master thesis/project student to work on a challenging project on computer vision for railway infrastructure inspection (posting [here](https://sirop.org/app/0712ecf8-2675-4426-95fe-7b6cf24a9d11)). Find other open projects of our lab [here](https://www.epfl.ch/labs/imos/student-projects/). -->
-
 <ul class="events">
+<li style="list-style-type:'Jan 2026'">🎉 Our <a href="https://www.sciencedirect.com/science/article/pii/S0951832025013420">paper</a> <i>Uncertainty-guided alignment for unsupervised domain adaptation in regression</i> has been accepted in Reliability Engineering & System Safety (RESS)!</li>
+<li style="list-style-type:'Dec 2025'">📰 Check out our latest <a href="https://arxiv.org/abs/2512.03578">pre-print</a> <i>When, How Long and How Much? Interpretable Neural Networks for Time Series Regression by Learning to Mask and Aggregate</i>!</li>
 <li style="list-style-type:'Nov 2024'">🎉 Our <a href="https://www.mdpi.com/1424-8220/24/23/7539">paper</a> <i>Calibrated Adaptive Teacher for Domain-Adaptive Intelligent Fault Diagnosis</i> has been accepted for publication in the Sensors journal!</li>
 <li style="list-style-type:'Oct 2024'">🎉 Our <a href="http://papers.phmsociety.org/index.php/ijphm/article/view/3986">survey paper</a> on <i>Knowledge-based and Expert Systems in Prognostics and Health Management</i>, written following Kalil's master thesis in our lab, has been published in the International Journal of the PHM Society (IJPHM).</li>
 <li style="list-style-type:'Sep 2024'">🔥 Brace yourselves for the 8th <a href="https://intelligent-maintenance.ch/">IMC conference</a> and 1st IMC-HOW? Workshops taking place next week on Sept. 2-4!</li>
@@ -53,6 +53,8 @@ Feel free to reach out to me via [e-mail](/contact) or LinkedIn for discussions 
 </ul>
 
 # Recent events
+
+2025
 
 <ul>
 <li><a href="https://www.appliedmldays.org/">Applied Machine Learning Days</a>, February 11-14, Lausanne, Switzerland <span class="flag-icon flag-icon-squared flag-icon-ch"></span></li>

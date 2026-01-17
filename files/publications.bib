@@ -1,3 +1,32 @@
+@misc{forest2025whenlongmuchinterpretable,
+      title = { When, How Long and How Much? Interpretable Neural Networks for Time Series Regression by Learning to Mask and Aggregate}, 
+      author = {Florent Forest and Amaury Wei and Olga Fink},
+      year = {2025},
+      eprint = {2512.03578},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.LG},
+	  abstract = {Time series extrinsic regression (TSER) refers to the task of predicting a continuous target variable from an input time series. It appears in many domains, including healthcare, finance, environmental monitoring, and engineering. In these settings, accurate predictions and trustworthy reasoning are both essential. Although state-of-the-art TSER models achieve strong predictive performance, they typically operate as black boxes, making it difficult to understand which temporal patterns drive their decisions. Post-hoc interpretability techniques, such as feature attribution, aim to to explain how the model arrives at its predictions, but often produce coarse, noisy, or unstable explanations. Recently, inherently interpretable approaches based on concepts, additive decompositions, or symbolic regression, have emerged as promising alternatives. However, these approaches remain limited: they require explicit supervision on the concepts themselves, often cannot capture interactions between time-series features, lack expressiveness for complex temporal patterns, and struggle to scale to high-dimensional multivariate data.
+	  To address these limitations, we propose MAGNETS (Mask-and-AGgregate NEtwork for Time Series), an inherently interpretable neural architecture for TSER. MAGNETS learns a compact set of human-understandable concepts without requiring any annotations. Each concept corresponds to a learned, mask-based aggregation over selected input features, explicitly revealing both which features drive predictions and when they matter in the sequence. Predictions are formed as combinations of these learned concepts through a transparent, additive structure, enabling clear insight into the model's decision process. The code implementation and datasets are publicly available at https://github.com/FlorentF9/MAGNETS.},
+      url_Link = {https://arxiv.org/abs/2512.03578},
+	  url_Code = {https://github.com/FlorentF9/MAGNETS},
+	  bibbase_note = {<img src="assets/img/papers/magnets.png">}
+}
+
+@article{nejjar_uncertainty-guided_2026,
+	title = {Uncertainty-guided alignment for unsupervised domain adaptation in regression},
+	author = {Ismail Nejjar and Gaetan Frusque and Florent Forest and Olga Fink},
+	journal = {Reliability Engineering & System Safety},
+	volume = {270},
+	pages = {112143},
+	year = {2026},
+	issn = {0951-8320},
+	doi = {https://doi.org/10.1016/j.ress.2025.112143},
+	abstract = {In prognostics and health management systems, models must reliably predict asset health conditions across varying operating conditions, equipment manufacturers, or degradation patterns. However, obtaining labeled data for every new operational context is often impractical, particularly for run-to-failure trajectories. This work addresses this challenge through Unsupervised Domain Adaptation for Regression, which enables adaptation from a labeled source domain to an unlabeled target domain. Traditional feature alignment methods (such as adversarial or moment matching) underperform in PHM regression tasks due to the inherent correlation among learned features, leading to unreliable prognostic predictions when operating conditions change. This work proposes Uncertainty-Guided Alignment (UGA), a novel method that explicitly integrates predictive uncertainty into the feature alignment process. UGA employs Evidential Deep Learning to predict both target values and their associated uncertainties, using this uncertainty information to guide domain alignment and regularize the embedding space. This directly addresses key PHM requirements: (1) quantifying confidence in predictions when deployed in new operational conditions, (2) enabling reliable cross-operational context deployment. The approach is validated on two computer vision benchmarks and a real-world PHM case study of battery state-of-charge prediction, where domains are defined by different manufacturers (LG, Panasonic) and operating temperatures (-20°C to 25°C). Across 52 transfer tasks, UGA outperforms existing state-of-the-art methods on average. Our approach not only improves adaptation performance but also provides well-calibrated uncertainty estimates. The code is available in https://github.com/ismailnejjar/UGA.},
+	url_Link = {https://www.sciencedirect.com/science/article/pii/S0951832025013420},
+	url_Code = {https://github.com/ismailnejjar/UGA},
+	bibbase_note = {<img src="assets/img/papers/uga2.png">}
+}
+
 @article{xu_exploiting_2025,
 	title = {Exploiting semantic scene reconstruction for estimating building envelope characteristics},
 	author = {Xu, Chenghao and Mielle, Malcolm and Laborde, Antoine and Waseem, Ali and Forest, Florent and Fink, Olga},
